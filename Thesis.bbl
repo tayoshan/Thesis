@@ -1,0 +1,306 @@
+\begin{thebibliography}{51}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Anschuetz et~al.(2001)Anschuetz, Wilhusen, \& Scheick}]{AnsWilSch01}
+Anschuetz, K.~F., Wilhusen, R.~H., \& Scheick, C.~L. (2001).
+\newblock An archaeology of landscapes: Perspectives and directions.
+\newblock {\em Journal of Archaeological Research\/}, {\em 9\/}(2), 157--211.
+\newblock Accessed 11/04.2012 23:37.
+\newline\urlprefix\url{http://jstor.org/stable/41053175}
+
+\bibitem[{Barker \& Rasmussem(1998)}]{BarRas98}
+Barker, G., \& Rasmussem, T. (1998).
+\newblock {\em The Etruscans\/}.
+\newblock Malden, Massachussetts: Blackwell Publishers Inc.
+
+\bibitem[{Bevan(Forthcoming)}]{BevForthcoming}
+Bevan, A. (Forthcoming).
+\newblock A review of some computational modelling approaches. travel and
+  interaction in the greek and roman world.
+\newblock {\em Digital Classicist (Bulletin of the Institute of Classical
+  Studies )\/}.
+
+\bibitem[{Binford(1983)}]{Bin83}
+Binford, L.~R. (1983).
+\newblock {\em Working at Archaeology\/}.
+\newblock New York: Academic Press.
+
+\bibitem[{Broodbank(2000)}]{Bro00}
+Broodbank, C. (2000).
+\newblock {\em An Island Archaeology of the Ealy Cyclades\/}.
+\newblock Cambridge: CUP.
+
+\bibitem[{Campana(2001)}]{Cam01}
+Campana, S. (2001).
+\newblock {\em Carta Archeologica Della Provincial di Siena (Murlo)\/}, vol.~V.
+\newblock Siena: publisher.
+
+\bibitem[{Clarke(1968)}]{Cla68}
+Clarke, D.~L. (1968).
+\newblock {\em Analytical Archaeology\/}.
+\newblock New York: Columbia University Press.
+
+\bibitem[{Clarke(1977)}]{Cla77}
+Clarke, D.~L. (1977).
+\newblock {\em Spatial Archaeology\/}.
+\newblock New York: Academic Press.
+
+\bibitem[{Eckbo(1969)}]{Eckbo69}
+Eckbo, G. (1969).
+\newblock {\em The Landscape We See\/}.
+\newblock New York: McGraw Hill.
+
+\bibitem[{Edlund-Berry(1994)}]{IEB94}
+Edlund-Berry, I.~M. (1994).
+\newblock {\em Murlo and the Etruscans: Art and Society in Ancient Etruria\/},
+  chap. Ritual Destruction of Cities and Sanctuaries: The Un-founding of the
+  Archaic Monumental Bulding at Poggio Civitate (Murlo), (pp. 16--28).
+\newblock Madison: University of Wisconsin Press.
+
+\bibitem[{Etherington(2011)}]{Eth11}
+Etherington, T.~R. (2011).
+\newblock Python based gis tools for landscape genetics: Visualizing genetic
+  relatedness and measuring landscape connectivity.
+\newblock {\em Methods in Ecology and Evolution\/}, {\em 2\/}(1), 52--55.
+
+\bibitem[{Evans et~al.(2012)Evans, Rivers, \& Knappett}]{ERK12}
+Evans, T.~S., Rivers, R.~J., \& Knappett, C. (2012).
+\newblock Interactions in space for archaeological models.
+\newblock {\em Advances in Complex Systems\/}, {\em 15\/}(01n02), 1150009.
+\newline\urlprefix\url{http://www.worldscientific.com/doi/abs/10.1142/S021952591100327X}
+
+\bibitem[{Fotheringham et~al.(2002)Fotheringham, Brundson, \&
+  Charlton}]{FotBruCha02}
+Fotheringham, A., Brundson, C., \& Charlton, M. (2002).
+\newblock {\em Quantitative Geography\/}, chap. Spatial Modelling and the
+  Evolution of Spatial Theory.
+\newblock London: Sage Publications Ltd.
+
+\bibitem[{Fotheringham \& O'Kelly(1989)}]{FotOke89}
+Fotheringham, A., \& O'Kelly, M. (1989).
+\newblock {\em Spatial Interaction Models: Formulations and Applications\/}.
+\newblock London: Kluwer Academic Publishers.
+
+\bibitem[{Fotheringham(1983)}]{Fot83}
+Fotheringham, A.~S. (1983).
+\newblock A new set of spatial-interaction models: The theory of competing
+  destinations.
+\newblock {\em Evironmental and Planning A\/}, {\em 15\/}(1), 15--36.
+
+\bibitem[{Glennie et~al.(2013)Glennie, Rodriguez, \& Tuck}]{AnnAnd}
+Glennie, A., Rodriguez, A., \& Tuck, A. (2013).
+\newblock Waiting for title.
+\newblock Unpublished paper presented at The 2013 Archaeological Institute of
+  America Annual Meeting.
+
+\bibitem[{Graham(2008)}]{GraSte08}
+Graham, S. (2008).
+\newblock Travellersim: Growing settlement structures and territories with
+  agent-based modeling.
+\newblock In J.~T. Clark, \& E.~M. Hagemeister (Eds.) {\em Digital Discovery:
+  Exploring New Frontiers in Human Heritage\/}, vol.~34. CAA, Budapest:
+  Archaeolingua.
+
+\bibitem[{Harvey(2006)}]{Harvey06}
+Harvey, D. (2006).
+\newblock {\em David Harvey: A Critical Reader\/}, chap. Space As a Keyword.
+\newblock United Kingdom: Blackwell.
+
+\bibitem[{Hodder(2003)}]{Hod03}
+Hodder, I. (2003).
+\newblock {\em Archaeology Beyond Dialogue\/}.
+\newblock Salt Lake City: University of Utah Press.
+
+\bibitem[{Kantner(2008)}]{Kantner08}
+Kantner, J. (2008).
+\newblock The archaeology of regions: From discrete analytical toolkit to
+  ubiquitous spatial perspective.
+\newblock {\em Journal of Archaeological Research\/}, {\em 16\/}(1), 37--81.
+\newblock [Accessed 20-May-2013].
+\newline\urlprefix\url{http://www.jstor.org/stable/41053246/}
+
+\bibitem[{Kleinberg(1999)}]{Kle99}
+Kleinberg, J.~M. (1999).
+\newblock Authoritative sources in a hyperlinked environment.
+\newblock {\em JOURNAL OF THE ACM\/}, {\em 46\/}(5), 604--632.
+
+\bibitem[{Knappett et~al.(2008)Knappett, Evans, \& Rivers}]{KnaEvaRiv08}
+Knappett, C., Evans, T., \& Rivers, R. (2008).
+\newblock Modelling maritime interaction in the aegean bronze age.
+\newblock {\em Antiquity\/}, {\em 82\/}, 1009--1024.
+
+\bibitem[{Knappett et~al.(2011)Knappett, Rivers, \& Evans}]{KnaRivEva11}
+Knappett, C., Rivers, R., \& Evans, T. (2011).
+\newblock The theran eruption and minoan palatial collapse: New interpreations
+  gained from modelling the maritime network.
+\newblock {\em Antiquity\/}, {\em 85\/}(329), 1008--1023.
+
+\bibitem[{Knoke \& Kuklinski(1982)}]{KnoKuk92}
+Knoke, D., \& Kuklinski, J.~H. (1982).
+\newblock {\em Network Analysis\/}.
+\newblock London: Sage Publications.
+
+\bibitem[{Kowalewski(2008)}]{Kow08}
+Kowalewski, S.~A. (2008).
+\newblock Regional settlement patterns.
+\newblock {\em Journal of Archaeological Research\/}, {\em 16\/}(225-285).
+
+\bibitem[{Langville \& Meyer(2004)}]{LanMey04}
+Langville, A.~N., \& Meyer, C.~D. (2004).
+\newblock A survey of eigenvector methods of web information retrieval.
+
+\bibitem[{Minetti et~al.(2002)Minetti, Moia, Roi, Susta, \& Ferretti}]{Min02}
+Minetti, A.~E., Moia, C., Roi, G.~S., Susta, D., \& Ferretti, G. (2002).
+\newblock Energy cost of walking and running at extreme uphill and downhill
+  slopes.
+\newblock {\em Journal of Applied Physiology\/}, {\em 93\/}(3), 1039--1046.
+
+\bibitem[{Newman(2003)}]{New03a}
+Newman, M. E.~J. (2003).
+\newblock Mixing patterns in networks.
+\newblock {\em Phys. Rev. E\/}, {\em 67\/}, 026126.
+\newline\urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevE.67.026126}
+
+\bibitem[{{Newman}(2003)}]{New03}
+{Newman}, M.~E.~J. (2003).
+\newblock {The Structure and Function of Complex Networks}.
+\newblock {\em SIAM Review\/}, {\em 45\/}, 167--256.
+
+\bibitem[{Nielsen \& Tuck(2001)}]{NieTuc01}
+Nielsen, E.~O., \& Tuck, A.~S. (2001).
+\newblock An orientalizing period comples at poggio civitate(murlo): A
+  preliminary view.
+\newblock {\em Etruscan Studies\/}, {\em 8\/}(3).
+\newblock Accessed May 20th 2013.
+\newline\urlprefix\url{http://scholarworks.umass.edu/etruscan_studies/vol8/iss1/3}
+
+\bibitem[{O'Donoghue(2013)}]{Odo13}
+O'Donoghue, E. (2013).
+\newblock The mute statues speak: The archaic period acroteria from poggio
+  civitate (murlo).
+\newblock {\em European Journal of Archaeology\/}.
+
+\bibitem[{O'Kelly(2004)}]{Oke04}
+O'Kelly, M.~E. (2004).
+\newblock Isard's contributions to spatial interaction modeling.
+\newblock {\em Journal of Geographical Systems\/}, {\em 6\/}(1), 43--54.
+
+\bibitem[{Page et~al.(1999)Page, Brin, Motwani, \& Winograd}]{PageRank}
+Page, L., Brin, S., Motwani, R., \& Winograd, T. (1999).
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock Technical Report 1999-66, Stanford InfoLab.
+\newblock Previous number = SIDL-WP-1999-0120.
+\newline\urlprefix\url{http://ilpubs.stanford.edu:8090/422/}
+
+\bibitem[{Pena(2011)}]{Pen11}
+Pena, T.~J. (2011).
+\newblock {\em State Formation in Italy and Greece: Question the
+  Neoevolutionist Paradigm\/}, chap. State Formation in Souther Coastal
+  Etruria: An Application of the Kipp-Schrotman Model, (pp. 162--178).
+\newblock Oxford: Oxbow Books.
+
+\bibitem[{Renfrew \& Level(1979)}]{RenLev79}
+Renfrew, A.~C., \& Level, E.~V. (1979).
+\newblock {\em Transformation: Mathematical approaches to Culture Change\/},
+  chap. Exploring Dominance: Preciting Polities From Centres.
+\newblock New York: Academic Press.
+
+\bibitem[{Renfrew(1975)}]{Ren75}
+Renfrew, C. (1975).
+\newblock {\em Ancient Civilizations and Trade\/}, chap. Trade As an Action At
+  a Distance: Questions of Interaction and Communication.
+\newblock Albuquerque: School of American Research - University of New Mexico.
+
+\bibitem[{Rihll \& Wilson(1991)}]{RihWil91}
+Rihll, T., \& Wilson, A. (1991).
+\newblock {\em City and Counrty in the Acneint World\/}, chap. Modelling
+  Settlement Structures In Ancient Greece: New Approaches to the Polis.
+\newblock 3. London: Routledge.
+
+\bibitem[{Rodrigue et~al.(2006)Rodrigue, Comtois, \& Slack}]{RodComSla06}
+Rodrigue, J.-P., Comtois, C., \& Slack, B. (2006).
+\newblock {\em The Geography of Transport Systems\/}.
+\newblock 3. New York: Routledge.
+
+\bibitem[{Roy \& Thill(2004)}]{RoyThi04}
+Roy, J.~A., \& Thill, J.-C. (2004).
+\newblock Spatial interaction modeling.
+\newblock {\em Papers in Regional Science\/}, {\em 83\/}, 339--362.
+
+\bibitem[{Saram\"{a}k et~al.(2007)Saram\"{a}k, Kivel\"{a}, Onnela, Kaski, \&
+  Kertész}]{Sar07}
+Saram\"{a}k, J., Kivel\"{a}, M., Onnela, J.-P., Kaski, K., \& Kertész, J.
+  (2007).
+\newblock Generalizations of the clustering coefficient to weighted complex
+  networks.
+\newblock {\em Physical Review E\/}, {\em 75\/}.
+\newline\urlprefix\url{http://jponnela.com/web_documents/a9.pdf}
+
+\bibitem[{Scullard(1980)}]{Scu80}
+Scullard, H. (1980).
+\newblock {\em A History of the Roman World\/}.
+\newblock New York: Methuen.
+
+\bibitem[{Setti \& Bonamici(1985)}]{SetBon85}
+Setti, S., \& Bonamici, M. (1985).
+\newblock {\em The Land of the Etrusans: From Prehistory to the Middle Ages\/}.
+\newblock Firenze: Scala Books.
+
+\bibitem[{Simini et~al.(2012)Simini, Gonzalez, Maritan, \& Barabasi}]{Bar12}
+Simini, F., Gonzalez, M.~C., Maritan, A., \& Barabasi, A.-L. (2012).
+\newblock A universal model for mobility and migration patterns.
+\newblock {\em Nature\/}, {\em 484\/}, 96--100.
+
+\bibitem[{Spivy \& Stoddart(1992)}]{SpiSto92}
+Spivy, N., \& Stoddart, S. (1992).
+\newblock {\em Etruscan Italy: An Archaeological History\/}.
+\newblock Brasford.
+
+\bibitem[{Stoddart \& Redhouse(2011)}]{StoRed11}
+Stoddart, S., \& Redhouse, D.~I. (2011).
+\newblock {\em State Formation in Italy and Greece: Questioning the
+  Neoevolutionist Paradigm\/}, chap. Mapping Estruscan State Formation.
+\newblock Oxford: Oxbow Books.
+
+\bibitem[{Tuan(1976)}]{Tuan76}
+Tuan, Y.-F. (1976).
+\newblock Humanistic geography.
+\newblock {\em Annals of the Association of American Geographers\/}, {\em
+  66\/}(2), 266--276.
+\newline\urlprefix\url{http://dx.doi.org/10.1111/j.1467-8306.1976.tb01089.x}
+
+\bibitem[{Tuck(2006)}]{Tuc06}
+Tuck, A. (2006).
+\newblock {\em Deliciae Fictiles III. Architectural Terracottas in Ancient
+  Italy\/}, chap. The Social and Political Context of the 7th Century
+  Architectural Terracottas from Poggio Civitate (Murlo), (pp. 130--135).
+\newblock Oxbow Books.
+
+\bibitem[{Tuck et~al.(2010)Tuck, Brunk, Huntsman, \& Tallman}]{TucBruHunTal10}
+Tuck, A., Brunk, J., Huntsman, T., \& Tallman, H. (2010).
+\newblock An archaic period well from poggio civitate (murlo).
+\newblock {\em Etruscan Studies\/}, {\em 13\/}(1), 93--106.
+\newline\urlprefix\url{http://dx.doi.org/10.1515/etst.2010.13.1.93}
+
+\bibitem[{Wilson(2010)}]{Wil10}
+Wilson, A. (2010).
+\newblock Entropy in urban and regional modelling: Retrospect and prospect.
+\newblock {\em Geographical Analysis\/}, {\em 42\/}, 364--394.
+
+\bibitem[{Winter(2009)}]{Win09}
+Winter, N.~A. (2009).
+\newblock {\em Symbols of Wealth and Power: Architectural Terracotta Decoration
+  In Etruria and Cental Italy, 640-510 B.C.\/}.
+\newblock Ann Arbor: The University of Michigan Press.
+
+\bibitem[{Wyly(2009)}]{Wyl09}
+Wyly, E. (2009).
+\newblock Strategic positivism.
+\newblock {\em Professional Geographer\/}, {\em 61\/}(3), 310--322.
+\newblock Accessed: December 12, 2012.
+\newline\urlprefix\url{http://proxy.wexler.hunter.cuny.edu/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=41998475&site=ehost-live}
+
+\end{thebibliography}

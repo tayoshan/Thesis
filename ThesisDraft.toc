@@ -1,0 +1,64 @@
+\contentsline {chapter}{\numberline {1.}Introduction}{4}
+\contentsline {section}{\numberline {1.1}General Overview}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{7}
+\contentsline {chapter}{\numberline {2.}Literature Review}{9}
+\contentsline {section}{\numberline {2.1}History of the Etruscans and Poggio Civitate}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{}{18}
+\contentsline {section}{\numberline {2.2}Spatial Interaction Theory In Archaeology and Within Etruria}{19}
+\contentsline {paragraph}{}{19}
+\contentsline {paragraph}{}{20}
+\contentsline {paragraph}{}{20}
+\contentsline {section}{\numberline {2.3}Modern Transportation Geographic Theory}{22}
+\contentsline {paragraph}{}{22}
+\contentsline {paragraph}{}{22}
+\contentsline {section}{\numberline {2.4}Spatial Interaction Theory and Modeling}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {paragraph}{}{24}
+\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{27}
+\contentsline {section}{\numberline {2.5}Spatial Interaction Modeling in Classical Archaeology}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{29}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{33}
+\contentsline {paragraph}{}{34}
+\contentsline {paragraph}{}{35}
+\contentsline {paragraph}{}{36}
+\contentsline {chapter}{\numberline {3.}Problem Statement and Hypothesis}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {paragraph}{}{38}
+\contentsline {chapter}{\numberline {4.}Methodology}{39}
+\contentsline {section}{\numberline {4.1}Data}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {paragraph}{}{40}
+\contentsline {paragraph}{}{42}
+\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{42}
+\contentsline {paragraph}{}{42}
+\contentsline {section}{\numberline {4.3}Network Analysis Metrics}{42}
+\contentsline {chapter}{\numberline {5.}Results}{43}
+\contentsline {section}{\numberline {5.1}Ariadne Model}{43}
+\contentsline {section}{\numberline {5.2}Radiation Model}{43}
+\contentsline {section}{\numberline {5.3}Agent-based Model}{43}
+\contentsline {chapter}{\numberline {6.}Discussion and Conclusions}{44}
+\contentsline {section}{\numberline {6.1}Simulating Networks}{44}
+\contentsline {section}{\numberline {6.2}Comparing and Contrasting the Models}{44}
+\contentsline {section}{\numberline {6.3}Implications for Poggio Civitate}{44}
+\contentsline {section}{\numberline {6.4}Final Conclusions}{44}
+\contentsline {section}{\numberline {6.5}Further Work}{44}
