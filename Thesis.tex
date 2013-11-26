@@ -401,7 +401,6 @@ Similarly, running the maximum-distance network model, using distances of 25km, 
  
 
 \subsection{Radiation Model}
- Did I mention the cutoff value?
 \paragraph{}
 To operationalize the radiation model code was developed (See Appendix B) following \cite{Bar12} with one exception. The term  $T_{i}$, which is supposed to be a proportion of the total population originating at each site, will instead consider the settlement size estimate at a given location. Alternatively, $T_{i}$ could be a ratio of the settlement site size to the total of all sizes. Any value which accurately scales calculations by the estimates at the origins is acceptable. Since $M_{i}$ is also equal to the origin estimate, equation \ref{eq:originalRad} from section 2.3 therefore becomes,
 						
@@ -439,7 +438,7 @@ All networks produced from this model were filtered to remove near-zero edges us
 
 \subsection{Agent-based Model}
 
-agent 60km
+-Add in agent 60km cut off comment and screen shot
 
 \paragraph{}
 To take an agent-based approach to simulating spatial interaction for this study region some changes were imposed upon the TravellerSim model introduced earlier (section X). First, the local vision was increased from 25km to match the journey limitations proposed for use in the Ariadne model (60km and 100km). This change reflects the additions of horse related transportation and a general increase in spatial awareness that would have been assumed to accompany intensified relationships with the landscape and larger settlements. Next, the attractiveness of each settlement was calculated each round rather than randomly selecting three from those within a human agent's vision. The original authors \citep{GraSte08} explain that this limitation acted primarily as a computation shortcut to prevent lengthy simulation run times and they rationalize this decision by adding that it would have reflected an agent's limited knowledge of their surroundings. It is unknown whether the authors realized that this limitation was the basis for which their model became stochastic (every run yields slightly different results); however, this shortcut was removed due to advances in computing capabilities and that the larger, more urbanized sites would have likely had an increased knowledge of the region. As a result, the model has become deterministic. To test the stability of the interaction system resulting from this model slight deviations to a site's importance were administered at end of each iteration within the simulation. Each site's importance was increased or decreased with equal probability by a value which was randomly generated according to the Poisson distribution using its current importance as the lambda parameter. Overall, model runs using this alteration (Appendix) manifested remarkably similar structure highlighting the stability of process being modeled. Another effect of this approach is that the model results will be interpreted statistically, similarly to the Ariadne networks, using the average many networks.  
@@ -461,6 +460,8 @@ Interaction is an output of each of the models which does not require any additi
 \subsubsection{Degree Centrality}
 The degree is the number of edges connected to a node. Since this research looks at directed networks we must differentiate between the number of edges arriving at a node and the number of edges originating at a node or, more simply, the ``in degree'' and ``out degree''. A settlement is considered more important if it has a higher degree and therefore has many other settlements connecting to it \cite[64]{RodComSla06}.  
 
+
+-consider deleting local transitivty
 \subsubsection{Clustering Coefficient}
 A clustering coefficient , which measures transitivity, will be calculated for each node within the network \citep{Sar07}. Transitivity is most easily described in terms of social networks in which it is the mean probability that a friend of a friend is also your friend. In network terminology this relationship is referred to as a triangle and the coefficient measures how many triangles exist for a node over how many are possible for the same node \cite[11-12]{New03}. Higher coefficient values are associated with more connected nodes.  
 
@@ -495,7 +496,7 @@ DELETE THIS HERE AND IN RESULTS
 The network density measures how many the links of a network are occupying given the extent of the network. A high network density signifies a more developed network. 
 
 \subsubsection{Beta Index}
-The beta index measure network connectivity through the ratio of the number of links (e) to the number of nodes (v). Simpler networks with less than 1 cycle and are not connected have a beta index of 1 while those which are connect and have more than 1 cycle have a beta index greater than 1. Holding the number of nodes constant, the higher the number of links means there are more paths possible which will correspond to a higher beta index. 
+The beta index measure network connectivity through the ratio of the number of links to the number of nodes. Simpler networks with less than 1 cycle and are not very connected have a beta index of 1 while those which are connect and have more than 1 cycle have a beta index greater than 1. Holding the number of nodes constant, the higher the number of links means there are more paths possible which will correspond to a higher beta index. 
 
 \subsubsection{Gamma Index}
 The Gamma index compares the number of links with the maximum number of possible links. The values range from 0 to 1 with higher values representing more connected networks. The Gamma index is especially useful for measuring changes in networks over time. It is unique because it provides a measure of connectivity independently of nodes.
@@ -506,12 +507,19 @@ The Gamma index compares the number of links with the maximum number of possible
 In all of the models, network visualizations offer the first clues into system structures and how Murlo factors within the region. A filter is applied to the agent model and Ariadne due to edges being calculated between all node pairs yet many of them having near-zero values. Following the visualization a table of results for each the node-level metrics and the network-level metrics will be reported. Lastly, Poggio Civitate (node 16) will be removed from the input data and the models will be re-run holding everything else constant and new data will be recorded. 
 
 
-
+-check resluts of models against preliminary data model results
 \chapter{Results}
 A visualization, network-based metrics and node level metrics, and several graphs will be provided for each model first including Murlo and then again after removing this node to mimic its destruction.
 
 
-\section{Radiation Model}
+\section{Radiation Model} 
+
+\paragraph{}
+Network results of the radiation model indicate that Poggio Civitate was not a highly connected node and, therefore, its spatial orientation would not have granted it superior network advantages. Rather, this model indicates that Murlo would have actually been quite isolated generally lacking the ability to achieve outward interaction. Even the sole incoming interaction to Poggio Civitate is evidence against its role as a central node within the network since it is the weakest interaction within the entire system. A low PageRank value confirms that it was not, in fact, punching above its weight and did not have a large importance in the overall network connectivity. 
+
+\paragraph{}
+Medium transitivity value suggests that there is some community formation within the network but that it is not the defining factor within the results which is confirmed by frequent weak long-distance interactions in the visualization. Interestingly, upon the removal of Murlo, there is slight increase in the overall connectivity of the network. Values for the transitivity, beta index, and gamma index all support this slight trend, though the network diameter remains unchanged. Bar chart comparing total interaction changes from before and after.   
+
 \subsubsection{Before}
 
 \begin{figure}[H]
@@ -621,7 +629,10 @@ A visualization, network-based metrics and node level metrics, and several graph
 \section{Ariadne Model}
 
 \paragraph{}
-In each scenario, the network-level metrics converged to a steady values within 25 averaged model runs.
+In each scenario, the network-level metrics converged to a steady values within 25 averaged model runs. At the lower distance threshold the Ariadne model indicates that on average Poggio Civitate would have sustained 2-3 outgoing interactions and 0-1 incoming interactions though they would have been among some of the weakest links within the network. Increasing the distance threshold does not have an impact on Murlo's connectivity despite the fact the overall increase in connectivity suggested by a decreasing diameter value. Both model variations produce PageRank and HITS values that are extremely small and therefore confirm Poggio Civitate's relative lack of importance within the system.   
+
+\paragraph{}
+High transitivity values suggest strong neighborhood effects within all of the Ariadne model results. It is easy to visually extract communities in the lower distance threshold model results though the longer distance threshold model results present an interesting deviation for settlements in the northeast. The increased travel distance capabilities seem to have decreased the frequency with which these sites interact with themselves. Instead of forming their own community they tend to explicitly interact with larger more distant nodes. This phenomenon is reflected within the  overall transitivity calculations though only minutely. It is difficult to quantify changes within the Ariadne networks after the destruction of Murlo. For both variations of the model the metrics present mixed evidence for whether or not the system becomes more connected. Additionally, none of the resulting values represent large deviations so the variations within the metrics is likely just due to the stochastic nature of the model. Ultimately, the removal of Poggio Civiate does not cause significant shifts within the network. Bar chart node interaction changes.
 
 \subsubsection{Before - 60km}
 
@@ -844,7 +855,10 @@ In each scenario, the network-level metrics converged to a steady values within 
 \section{Agent-based Model}
 
 \paragraph{}
-Similarly, the agent-based model network-level metric results converged to steady values within 25 models runs.
+Similarly, the agent-based model network-level metric results converged to steady values within 25 models runs. While Poggio Civitate does not appear to be highly connected it does seem to be central to the northern settlements. On average the model results suggest that Murlo would have maintained 2-3 incoming edges and about 3 outgoing edges. Though the agent-based model has produced the most promising evidence for Murlo as a central node the interaction quantity maintained over its edges would still have been among the weakest within the system. Even if Poggio Civitate did sustain connections with as many as six other settlements it was likely not fostering strong affiliations. PageRank and HITS values are very small and therefore do not indicate that Murlo was serving an important central function.
+
+\paragraph{}
+Visually, the networks from this model seem to be resulting in communities with higher connectivities. Transitivity values show that there is some association between neighbors. Overall, these networks are less connected than previous models, which is supported by a smaller average degree. The removal of Murlo does not seem to suggest any strong fluctuations within the system. Minor decreases in the average degree and beta index suggest slightly less connectivity while small increases in the gamma index suggest higher connectivity. All of these variations are small and do not provide strong evidence towards and real transformations of the network. Similarly to the Ariadne results the mixed evidence is likely due to noise generated from the stochastic nature of the model. 
 
 \subsubsection{Before}
 
@@ -953,9 +967,19 @@ Similarly, the agent-based model network-level metric results converged to stead
 \end{figure}
 
 \chapter{Discussion}
-\section{Simulating Networks}
+\section{Implications for Poggio Civitate and Etruria}
+-overall results pertaining to murlo
+-make the point that there is no reason to tweak paramaters after removal of murlo (not like thera)
+-state that models should be rerun with attention to particular nodes for finer and more accurate results
+
 \section{Comparing and Contrasting the Models}
-\section{Implications for Poggio Civitate}
+-add in a point about parameters in the 100km ariadne run regarding different transportation technologies
+
+\section{Simulating Networks - Limitations}
+-agent model should have considered starting agent populations in proportion to starting size
+-change importance calculation to be local (iteration) rather than global (entire simulation) the number of visitors
+-data limitations
+
 
 \chapter{Conclusions}
 \section{Final Conclusions}
@@ -1104,6 +1128,102 @@ Similarly, the agent-based model network-level metric results converged to stead
 \includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/9lcptest_j-02_00-m00_100-k001_00-l008_00}
 \caption{}
 \label{fig:100kmAll}
+\end{figure}
+
+\begin{figure}
+\centering
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
+\hline	5	&	-0.05140299	&	4.40000000	&	11.68000000	&	0.70671354	&	0.24333333	&	5.84000000	&	0.23360000	\\
+\hline	10	&	-0.05091950	&	4.20000000	&	11.71200000	&	0.71293931	&	0.24400000	&	5.85600000	&	0.23424000	\\
+\hline	15	&	-0.05081230	&	4.20000000	&	11.64266667	&	0.70496897	&	0.24255556	&	5.82133333	&	0.23285333	\\
+\hline	20	&	-0.05107444	&	4.20000000	&	11.63600000	&	0.70794023	&	0.24241667	&	5.81800000	&	0.23272000	\\
+\hline	25	&	-0.05119454	&	4.16000000	&	11.62880000	&	0.70893446	&	0.24226667	&	5.81440000	&	0.23257600	\\ 
+\hline 
+\end{tabular}
+\caption{Network-level metric results for 25 runs (Ariadne - Before - 60km)}
+\label{fig:ConvergeAriadneB60} 
+\end{figure}
+
+\begin{figure}
+\centering
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
+\hline	5	&	-0.05526671	&	3.00000000	&	12.14400000	&	0.73106504	&	0.25300000	&	6.07200000	&	0.24288000	\\
+\hline	10	&	-0.05538473	&	3.00000000	&	11.84800000	&	0.69957622	&	0.24683333	&	5.92400000	&	0.23696000	\\
+\hline	15	&	-0.05541665	&	3.13333333	&	11.96800000	&	0.70008067	&	0.24933333	&	5.98400000	&	0.23936000	\\
+\hline	20	&	-0.05569742	&	3.10000000	&	11.63600000	&	0.69305360	&	0.24241667	&	5.81800000	&	0.23272000	\\
+\hline	25	&	-0.05581519	&	3.12000000	&	11.65760000	&	0.69901818	&	0.24286667	&	5.82880000	&	0.23315200	\\
+\hline 
+\end{tabular}
+\caption{Network-level metric results for 25 runs (Ariadne - Before - 100km)}
+\label{fig:ConvergeAriadneB100} 
+\end{figure}
+
+\begin{figure}
+\centering
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
+\hline	5	&	-0.05294613	&	4.60000000	&	11.42400000	&	0.71058266	&	0.25869565	&	5.95000000	&	0.24791667	\\
+\hline	10	&	-0.05346564	&	4.50000000	&	11.18400000	&	0.71911467	&	0.25326087	&	5.82500000	&	0.24270833	\\
+\hline	15	&	-0.05322030	&	4.33333333	&	11.24266667	&	0.72488791	&	0.25458937	&	5.85555556	&	0.24398148	\\
+\hline	20	&	-0.05322119	&	4.25000000	&	11.37600000	&	0.72831435	&	0.25760870	&	5.92500000	&	0.24687500	\\
+\hline	25	&	-0.05325428	&	4.24000000	&	11.31520000	&	0.72501267	&	0.25623188	&	5.89333333	&	0.24555556	\\
+\hline 
+\end{tabular}
+\caption{Network-level metric results for 25 runs (Ariadne - After - 60km)}
+\label{fig:ConvergeAriadneA60} 
+\end{figure}
+
+\begin{figure}
+\centering
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
+\hline	5	&	-0.05840201	&	3.20000000	&	10.46400000	&	0.66037357	&	0.23695652	&	5.45000000	&	0.22708333	\\
+\hline	10	&	-0.05642575	&	3.10000000	&	10.87200000	&	0.67265716	&	0.24619565	&	5.66250000	&	0.23593750	\\
+\hline	15	&	-0.05726372	&	3.06666667	&	11.03466667	&	0.69067383	&	0.24987923	&	5.74722222	&	0.23946759	\\
+\hline	20	&	-0.05687748	&	3.10000000	&	11.01200000	&	0.68319655	&	0.24936594	&	5.73541667	&	0.23897569	\\
+\hline	25	&	-0.05695306	&	3.08000000	&	10.91840000	&	0.67954338	&	0.24724638	&	5.68666667	&	0.23694444	\\
+\hline 
+\end{tabular}
+\caption{Network-level metric results for 25 runs (Ariadne - After - 100km)}
+\label{fig:ConvergeAriadneA100} 
+\end{figure}
+
+\begin{figure}
+\centering
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
+\hline	5	&	-0.04980000	&	5.00000000	&	8.37000000	&	0.43800000	&	0.17400000	&	4.18000000	&	0.16700000	\\
+\hline	10	&	-0.04030000	&	5.00000000	&	8.36000000	&	0.44100000	&	0.17400000	&	4.18000000	&	0.16700000	\\
+\hline	15	&	-0.03890000	&	5.00000000	&	8.42000000	&	0.43600000	&	0.17500000	&	4.21000000	&	0.16800000	\\
+\hline	20	&	-0.04120000	&	5.00000000	&	8.39000000	&	0.43500000	&	0.17500000	&	4.20000000	&	0.16800000	\\
+\hline	25	&	-0.03900133	&	5.00000000	&	8.31360000	&	0.43295384	&	0.17320000	&	4.15680000	&	0.16627200	\\
+\hline 
+\end{tabular}
+\caption{Network-level metric results for 25 runs (Agent Model - Before)}
+\label{fig:ConvergeAgentB} 
+\end{figure}
+
+\begin{figure}
+\centering
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
+\hline	5	-0.02416639	&	5.00000000	&	7.93600000	&	0.43904952	&	0.17971014	&	4.13333333	&	0.17222222	\\
+\hline	10	-0.02245842	&	5.00000000	&	7.92000000	&	0.43448981	&	0.17934783	&	4.12500000	&	0.17187500	\\
+\hline	15	-0.02198818	&	5.00000000	&	7.94666667	&	0.43704930	&	0.17995169	&	4.13888889	&	0.17245370	\\
+\hline	20	-0.02568726	&	5.00000000	&	7.96000000	&	0.44110698	&	0.18025362	&	4.14583333	&	0.17274306	\\
+\hline	25	-0.02370421	&	5.00000000	&	7.97440000	&	0.44168669	&	0.18057971	&	4.15333333	&	0.17305556	\\
+\hline 
+\end{tabular}
+\caption{Network-level metric results for 25 runs (Agent Model - After)}
+\label{fig:ConvergeAgentA} 
 \end{figure}
 
 \end{document}}

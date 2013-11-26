@@ -87,23 +87,27 @@
 \contentsline {paragraph}{}{63}
 \contentsline {chapter}{\numberline {5.}Results}{64}
 \contentsline {section}{\numberline {5.1}Radiation Model}{64}
-\contentsline {subsubsection}{Before}{64}
-\contentsline {subsubsection}{After}{65}
-\contentsline {section}{\numberline {5.2}Ariadne Model}{66}
-\contentsline {paragraph}{}{66}
-\contentsline {subsubsection}{Before - 60km}{67}
-\contentsline {subsection}{\numberline {5.2.1}Before - 100km}{68}
-\contentsline {subsection}{\numberline {5.2.2}After - 60km}{69}
-\contentsline {subsection}{\numberline {5.2.3}After - 100km}{70}
-\contentsline {section}{\numberline {5.3}Agent-based Model}{71}
-\contentsline {paragraph}{}{71}
-\contentsline {subsubsection}{Before}{71}
-\contentsline {subsubsection}{After}{72}
-\contentsline {chapter}{\numberline {6.}Discussion}{74}
-\contentsline {section}{\numberline {6.1}Simulating Networks}{74}
-\contentsline {section}{\numberline {6.2}Comparing and Contrasting the Models}{74}
-\contentsline {section}{\numberline {6.3}Implications for Poggio Civitate}{74}
-\contentsline {chapter}{\numberline {7.}Conclusions}{75}
-\contentsline {section}{\numberline {7.1}Final Conclusions}{75}
-\contentsline {section}{\numberline {7.2}Further Work}{75}
-\contentsline {part}{Appendix}{83}
+\contentsline {paragraph}{}{64}
+\contentsline {paragraph}{}{64}
+\contentsline {subsubsection}{Before}{65}
+\contentsline {subsubsection}{After}{66}
+\contentsline {section}{\numberline {5.2}Ariadne Model}{67}
+\contentsline {paragraph}{}{67}
+\contentsline {paragraph}{}{68}
+\contentsline {subsubsection}{Before - 60km}{69}
+\contentsline {subsection}{\numberline {5.2.1}Before - 100km}{70}
+\contentsline {subsection}{\numberline {5.2.2}After - 60km}{71}
+\contentsline {subsection}{\numberline {5.2.3}After - 100km}{72}
+\contentsline {section}{\numberline {5.3}Agent-based Model}{73}
+\contentsline {paragraph}{}{73}
+\contentsline {paragraph}{}{73}
+\contentsline {subsubsection}{Before}{74}
+\contentsline {subsubsection}{After}{75}
+\contentsline {chapter}{\numberline {6.}Discussion}{76}
+\contentsline {section}{\numberline {6.1}Implications for Poggio Civitate and Etruria}{76}
+\contentsline {section}{\numberline {6.2}Comparing and Contrasting the Models}{76}
+\contentsline {section}{\numberline {6.3}Simulating Networks - Limitations}{76}
+\contentsline {chapter}{\numberline {7.}Conclusions}{77}
+\contentsline {section}{\numberline {7.1}Final Conclusions}{77}
+\contentsline {section}{\numberline {7.2}Further Work}{77}
+\contentsline {part}{Appendix}{85}
