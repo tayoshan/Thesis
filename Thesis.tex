@@ -58,7 +58,7 @@ Etruria generally refers to the society that dwelt in ancient Italy from the pre
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{../etruria}
-\caption[Map of Etruscan Territory]{Map of Etruscan Territory}
+\caption[Map of Etruscan territory]{Map of Etruscan territory}
 \label{fig:etruria}
 \end{figure}
 
@@ -99,7 +99,7 @@ While the exact reason for Poggio Civitate's eradication is unknown, the archaeo
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{../roof}
-\caption{Rooftop decorations and statures.}
+\caption{Rooftop decorations and statues.}
 \label{fig:roof}
 \end{figure}
 
@@ -271,7 +271,7 @@ For all of the chosen models, the only necessary data is a selection of settleme
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{../Sites}
-\caption{Study Sites within their natural topographic (elevation) environment.}
+\caption{Study sites within their natural topographic (elevation) environment.}
 \label{fig:Sites}
 \end{figure}
 
@@ -307,7 +307,7 @@ For all of the chosen models, the only necessary data is a selection of settleme
 \hline 	Spoleto	&	25	&	20	&	42.7333	&	12.7333	\\
 \hline
 \end{tabular} 
-\caption{ Sites used in the study and their attributes.}
+\caption{Sites used in the study and their attributes.}
 \label{fig:SiteData}
 \end{figure}
 
@@ -340,14 +340,14 @@ Distances between sites will be reflective of the least accumulated path given t
 \hline 45 & 17.33 & 18.93 \\ 
 \hline 
 \end{tabular} 
-\caption{Energy cost of walking and Running on different slopes ($J\cdot kg^{-1}\cdot m^{-1}$).}
+\caption{Energy cost of walking and running on different slopes ($J\cdot kg^{-1}\cdot m^{-1}$).}
 \label{fig:CostData}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{../EnergyCostData}
-\caption{Direct relationship between cost and positive slopes for both walking and running}
+\caption{Direct relationship between cost and positive slopes for both walking and running.}
 \label{fig:EnergyCostData}
 \end{figure}
 
@@ -366,7 +366,7 @@ Since the distances between the sites are long enough to prohibit an average per
 \hline 46+ & 5 \\ 
 \hline 
 \end{tabular} 
-\tablename{Cost classification for each slope range}
+\tablename{Cost classification for each slope range.}
 \label{fig:slopeClass}
 \end{figure}
 
@@ -391,12 +391,6 @@ Running the proximal point analysis model on the site data using $k$ values of 1
 \paragraph{}
 Similarly, running the maximum-distance network model, using distances of 25km, 50km, 75km, 85km, 100km, 125km, and 150km, generates interactions networks with compounding complexity (Figure X Appendix). At distances of 25km and 50km the study region remains extremely disconnected. Increasing the distance threshold to 75km results in highly connected southern Etruria and a partially fragmented northern Etruria (which is interesting given the general consensus that the south developed more rapidly). It is not until a threshold of 85km that every site is included within the network though there are still large disparities between the northern and southern regions. Finally, values of over 100km begin to yield overly connected networks which result in the smallest of settlements making great journeys. Overall, it seems that a network in which the average node has about 5 edges and a distances threshold of about 100km would be the most representative of a highly connect, though still constrained, spatial interaction system.  
 
-\subsection{Generating a Random Network} 
-\paragraph{}
-%G = nx.newman_watts_strogatz_graph(25, 5, .5)
-
-%nx.draw_networkx(G, coords, alpha = .7)
-%plt.pyplot.show()
 
  
 
@@ -525,7 +519,7 @@ Medium transitivity value suggests that there is some community formation within
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.35\linewidth]{./BeforeViz/radModel}
-\caption{}
+\caption{Visualization of a single radiation model run including Murlo.}
 \label{fig:radModelBefore}
 \end{figure}
 
@@ -578,7 +572,7 @@ Medium transitivity value suggests that there is some community formation within
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.35\linewidth]{./AfterViz/radModel}
-\caption{}
+\caption{Visualization of a single radiation model run excluding Murlo.}
 \label{fig:radModelAfter}
 \end{figure}
 
@@ -639,7 +633,7 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.35\linewidth]{./BeforeViz/ariadne60}
-\caption{}
+\caption{Visualization of a single Ariadne model run including Murlo (60km).}
 \label{fig:ariadneB60}
 \end{figure}
 
@@ -690,12 +684,12 @@ High transitivity values suggest strong neighborhood effects within all of the A
 
 
 
-\subsection{Before - 100km}
+\subsubsection{Before - 100km}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.35\linewidth]{./BeforeViz/ariadne100}
-\caption{}
+\caption{Visualization of a single Ariadne model run including Murlo (100km).}
 \label{fig:ariadneB100}
 \end{figure}
 
@@ -745,12 +739,12 @@ High transitivity values suggest strong neighborhood effects within all of the A
 
 
 
-\subsection{After - 60km}
+\subsubsection{After - 60km}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.35\linewidth]{./AfterViz/ariadne60}
-\caption{}
+\caption{Visualization of a single Ariadne model run excluding Murlo (60km).}
 \label{fig:ariadneA60}
 \end{figure}
 
@@ -798,12 +792,12 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \end{tabular} 
 \end{figure}
 
-\subsection{After - 100km}
+\subsubsection{After - 100km}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.35\linewidth]{./AfterViz/ariadne100}
-\caption{}
+\caption{Visualization of a single Ariadne model run excluding Murlo (100km).}
 \label{fig:ariadneA100}
 \end{figure}
 
@@ -975,15 +969,13 @@ Visually, the networks from this model seem to be resulting in communities with 
 \section{Comparing and Contrasting the Models}
 -add in a point about parameters in the 100km ariadne run regarding different transportation technologies
 
-\section{Simulating Networks - Limitations}
+\section{Simulating Networks - Limitations - Future Work}
 -agent model should have considered starting agent populations in proportion to starting size
 -change importance calculation to be local (iteration) rather than global (entire simulation) the number of visitors
 -data limitations
 
 
-\chapter{Conclusions}
-\section{Final Conclusions}
-\section{Further Work}
+\chapter{Conclusion}
 
 \bibliographystyle{apa-good}
 \bibliography{bibfile}
