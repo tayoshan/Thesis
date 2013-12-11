@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -229,15 +229,6 @@ Rodrigue, J.-P., Comtois, C., \& Slack, B. (2006).
 Roy, J.~A., \& Thill, J.-C. (2004).
 \newblock Spatial interaction modeling.
 \newblock {\em Papers in Regional Science\/}, {\em 83\/}, 339--362.
-
-\bibitem[{Saram\"{a}k et~al.(2007)Saram\"{a}k, Kivel\"{a}, Onnela, Kaski, \&
-  Kertész}]{Sar07}
-Saram\"{a}k, J., Kivel\"{a}, M., Onnela, J.-P., Kaski, K., \& Kertész, J.
-  (2007).
-\newblock Generalizations of the clustering coefficient to weighted complex
-  networks.
-\newblock {\em Physical Review E\/}, {\em 75\/}.
-\newline\urlprefix\url{http://jponnela.com/web_documents/a9.pdf}
 
 \bibitem[{Scullard(1980)}]{Scu80}
 Scullard, H. (1980).

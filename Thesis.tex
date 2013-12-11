@@ -1,4 +1,5 @@
 \documentclass[12pt,a4paper]{thesis}
+\usepackage[a4paper,left=1.4in,right=.75in,top=1in,bottom=.75in, includehead]{geometry}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -9,6 +10,7 @@
 \usepackage{url}
 \usepackage{rotating}
 \usepackage{float}
+\usepackage[toc,page]{appendix}
 \begin{document}
 
 \title{Spatial Interaction Simulation Methods for Ancient Settlement Distributions in Central Italy}
@@ -40,10 +42,11 @@ The purpose of this research is to explore the spatial distribution of early Etr
 Quantitative modeling will be embraced as the analytical framework within which to carry out the proposed spatial 
 analysis. Large multi-dimensional datasets quickly become complicated and conceptually difficult to manage. Models become a necessity to mitigate these complexities. They also act as a tool to develop hypotheses since the models can be parameterized in such a way to test existing and new theories. By employing a common language they increase dissemination and communication within and between fields \citep{Wyl09}. Quantitative modeling's merits within archaeology are summarized below by \citep{ERK12}:
 
-    
+\begin{singlespace}
 \begin{quote}
         ``Despite our best attempts at deducing relationships from the artefacts found at them [sites], there is often little direct information about how sites interact. Quantitative modelling provides one response to this challenge. Good quantitative modelling can be insensitive to poor data, make assumptions and biases clear and debatable, and can allow us to provide possible answers to questions that could not be asked any other way. In the best case, such answers can be checked later from the archaeological record.''(1)
 \end{quote}
+\end{singlespace}
 
 \paragraph{}
 Three conceptually unique techniques will be employed in order to simulate relative spatial interactions amongst the sites in the study area: an agent-based model, a radiation analogy model, and a Hamiltonian gravitational model. As a consequence, each model provides varying interpretations of spatial interaction by approaching the problem from 3 different perspectives. A multitude of models offers the ability to compare and contrast different nuances of a phenomenon using the same spatial inputs. Furthermore, different representations that yield varying yet similar results will provide assurance that we are indeed capturing the intended actions.
@@ -366,7 +369,7 @@ Since the distances between the sites are long enough to prohibit an average per
 \hline 46+ & 5 \\ 
 \hline 
 \end{tabular} 
-\tablename{Cost classification for each slope range.}
+\caption{Cost classification for each slope range.}
 \label{fig:slopeClass}
 \end{figure}
 
@@ -386,17 +389,17 @@ Given the following assumptions, a general cost class was assigned to each slope
 Prior to running the selected models exploratory data analysis will be performed using the proximal point analysis and maximum distance network models. While the limitations of these models are apparent (Section 2.5) they can nevertheless enable a basic understanding of which distances or number of nearest neighbors results in different levels of network connectivity. These simple metrics will help calibrate the more complex models chosen for interaction simulations.
 
 \paragraph{}
-Running the proximal point analysis model on the site data using $k$ values of 1, 2, 3, 4, 5, 7, and 9 illustrates how the interaction network becomes more connected as each settlement is forced to connect with an increasing number of nearest neighbors (Figure X Appendix). When $k$ equals 1-2 the connectivity network exists only through shorter distance links. Increasing $k$ up to 3-5 enables settlements to make medium distance journeys and to begin making more unrealistic long distance trips. At $k$ values of 7 and 9 it is apparent that the network is too highly connected to accurately resemble any nuance of reality. It is extremely unlikely that some of the smaller sites would have the means to sustain such expensive interactions. 
+Running the proximal point analysis model on the site data using $k$ values of 1, 2, 3, 4, 5, 7, and 9 illustrates how the interaction network becomes more connected as each settlement is forced to connect with an increasing number of nearest neighbors (Figure \ref{fig:PPA}). When $k$ equals 1-2 the connectivity network exists only through shorter distance links. Increasing $k$ up to 3-5 enables settlements to make medium distance journeys and to begin making more unrealistic long distance trips. At $k$ values of 7 and 9 it is apparent that the network is too highly connected to accurately resemble any nuance of reality. It is extremely unlikely that some of the smaller sites would have the means to sustain such expensive interactions. 
 
 \paragraph{}
-Similarly, running the maximum-distance network model, using distances of 25km, 50km, 75km, 85km, 100km, 125km, and 150km, generates interactions networks with compounding complexity (Figure X Appendix). At distances of 25km and 50km the study region remains extremely disconnected. Increasing the distance threshold to 75km results in highly connected southern Etruria and a partially fragmented northern Etruria (which is interesting given the general consensus that the south developed more rapidly). It is not until a threshold of 85km that every site is included within the network though there are still large disparities between the northern and southern regions. Finally, values of over 100km begin to yield overly connected networks which result in the smallest of settlements making great journeys. Overall, it seems that a network in which the average node has about 5 edges and a distances threshold of about 100km would be the most representative of a highly connect, though still constrained, spatial interaction system.  
+Similarly, running the maximum-distance network model, using distances of 25km, 50km, 75km, 85km, 100km, 125km, and 150km, generates interactions networks with compounding complexity (Figure \ref{fig:MDN}). At distances of 25km and 50km the study region remains extremely disconnected. Increasing the distance threshold to 75km results in highly connected southern Etruria and a partially fragmented northern Etruria (which is interesting given the general consensus that the south developed more rapidly). It is not until a threshold of 85km that every site is included within the network though there are still large disparities between the northern and southern regions. Finally, values of over 100km begin to yield overly connected networks which result in the smallest of settlements making great journeys. Overall, it seems that a network in which the average node has about 5 edges and a distances threshold of about 100km would be the most representative of a highly connect, though still constrained, spatial interaction system.  
 
 
  
 
 \subsection{Radiation Model}
 \paragraph{}
-To operationalize the radiation model code was developed (See Appendix B) following \cite{Bar12} with one exception. The term  $T_{i}$, which is supposed to be a proportion of the total population originating at each site, will instead consider the settlement size estimate at a given location. Alternatively, $T_{i}$ could be a ratio of the settlement site size to the total of all sizes. Any value which accurately scales calculations by the estimates at the origins is acceptable. Since $M_{i}$ is also equal to the origin estimate, equation \ref{eq:originalRad} from section 2.3 therefore becomes,
+To operationalize the radiation model code was developed following \cite{Bar12} with one exception. The term  $T_{i}$, which is supposed to be a proportion of the total population originating at each site, will instead consider the settlement size estimate at a given location. Alternatively, $T_{i}$ could be a ratio of the settlement site size to the total of all sizes. Any value which accurately scales calculations by the estimates at the origins is acceptable. Since $M_{i}$ is also equal to the origin estimate, equation \ref{eq:originalRad} from section 2.3 therefore becomes,
 						
 				
 				\begin{equation}						
@@ -412,7 +415,7 @@ giving $Mi^2$ in the numerator. The radiation model has no parameters so there i
 Before any interaction data can be harvested from the Ariadne model it must be configured for our study area. We must prescribe a distance which represents the average trip length one could complete in a day and therefore in a single journey. Based on conclusions aggregated by \cite{BevForthcoming} the average travel speed over a full day for a pedestrian ranges from 2.5km/h to 5km/h depending on the load they may be carrying. In contrast, horses would have reached speeds of 4km/h - 8km/h when carrying packs and 10km/h - 30km/h when utilized solely for riding. If we take a full day's travel to be about 12 hours then the maximum distance traveled by a pedestrian in a day is approximately 60km. For travel on horseback (taking the upper limit of the speed of a pack horse) it would be possible to travel about 96km. In reality, a riding horse could reach much higher speeds and therefore cover distances well over 100km. It is apparent that there is a division in the limitations of these two different travel modes and so both will be considered in this model. In each scenario anything longer than these values will incur large costs so that these trips will only be chosen if there are ample benefits to outweigh the costs. An additional distance must be specified in the model which denotes the point at which very close settlements are considered as one entity (``coarse-graining''). A value of 5km is sufficient for this measure, which would combine settlements where pedestrians could interact with travel times around 1-2 hours regardless of mode, though the site distribution for this study is unaffected since all settlements are separated by values larger than the this threshold. 
 
 \paragraph{}
-Finally, the model must be parameterized. Ariadne's four parameters $k$, $\lambda$, $j$, and $\mu$ must be tweaked in order to find a network which conforms to a theoretical scenario. Drawing on the experience of previous research \citep{KnaRivEva11} we will initiate parameterization using values of $k$ = 1.0, $\lambda$ = 4.0, $j$ = -2.0, and $\mu$ = 0.1. For our purpose, we search for a network which allows many nodes to interact, while ensuring the network does not become overly connected. For instance, we should not see small settlements that are sustaining many long distance journeys and no settlements should be should be sustaining strong long distance links since it would have been prohibitively expensive. In effect, we are seeking a network which represents two different scales (short vs. long) which are differentiated by their strength (strong vs. weak). Parameterization is a relative process which requires exploration. While it is arguably unsound to prescribe parameters to find a satisfying network we can nevertheless defend our choice by comparing it to other less appealing parameter options given that all other model values are held constant. Sensitivity of parameters was therefore tested by running the model and, in turn, either doubling or halving each initial parameter while holding all others constant (Appendix A Figure X and X) and assessing changes to the resulting networks.
+Finally, the model must be parameterized. Ariadne's four parameters $k$, $\lambda$, $j$, and $\mu$ must be tweaked in order to find a network which conforms to a theoretical scenario. Drawing on the experience of previous research \citep{KnaRivEva11} we will initiate parameterization using values of $k$ = 1.0, $\lambda$ = 4.0, $j$ = -2.0, and $\mu$ = 0.1. For our purpose, we search for a network which allows many nodes to interact, while ensuring the network does not become overly connected. For instance, we should not see small settlements that are sustaining many long distance journeys and no settlements should be should be sustaining strong long distance links since it would have been prohibitively expensive. In effect, we are seeking a network which represents two different scales (short vs. long) which are differentiated by their strength (strong vs. weak). Parameterization is a relative process which requires exploration. While it is arguably unsound to prescribe parameters to find a satisfying network we can nevertheless defend our choice by comparing it to other less appealing parameter options given that all other model values are held constant. Sensitivity of parameters was therefore tested by running the model and, in turn, either doubling or halving each initial parameter while holding all others constant (Figure \ref{fig:60kmAll} and Figure \ref{fig:100kmAll}) and assessing changes to the resulting networks.
 
 \begin{figure}
 \centering
@@ -423,7 +426,7 @@ Finally, the model must be parameterized. Ariadne's four parameters $k$, $\lambd
 \end{figure}
 
 \paragraph{}
-By visually examining each network from the parameter tests it is possible to distinguish which values will provide the best representation of interaction. For the system assuming 60km average trip lengths it appears that increasing $k$, decreasing $\lambda$, or decreasing $\mu$ will cause the network to become slightly under-connected while decreasing $k$ or increasing $\lambda$ will result in slightly over-connected networks. Other parameter changes resulted in minimal deviations and overall the system is insensitive. As a result, the initial parameters will be used to produce networks with ideal conditions (figure \ref{fig:initParams} A) at this scale. It is evident that employing the same initial values for a model accommodating longer trips (figure \ref{fig:initParams} B) the network will be too dense and permit too many strong long distance relationships. Doubling $k$ or halving $\lambda$ give more accurate representations and therefore by increasing $k$ from 1 to 1.5 and decreasing $\lambda$ from 4 to 3 it is possible to take a balanced approach to settling on parameters to produce a preferable interaction system.
+By visually examining each network from the parameter tests it is possible to distinguish which values will provide the best representation of interaction. For the system assuming 60km average trip lengths it appears that increasing $k$, decreasing $\lambda$, or decreasing $\mu$ will cause the network to become slightly under-connected while decreasing $k$ or increasing $\lambda$ will result in slightly over-connected networks. Other parameter changes resulted in minimal deviations and overall the system is insensitive. As a result, the initial parameters will be used to produce networks with ideal conditions (Figure \ref{fig:initParams} A) at this scale. It is evident that employing the same initial values for a model accommodating longer trips (Figure \ref{fig:initParams} B) the network will be too dense and permit too many strong long distance relationships. Doubling $k$ or halving $\lambda$ give more accurate representations and therefore by increasing $k$ from 1 to 1.5 and decreasing $\lambda$ from 4 to 3 it is possible to take a balanced approach to settling on parameters to produce a preferable interaction system.
 
 \paragraph{}
 Due to the stochastic nature of Ariadne it is necessary to an average of many model runs. This ensures that fluctuations which may account between different model runs are accounted for within the analysis of this research. 
@@ -432,10 +435,17 @@ All networks produced from this model were filtered to remove near-zero edges us
 
 \subsection{Agent-based Model}
 
--Add in agent 60km cut off comment and screen shot
 
 \paragraph{}
-To take an agent-based approach to simulating spatial interaction for this study region some changes were imposed upon the TravellerSim model introduced earlier (section X). First, the local vision was increased from 25km to match the journey limitations proposed for use in the Ariadne model (60km and 100km). This change reflects the additions of horse related transportation and a general increase in spatial awareness that would have been assumed to accompany intensified relationships with the landscape and larger settlements. Next, the attractiveness of each settlement was calculated each round rather than randomly selecting three from those within a human agent's vision. The original authors \citep{GraSte08} explain that this limitation acted primarily as a computation shortcut to prevent lengthy simulation run times and they rationalize this decision by adding that it would have reflected an agent's limited knowledge of their surroundings. It is unknown whether the authors realized that this limitation was the basis for which their model became stochastic (every run yields slightly different results); however, this shortcut was removed due to advances in computing capabilities and that the larger, more urbanized sites would have likely had an increased knowledge of the region. As a result, the model has become deterministic. To test the stability of the interaction system resulting from this model slight deviations to a site's importance were administered at end of each iteration within the simulation. Each site's importance was increased or decreased with equal probability by a value which was randomly generated according to the Poisson distribution using its current importance as the lambda parameter. Overall, model runs using this alteration (Appendix) manifested remarkably similar structure highlighting the stability of process being modeled. Another effect of this approach is that the model results will be interpreted statistically, similarly to the Ariadne networks, using the average many networks.  
+To take an agent-based approach to simulating spatial interaction for this study region some changes were imposed upon the TravellerSim model introduced earlier (section 2.5). First, the local vision was increased from 25km to match the journey limitations proposed for use in the Ariadne model (60km and 100km). This change reflects the additions of horse related transportation and a general increase in spatial awareness that would have been assumed to accompany intensified relationships with the landscape and larger settlements. For this research only the longer distance constraint could be utilized due to the fact that the shirt distance constraint resulted in an extremely fragmented network (figure \ref{fig:agent60}). Next, the attractiveness of each settlement was calculated each round rather than randomly selecting three from those within a human agent's vision. The original authors \citep{GraSte08} explain that this limitation acted primarily as a computation shortcut to prevent lengthy simulation run times and they rationalize this decision by adding that it would have reflected an agent's limited knowledge of their surroundings. It is unknown whether the authors realized that this limitation was the basis for which their model became stochastic (every run yields slightly different results); however, this shortcut was removed due to advances in computing capabilities and that the larger, more urbanized sites would have likely had an increased knowledge of the region. As a result, the model has become deterministic. To test the stability of the interaction system resulting from this model slight deviations to a site's importance were administered at end of each iteration within the simulation. Each site's importance was increased or decreased with equal probability by a value which was randomly generated according to the Poisson distribution using its current importance as the lambda parameter. Overall, model runs using this alteration (Figure \ref{fig:agentFluctuations}) manifested remarkably similar structure highlighting the stability of process being modeled. Another effect of this approach is that the model results will be interpreted statistically, similarly to the Ariadne networks, using the average many networks.  
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\linewidth]{../BeforeViz/agent60}
+\caption{Disconnected network from agent-based framework (60km).}
+\label{fig:agent60}
+\end{figure}
+
 
 \paragraph{}
 Parameterization of the agent model includes choosing the logistical variables of how many human agents should start at each settlement agent and how many iterations the model should be run for, as well as model variables consisting of values for the difficulty of communication and benefits from resources. Testing the simulations with varying numbers of agents or iterations holding other parameters constant demonstrated that the model was insensitive to these logistical inputs. Five agents and 10 iterations were chosen to ensure enough complexity in the model without utilizing unnecessary computing time. The model variables were tested in a similar manner; values for the range .01 to 5 were tested for each parameter holding the other one constant. Again, the system structure proved extremely resilient to these deviations so values of 1 were employed for both variables. Networks produced from the agent-based model do not results in near-zero values for edge weights and therefore do not need to be filtered.   
@@ -449,50 +459,55 @@ Questions pertaining to the context of individual  sites can only be achieved us
 
 
 \subsubsection{Interaction Strength}
+\paragraph{}
 Interaction is an output of each of the models which does not require any additional computing. Using visualization it is possible to quickly notice where interactions are predicted to have occurred more strongly. It is also possible to take the sum of either all incoming or outgoing interaction for each node. This translates roughly into how much trade, information, or people may have been transferred to this site in comparison to all other sites within the region. 
 
 \subsubsection{Degree Centrality}
+\paragraph{}
 The degree is the number of edges connected to a node. Since this research looks at directed networks we must differentiate between the number of edges arriving at a node and the number of edges originating at a node or, more simply, the ``in degree'' and ``out degree''. A settlement is considered more important if it has a higher degree and therefore has many other settlements connecting to it \cite[64]{RodComSla06}.  
 
 
--consider deleting local transitivty
-\subsubsection{Clustering Coefficient}
-A clustering coefficient , which measures transitivity, will be calculated for each node within the network \citep{Sar07}. Transitivity is most easily described in terms of social networks in which it is the mean probability that a friend of a friend is also your friend. In network terminology this relationship is referred to as a triangle and the coefficient measures how many triangles exist for a node over how many are possible for the same node \cite[11-12]{New03}. Higher coefficient values are associated with more connected nodes.  
+
+
 
 \subsubsection{PageRank}
+\paragraph{title}
 Originally developed by Google as a mechanism to ranks web sites, the PageRank algorithm is useful in many networks for ranking nodes based on the structure of incoming links \citetext{\citealp{PageRank}; \citealp{LanMey04}}. It was first suggested for use within archaeological networks by Evans, Knappett, and Rivers \citeyearpar{KnaEvaRiv08} who adopted it due to its ability to account for weighted links and nodes which were characteristic of their simulated interaction networks. Specifically, they were able to find settlements or nodes which ``punched above their weight'' which means they has a high PageRank value given their node size and is likely acting as a gateway community between clusters (8-11). Due to this, it will be particularly useful for measuring the importance of smaller sites such as Poggio Civitate which have been theorized to possibly had much importance.
 
 
 \subsubsection{HITS (Authorities and Hubs)}
+\paragraph{}
 The HITS algorithm \citetext{\citealp{Kle99}; \citealp{PageRank}} is similar to PageRank in that it uses links to find nodes of importance but it computes a value for both incoming links (``authorities'') and outgoing links (``hubs''). This metric will provide validation against the PageRank values and will be helpful in distinguishing between ``supply-side'' and ``demand-side'' relationships of nodes.
 
 \subsection{Network-level Metrics}
-
 \paragraph{}
 A core component of this study is to evaluate an entire network, which is representative of a region, in order to compare results from differing models and parameters. Newman \citeyearpar{New03} suggests that there are features of networks which arise frequently and are therefore helpful for analysis such as the small-world effect, transitivity/clustering, degree distributions, network resiliency, mixing patterns, and community structure. Methods for measuring each of these properties which is pertinent to this study will be reviewed along with network measures and indices \citep{RodComSla06}, which are typically employed for analysis within transportation studies. Indices compare one attribute against another to express more complex relationships within a network's structure. This section will outline the network level metrics which will be calculated for systems in this research in order to understand their structures as well as facilitate comparison.
 
 
 \subsubsection{Average Node Degree}
+\paragraph{}
 Average node degree is similar to the degree measure described previously in the nodes-level metrics except that it does not distinguish between incoming and outgoing relationships. It is, in effect, an average for all degree values calculated for individual nodes. Higher degrees are associated with more connected networks.  
 
 \subsubsection{Assortativity Coefficient (Degree and Size)}
+\paragraph{}
 Assortativity measures the similarity of connections in the graph with respect to a given attribute. In this case, the relationship between connectivity and total interaction flowing through a node is being calculated. A higher coefficient means there is a stronger relationship between these two variables within the network \citeyearpar{New03a}. 
 
 \subsubsection{Diameter}
+\paragraph{}
 The diameter is a measure of the shortest path (number of links traversed) between the most distanced nodes in a network. It is a helpful measure because more connected networks will tend to have smaller diameters and it can be useful to measure how the diameter changes as the network is altered in order to get an idea of changing connectivity. 
 
 
 \subsubsection{Transitivity/Average Clustering}
-Transitivity is the same as a clustering coefficient from section 4.3.1  except it is the ratio of all triangles present in a network compared to the total possible triangles. Similarly, to get a network-level measure of transitivity it is possible to calculate the mean cluster coefficient from individual nodes. The coefficient will provide a global insight into the clustered nature of the produced networks.
+\paragraph{}
+A clustering coefficient , which measures transitivity, is most easily described in terms of social networks in which it is the mean probability that a friend of a friend is also your friend. In network terminology this relationship is referred to as a triangle and the coefficient measures the ratio of all triangles present in a network compared to the total possible triangles \cite[11-12]{New03}. Similarly, to get a network-level measure of transitivity it is possible to calculate the mean cluster coefficient from individual nodes. The coefficient will provide a global insight into the clustered nature of the produced networks.
 
-DELETE THIS HERE AND IN RESULTS
-\subsubsection{Density}
-The network density measures how many the links of a network are occupying given the extent of the network. A high network density signifies a more developed network. 
 
 \subsubsection{Beta Index}
+\paragraph{}
 The beta index measure network connectivity through the ratio of the number of links to the number of nodes. Simpler networks with less than 1 cycle and are not very connected have a beta index of 1 while those which are connect and have more than 1 cycle have a beta index greater than 1. Holding the number of nodes constant, the higher the number of links means there are more paths possible which will correspond to a higher beta index. 
 
 \subsubsection{Gamma Index}
+\paragraph{}
 The Gamma index compares the number of links with the maximum number of possible links. The values range from 0 to 1 with higher values representing more connected networks. The Gamma index is especially useful for measuring changes in networks over time. It is unique because it provides a measure of connectivity independently of nodes.
 
 
@@ -501,19 +516,18 @@ The Gamma index compares the number of links with the maximum number of possible
 In all of the models, network visualizations offer the first clues into system structures and how Murlo factors within the region. A filter is applied to the agent model and Ariadne due to edges being calculated between all node pairs yet many of them having near-zero values. Following the visualization a table of results for each the node-level metrics and the network-level metrics will be reported. Lastly, Poggio Civitate (node 16) will be removed from the input data and the models will be re-run holding everything else constant and new data will be recorded. 
 
 
--check resluts of models against preliminary data model results
 \chapter{Results}
-A visualization, network-based metrics and node level metrics, and several graphs will be provided for each model first including Murlo and then again after removing this node to mimic its destruction.
+\paragraph{}
+A visualization, network-based metrics, and individual node metrics will be provided for each model for a system including Murlo and then again after removing this node from the study region to mimic its destruction. Graphs will also be presented to illustrate the changes in interaction between the two scenarios within each framework. Interaction deviations will be reported as percent increase/decrease from total interaction (incoming and outgoing) at each node for networks that include all settlements within the study region. Values of $999$ within the following tables represents instances where a metric calculation is not available for a node.
 
 
 \section{Radiation Model} 
 
 \paragraph{}
-Network results of the radiation model indicate that Poggio Civitate was not a highly connected node and, therefore, its spatial orientation would not have granted it superior network advantages. Rather, this model indicates that Murlo would have actually been quite isolated generally lacking the ability to achieve outward interaction. Even the sole incoming interaction to Poggio Civitate is evidence against its role as a central node within the network since it is the weakest interaction within the entire system. A low PageRank value confirms that it was not, in fact, punching above its weight and did not have a large importance in the overall network connectivity. 
+Network results of the radiation model indicate that Poggio Civitate was not a highly connected node and, therefore,  that its spatial orientation would not have granted it superior network advantages. Rather, this model indicates that Murlo would have actually been quite isolated generally lacking the ability to achieve outward interaction. Even the sole incoming interaction to Poggio Civitate is evidence against its role as a central node within the network since it is the weakest interaction within the entire system. A low PageRank value confirms that it was not, in fact, punching above its weight and did not have a large importance in the overall network connectivity. 
 
 \paragraph{}
-Medium transitivity value suggests that there is some community formation within the network but that it is not the defining factor within the results which is confirmed by frequent weak long-distance interactions in the visualization. Interestingly, upon the removal of Murlo, there is slight increase in the overall connectivity of the network. Values for the transitivity, beta index, and gamma index all support this slight trend, though the network diameter remains unchanged. Bar chart comparing total interaction changes from before and after.   
-
+A Medium transitivity value suggests that there is some mild neighborhood associations within the network but that it is not the defining factor. Frequent weak long-distance interactions in the visualization confirm that small communities do not prevail as the core structure. Interestingly, upon the removal of Murlo, there is slight increase in the overall connectivity of the network. It is expected that beta index will increase with the removal of any nodes (links/nodes), especially minimally connected ones, but values for the transitivity and gamma index also support this slight trend. The gamma index is especially indicative here since it independent of the number of nodes. Globally, the structure seems not to be influenced and is corroborated by the fact that the network diameter remains unchanged. The new system state supports approximately five percent increases in interaction for nodes 4 and 5 while node 22 approaches a 20 percent gain in interaction. 
 \subsubsection{Before}
 
 \begin{figure}[H]
@@ -526,9 +540,9 @@ Medium transitivity value suggests that there is some community formation within
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Radiation Model (Before) & -0.06080357 & 5 & 8.72 & 0.44292804 & 0.18166667 & 4.36 & 0.1744 \\ 
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Radiation Model (Before) & -0.06080357 & 5 & 8.72 & 0.44292804 & 4.36 & 0.1744 \\ 
 \hline 
 \end{tabular} 
 \end{figure}
@@ -536,33 +550,33 @@ Medium transitivity value suggests that there is some community formation within
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	108.75090365	&	111.16414012	&	8	&	13	&	0.52564103	&	0.06751344	&	0.14177813	&	0.40598155	\\
-\hline	1	&	96.07389215	&	122.16387527	&	5	&	12	&	0.56060606	&	0.06478559	&	0.44423172	&	0.13413920	\\
-\hline	2	&	67.87638768	&	56.74109960	&	7	&	7	&	0.85714286	&	0.06741936	&	0.02266724	&	0.02894542	\\
-\hline	3	&	33.31327788	&	68.03210348	&	6	&	12	&	0.43939394	&	0.03977904	&	0.03765628	&	0.02027152	\\
-\hline	4	&	49.93975449	&	25.07446728	&	7	&	8	&	0.46666667	&	0.03640718	&	0.01098481	&	0.01785142	\\
-\hline	5	&	15.57227832	&	7.52633653	&	6	&	3	&	0.38095238	&	0.03935866	&	0.00092203	&	0.00707285	\\
-\hline	6	&	19.07883554	&	2.10864198	&	6	&	2	&	1.00000000	&	0.03306262	&	0.00306255	&	0.01858651	\\
-\hline	7	&	13.05993630	&	6.04581589	&	5	&	2	&	1.00000000	&	0.02289676	&	0.00165243	&	0.01460570	\\
-\hline	8	&	9.06115422	&	5.47008547	&	4	&	1	&	0.33333333	&	0.09012996	&	0.00000000	&	0.00001391	\\
-\hline	9	&	27.85788453	&	22.08000000	&	4	&	2	&	1.00000000	&	0.02778622	&	0.03360924	&	0.04525178	\\
-\hline	10	&	0.00000000	&	4.73429952	&	0	&	3	&	0.33333333	&	0.00623404	&	0.00000042	&	0.00000000	\\
-\hline	11	&	6.67781494	&	4.44444444	&	2	&	1	&	1.00000000	&	0.08419627	&	0.00000072	&	0.00000001	\\
-\hline	12	&	2.59301085	&	1.79757322	&	2	&	2	&	0.33333333	&	0.00909824	&	0.00000210	&	0.00000296	\\
-\hline	13	&	94.33529348	&	113.27241140	&	8	&	11	&	0.61818182	&	0.10268830	&	0.14690874	&	0.13064157	\\
-\hline	14	&	78.80731418	&	62.97010450	&	9	&	10	&	0.65454545	&	0.07948022	&	0.08401978	&	0.11709181	\\
-\hline	15	&	38.35885414	&	28.57142857	&	5	&	1	&	1.00000000	&	0.04194336	&	0.00969919	&	0.01136807	\\
-\hline	16	&	1.30662021	&	0.00000000	&	1	&	0	&	0.00000000	&	0.00688343	&	0.00000000	&	0.00050247	\\
-\hline	17	&	3.35917313	&	16.66666667	&	2	&	1	&	1.00000000	&	0.00866548	&	0.00348936	&	0.00101027	\\
-\hline	18	&	23.34730839	&	24.57352717	&	9	&	8	&	0.60000000	&	0.06042608	&	0.01249645	&	0.02455853	\\
-\hline	19	&	5.22510994	&	19.24215940	&	3	&	3	&	0.33333333	&	0.02471582	&	0.00020864	&	0.00013203	\\
-\hline	20	&	19.71195355	&	8.70209059	&	3	&	3	&	0.50000000	&	0.04181020	&	0.00035005	&	0.00006471	\\
-\hline	21	&	9.95700623	&	9.26644932	&	3	&	1	&	1.00000000	&	0.01146410	&	0.04412081	&	0.02097623	\\
-\hline	22	&	2.45524664	&	7.26744186	&	2	&	1	&	1.00000000	&	0.00862441	&	0.00152152	&	0.00051184	\\
-\hline	23	&	6.61742424	&	2.08793908	&	2	&	1	&	0.00000000	&	0.01839718	&	0.00060137	&	0.00041967	\\
-\hline	24	&	0.00000000	&	3.33333333	&	0	&	1	&	0.00000000	&	0.00623404	&	0.00001641	&	0.00000000	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	108.75090365	&	111.16414012	&	8	&	13	&	0.06751344	&	0.14177813	&	0.40598155	\\
+\hline	1	&	96.07389215	&	122.16387527	&	5	&	12 &	0.06478559	&	0.44423172	&	0.13413920	\\
+\hline	2	&	67.87638768	&	56.74109960	&	7	&	7	&	0.06741936	&	0.02266724	&	0.02894542	\\
+\hline	3	&	33.31327788	&	68.03210348	&	6	&	12	&	0.03977904	&	0.03765628	&	0.02027152	\\
+\hline	4	&	49.93975449	&	25.07446728	&	7	&	8	&	0.03640718	&	0.01098481	&	0.01785142	\\
+\hline	5	&	15.57227832	&	7.52633653	&	6	&	3	&	0.03935866	&	0.00092203	&	0.00707285	\\
+\hline	6	&	19.07883554	&	2.10864198	&	6	&	2	&	0.03306262	&	0.00306255	&	0.01858651	\\
+\hline	7	&	13.05993630	&	6.04581589	&	5	&	2	&	0.02289676	&	0.00165243	&	0.01460570	\\
+\hline	8	&	9.06115422	&	5.47008547	&	4	&	1	&	0.09012996	&	0.00000000	&	0.00001391	\\
+\hline	9	&	27.85788453	&	22.08000000	&	4	&	2	&	0.02778622	&	0.03360924	&	0.04525178	\\
+\hline	10	&	0.00000000	&	4.73429952	&	0	&	3	&	0.00623404	&	0.00000042	&	0.00000000	\\
+\hline	11	&	6.67781494	&	4.44444444	&	2	&	1	&	0.08419627	&	0.00000072	&	0.00000001	\\
+\hline	12	&	2.59301085	&	1.79757322	&	2	&	2	&	0.00909824	&	0.00000210	&	0.00000296	\\
+\hline	13	&	94.33529348	&	113.27241140	&	8	&	11	&	0.10268830	&	0.14690874	&	0.13064157	\\
+\hline	14	&	78.80731418	&	62.97010450	&	9	&	10	&	0.07948022	&	0.08401978	&	0.11709181	\\
+\hline	15	&	38.35885414	&	28.57142857	&	5	&	1	&	0.04194336	&	0.00969919	&	0.01136807	\\
+\hline	16	&	1.30662021	&	0.00000000	&	1	&	0	&	0.00688343	&	0.00000000	&	0.00050247	\\
+\hline	17	&	3.35917313	&	16.66666667	&	2	&	1	&	0.00866548	&	0.00348936	&	0.00101027	\\
+\hline	18	&	23.34730839	&	24.57352717	&	9	&	8	&	0.06042608	&	0.01249645	&	0.02455853	\\
+\hline	19	&	5.22510994	&	19.24215940	&	3	&	3	&	0.02471582	&	0.00020864	&	0.00013203	\\
+\hline	20	&	19.71195355	&	8.70209059	&	3	&	3	&	0.04181020	&	0.00035005	&	0.00006471	\\
+\hline	21	&	9.95700623	&	9.26644932	&	3	&	1	&	0.01146410	&	0.04412081	&	0.02097623	\\
+\hline	22	&	2.45524664	&	7.26744186	&	2	&	1	&	0.00862441	&	0.00152152	&	0.00051184	\\
+\hline	23	&	6.61742424	&	2.08793908	&	2	&	1	&	0.01839718	&	0.00060137	&	0.00041967	\\
+\hline	24	&	0.00000000	&	3.33333333	&	0	&	1	&	0.00623404	&	0.00001641	&	0.00000000	\\
 \hline 
 \end{tabular} 
 \end{figure}
@@ -579,9 +593,9 @@ Medium transitivity value suggests that there is some community formation within
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Radiation Model (After) & -0.06149662 & 5 & 8.8 & 0.46039604 & 0.19927536 & 4.58333333 & 0.19097222 \\ 
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Radiation Model (After) & -0.06149662 & 5 & 8.8 & 0.46039604 & 4.58333333 & 0.19097222 \\ 
 \hline 
 \end{tabular} 
 \end{figure}
@@ -589,44 +603,61 @@ Medium transitivity value suggests that there is some community formation within
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	108.87945837	&	111.28995232	&	8	&	13	&	0.53846154	&	0.06801471	&	0.14163172	&	0.40324103	\\
-\hline	1	&	96.24280876	&	122.25482314	&	5	&	12	&	0.57575758	&	0.06532898	&	0.44076822	&	0.13419461	\\
-\hline	2	&	68.33916527	&	58.24965169	&	7	&	7	&	0.85714286	&	0.06611103	&	0.02357307	&	0.02983908	\\
-\hline	3	&	35.08523104	&	67.13766184	&	6	&	11	&	0.54545455	&	0.04047912	&	0.03834858	&	0.02094712	\\
-\hline	4	&	51.88176247	&	26.33777091	&	7	&	8	&	0.46666667	&	0.03687712	&	0.01148110	&	0.01822987	\\
-\hline	5	&	16.86599343	&	7.52633653	&	7	&	3	&	0.42857143	&	0.04070164	&	0.00092053	&	0.00847579	\\
-\hline	6	&	19.07883554	&	2.10864198	&	6	&	2	&	1.00000000	&	0.03333116	&	0.00305249	&	0.01855696	\\
-\hline	7	&	13.05993630	&	6.04581589	&	5	&	2	&	1.00000000	&	0.02306993	&	0.00164857	&	0.01457395	\\
-\hline	8	&	9.06115422	&	5.47008547	&	4	&	1	&	0.33333333	&	0.09093085	&	0.00000000	&	0.00001483	\\
-\hline	9	&	27.85788453	&	22.08000000	&	4	&	2	&	1.00000000	&	0.02786109	&	0.03345954	&	0.04514594	\\
-\hline	10	&	0.00000000	&	4.73429952	&	0	&	3	&	0.33333333	&	0.00625000	&	0.00000046	&	0.00000000	\\
-\hline	11	&	6.67781494	&	4.44444444	&	2	&	1	&	1.00000000	&	0.08489646	&	0.00000077	&	0.00000001	\\
-\hline	12	&	2.59301085	&	1.79757322	&	2	&	2	&	0.33333333	&	0.00909570	&	0.00000236	&	0.00000405	\\
-\hline	13	&	94.47431256	&	114.20909230	&	8	&	12	&	0.57575758	&	0.10355927	&	0.14659166	&	0.13024651	\\
-\hline	14	&	80.00784943	&	63.28116180	&	10	&	10	&	0.65454545	&	0.08076402	&	0.08412710	&	0.11706552	\\
-\hline	15	&	38.48556453	&	29.43232320	&	5	&	2	&	1.00000000	&	0.04082815	&	0.01116279	&	0.01174679	\\
-\hline	16	&	0.00000000	&	0.00000000	&	999	&	999	&	999	&	999	&	999	&	999	\\
-\hline	17	&	3.51731602	&	16.66666667	&	2	&	1	&	1.00000000	&	0.00878597	&	0.00355765	&	0.00108121	\\
-\hline	18	&	23.44998253	&	24.63662226	&	9	&	8	&	0.62222222	&	0.06125753	&	0.01268673	&	0.02454451	\\
-\hline	19	&	5.26560692	&	19.60770605	&	3	&	3	&	0.33333333	&	0.02481946	&	0.00028580	&	0.00014456	\\
-\hline	20	&	19.71195355	&	8.70209059	&	3	&	3	&	0.50000000	&	0.04209021	&	0.00041828	&	0.00007691	\\
-\hline	21	&	9.95700623	&	9.26644932	&	3	&	1	&	1.00000000	&	0.01151002	&	0.04375314	&	0.02090135	\\
-\hline	22	&	2.55094330	&	8.96057348	&	2	&	1	&	1.00000000	&	0.00868424	&	0.00191272	&	0.00054308	\\
-\hline	23	&	6.61742424	&	2.08793908	&	2	&	1	&	0.00000000	&	0.01850335	&	0.00060007	&	0.00042632	\\
-\hline	24	&	0.00000000	&	3.33333333	&	0	&	1	&	0.00000000	&	0.00625000	&	0.00001664	&	0.00000000	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	108.87945837	&	111.28995232	&	8	&	13	&	0.06801471	&	0.14163172	&	0.40324103	\\
+\hline	1	&	96.24280876	&	122.25482314	&	5	&	12	&	0.06532898	&	0.44076822	&	0.13419461	\\
+\hline	2	&	68.33916527	&	58.24965169	&	7	&	7	&	0.06611103	&	0.02357307	&	0.02983908	\\
+\hline	3	&	35.08523104	&	67.13766184	&	6	&	11	&	0.04047912	&	0.03834858	&	0.02094712	\\
+\hline	4	&	51.88176247	&	26.33777091	&	7	&	8	&	0.03687712	&	0.01148110	&	0.01822987	\\
+\hline	5	&	16.86599343	&	7.52633653	&	7	&	3	&	0.04070164	&	0.00092053	&	0.00847579	\\
+\hline	6	&	19.07883554	&	2.10864198	&	6	&	2	&	0.03333116	&	0.00305249	&	0.01855696	\\
+\hline	7	&	13.05993630	&	6.04581589	&	5	&	2	&	0.02306993	&	0.00164857	&	0.01457395	\\
+\hline	8	&	9.06115422	&	5.47008547	&	4	&	1	&	0.09093085	&	0.00000000	&	0.00001483	\\
+\hline	9	&	27.85788453	&	22.08000000	&	4	&	2	&	0.02786109	&	0.03345954	&	0.04514594	\\
+\hline	10	&	0.00000000	&	4.73429952	&	0	&	3	&	0.00625000	&	0.00000046	&	0.00000000	\\
+\hline	11	&	6.67781494	&	4.44444444	&	2	&	1	&	0.08489646	&	0.00000077	&	0.00000001	\\
+\hline	12	&	2.59301085	&	1.79757322	&	2	&	2	&	0.00909570	&	0.00000236	&	0.00000405	\\
+\hline	13	&	94.47431256	&	114.20909230	&	8	&	12	&	0.10355927	&	0.14659166	&	0.13024651	\\
+\hline	14	&	80.00784943	&	63.28116180	&	10	&	10	&	0.08076402	&	0.08412710	&	0.11706552	\\
+\hline	15	&	38.48556453	&	29.43232320	&	5	&	2	&	0.04082815	&	0.01116279	&	0.01174679	\\
+\hline	16	&	0.00000000	&	0.00000000	&	999	&	999	&	999	&	999	&	999	\\
+\hline	17	&	3.51731602	&	16.66666667	&	2	&	1	&	0.00878597	&	0.00355765	&	0.00108121	\\
+\hline	18	&	23.44998253	&	24.63662226	&	9	&	8	&	0.06125753	&	0.01268673	&	0.02454451	\\
+\hline	19	&	5.26560692	&	19.60770605	&	3	&	3	&	0.02481946	&	0.00028580	&	0.00014456	\\
+\hline	20	&	19.71195355	&	8.70209059	&	3	&	3	&	0.04209021	&	0.00041828	&	0.00007691	\\
+\hline	21	&	9.95700623	&	9.26644932	&	3	&	1	&	0.01151002	&	0.04375314	&	0.02090135	\\
+\hline	22	&	2.55094330	&	8.96057348	&	2	&	1	&	0.00868424	&	0.00191272	&	0.00054308	\\
+\hline	23	&	6.61742424	&	2.08793908	&	2	&	1	&	0.01850335	&	0.00060007	&	0.00042632	\\
+\hline	24	&	0.00000000	&	3.33333333	&	0	&	1	&	0.00625000	&	0.00001664	&	0.00000000	\\
 \hline 
 \end{tabular} 
 \end{figure}
 
+\subsubsection{Interaction Shifts}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/Radiation}
+\caption{Total interaction shift by node for radiation model.}
+\label{fig:RadiationShift}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/RadiationPercent}
+\caption{Percent total interaction by node for radiation model.}
+\label{fig:RadiationPercent}
+\end{figure}
+
+
 \section{Ariadne Model}
 
 \paragraph{}
-In each scenario, the network-level metrics converged to a steady values within 25 averaged model runs. At the lower distance threshold the Ariadne model indicates that on average Poggio Civitate would have sustained 2-3 outgoing interactions and 0-1 incoming interactions though they would have been among some of the weakest links within the network. Increasing the distance threshold does not have an impact on Murlo's connectivity despite the fact the overall increase in connectivity suggested by a decreasing diameter value. Both model variations produce PageRank and HITS values that are extremely small and therefore confirm Poggio Civitate's relative lack of importance within the system.   
+In each scenario, the network-level metrics converged to steady values within 25 averaged model runs (Figure \ref{fig:ConvergeAriadneB60}, \ref{fig:ConvergeAriadneB100}, \ref{fig:ConvergeAriadneA60}, \ref{fig:ConvergeAriadneA100}). At the lower distance threshold the Ariadne model indicates that on average Poggio Civitate would have sustained 2-3 outgoing interactions and 0-1 incoming interactions though they would have been among some of the weakest links within the network. Increasing the distance threshold does not have an impact on Murlo's connectivity despite the fact the overall increase in connectivity suggested by a decreasing diameter value. Both model variations produce PageRank and HITS values that are extremely small and therefore confirm Poggio Civitate's relative lack of importance within the system.   
 
 \paragraph{}
-High transitivity values suggest strong neighborhood effects within all of the Ariadne model results. It is easy to visually extract communities in the lower distance threshold model results though the longer distance threshold model results present an interesting deviation for settlements in the northeast. The increased travel distance capabilities seem to have decreased the frequency with which these sites interact with themselves. Instead of forming their own community they tend to explicitly interact with larger more distant nodes. This phenomenon is reflected within the  overall transitivity calculations though only minutely. It is difficult to quantify changes within the Ariadne networks after the destruction of Murlo. For both variations of the model the metrics present mixed evidence for whether or not the system becomes more connected. Additionally, none of the resulting values represent large deviations so the variations within the metrics is likely just due to the stochastic nature of the model. Ultimately, the removal of Poggio Civiate does not cause significant shifts within the network. Bar chart node interaction changes.
+High transitivity values suggest strong neighborhood effects within all of the Ariadne model results. It is easy to visually extract communities in the lower distance threshold results though the longer distance threshold results present an interesting deviation for settlements in the northeast. The increased travel distance capabilities seem to have decreased the frequency with which these sites interact with themselves. Instead of forming their own community they tend to explicitly interact with larger more distant nodes. It is difficult to quantify changes within the Ariadne networks after the destruction of Murlo. For both variations of the model the metrics present mixed evidence for whether or not the system becomes more connected. Additionally, none of the resulting values represent large deviations so the variations within the measurements is likely due to the stochastic nature of the model. Ultimately, the removal of Poggio Civiate does not cause significant shifts within the network. There is a split in the number of nodes which gain interaction and those which lose interaction for the 60km threshold. Nodes 3, 5, 9, 20 , and 22 show the largest increases with node 5 (Chiusi) having the highest at about 21 percent. In contrast, nodes 6, 14, 15, 23, and 24 decrease the most significantly with maximum loses of 20 percent by node 15. The 100km threshold is dominated by decreasing interaction shifts. Seventeen nodes proved to have decreased interaction with 7 of the nodes (0, 1, 9, 11, 13,and 19) having loses between 20-30 percent. Nodes 4, 8, and 22 show substantial gains of 10-20 percent. 
 
 \subsubsection{Before - 60km}
 
@@ -640,9 +671,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Ariadne (Before: 60km) & -0.05119454	& 4.1600 & 11.6288 & 0.70893446 & 0.24226667 & 5.8144 & 0.232576\\ 
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (Before: 60km) & -0.05119454	& 4.1600 & 11.6288 & 0.70893446 & 5.8144 & 0.232576\\ 
 \hline 
 \end{tabular} 
 \end{figure}
@@ -651,33 +682,33 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	5.15605044	&	10.37701864	&	9.0000	&	7.9600	&	0.76001154	&	0.06366162	&	0.20301292	&	0.08377937	\\
-\hline	1	&	4.78002280	&	10.50274632	&	8.6800	&	8.0400	&	0.83243867	&	0.06119557	&	0.17104314	&	0.08207493	\\
-\hline	2	&	4.37817908	&	4.00114796	&	6.8800	&	7.0400	&	0.52853102	&	0.05291583	&	0.03862894	&	0.03790744	\\
-\hline	3	&	2.33393132	&	4.43702164	&	4.7200	&	5.3600	&	0.58866667	&	0.03687551	&	0.02893478	&	0.00651458	\\
-\hline	4	&	2.45377924	&	2.54004316	&	5.2000	&	6.2400	&	0.51085714	&	0.03412294	&	0.00863165	&	0.00737997	\\
-\hline	5	&	1.40997460	&	1.56258092	&	7.0800	&	6.8800	&	0.47221290	&	0.04080041	&	0.01457215	&	0.00298033	\\
-\hline	6	&	5.68686764	&	2.35101684	&	10.3600	&	7.2000	&	0.67133822	&	0.06827045	&	0.02891943	&	0.08440798	\\
-\hline	7	&	5.83026388	&	2.09756240	&	9.6000	&	7.2000	&	0.76331890	&	0.06808746	&	0.02972334	&	0.08683485	\\
-\hline	8	&	0.89294904	&	0.82821912	&	5.8800	&	5.2400	&	0.56019048	&	0.02871467	&	0.00346677	&	0.00064527	\\
-\hline	9	&	4.70216060	&	2.03496144	&	5.8000	&	6.5600	&	0.98063492	&	0.04789472	&	0.02954883	&	0.10339356	\\
-\hline	10	&	0.04208724	&	0.32914720	&	0.6800	&	4.0000	&	0.73066667	&	0.00705151	&	0.00033416	&	0.00000596	\\
-\hline	11	&	0.16607516	&	0.38591676	&	1.7600	&	3.6800	&	0.71866667	&	0.01023432	&	0.00225924	&	0.00003969	\\
-\hline	12	&	0.20469996	&	0.37850296	&	2.5200	&	4.0000	&	0.75600000	&	0.01064349	&	0.00004972	&	0.00002770	\\
-\hline	13	&	7.94302340	&	10.75129336	&	13.2000	&	8.9200	&	0.55270396	&	0.09234654	&	0.19751654	&	0.13496315	\\
-\hline	14	&	7.99095508	&	7.94175732	&	12.9200	&	9.2400	&	0.55323506	&	0.09671460	&	0.14070298	&	0.13147314	\\
-\hline	15	&	3.65079068	&	1.81954172	&	5.0000	&	6.1600	&	0.66488889	&	0.04215937	&	0.01908715	&	0.03044919	\\
-\hline	16	&	0.02997972	&	0.16392172	&	0.4800	&	2.4000	&	0.98666667	&	0.00637868	&	0.00080004	&	0.00013414	\\
-\hline	17	&	0.20060956	&	0.38098608	&	1.0000	&	2.5200	&	1.00000000	&	0.00830969	&	0.00058663	&	0.00023103	\\
-\hline	18	&	6.67819704	&	3.98009484	&	15.8800	&	8.2800	&	0.40822889	&	0.09394147	&	0.04162679	&	0.10691481	\\
-\hline	19	&	0.44540620	&	0.68159284	&	3.3200	&	4.6000	&	0.52514286	&	0.01687598	&	0.00126330	&	0.00019425	\\
-\hline	20	&	0.89644132	&	0.79641936	&	4.8000	&	4.8000	&	0.70523810	&	0.02820003	&	0.00252656	&	0.00084704	\\
-\hline	21	&	4.74922272	&	1.84394700	&	5.6000	&	6.3600	&	0.94660317	&	0.04352903	&	0.02428703	&	0.09637430	\\
-\hline	22	&	0.18489916	&	0.50844160	&	1.0000	&	3.4400	&	0.40000000	&	0.00801272	&	0.00059727	&	0.00016563	\\
-\hline	23	&	0.86265308	&	0.63189508	&	3.8400	&	5.2000	&	0.64053968	&	0.02632835	&	0.00780512	&	0.00223517	\\
-\hline	24	&	0.01772372	&	0.36116640	&	0.1600	&	4.0400	&	0.88533333	&	0.00673504	&	0.00407552	&	0.00002649	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	5.15605044	&	10.37701864	&	9.0000	&	7.9600	&	0.06366162	&	0.20301292	&	0.08377937	\\
+\hline	1	&	4.78002280	&	10.50274632	&	8.6800	&	8.0400	&	0.06119557	&	0.17104314	&	0.08207493	\\
+\hline	2	&	4.37817908	&	4.00114796	&	6.8800	&	7.0400	&	0.05291583	&	0.03862894	&	0.03790744	\\
+\hline	3	&	2.33393132	&	4.43702164	&	4.7200	&	5.3600	&	0.03687551	&	0.02893478	&	0.00651458	\\
+\hline	4	&	2.45377924	&	2.54004316	&	5.2000	&	6.2400	&	0.03412294	&	0.00863165	&	0.00737997	\\
+\hline	5	&	1.40997460	&	1.56258092	&	7.0800	&	6.8800	&	0.04080041	&	0.01457215	&	0.00298033	\\
+\hline	6	&	5.68686764	&	2.35101684	&	10.3600	&	7.2000	&	0.06827045	&	0.02891943	&	0.08440798	\\
+\hline	7	&	5.83026388	&	2.09756240	&	9.6000	&	7.2000	&	0.06808746	&	0.02972334	&	0.08683485	\\
+\hline	8	&	0.89294904	&	0.82821912	&	5.8800	&	5.2400	&	0.02871467	&	0.00346677	&	0.00064527	\\
+\hline	9	&	4.70216060	&	2.03496144	&	5.8000	&	6.5600	&	0.04789472	&	0.02954883	&	0.10339356	\\
+\hline	10	&	0.04208724	&	0.32914720	&	0.6800	&	4.0000	&	0.00705151	&	0.00033416	&	0.00000596	\\
+\hline	11	&	0.16607516	&	0.38591676	&	1.7600	&	3.6800	&	0.01023432	&	0.00225924	&	0.00003969	\\
+\hline	12	&	0.20469996	&	0.37850296	&	2.5200	&	4.0000	&	0.01064349	&	0.00004972	&	0.00002770	\\
+\hline	13	&	7.94302340	&	10.75129336	&	13.2000	&	8.9200	&	0.09234654	&	0.19751654	&	0.13496315	\\
+\hline	14	&	7.99095508	&	7.94175732	&	12.9200	&	9.2400	&	0.09671460	&	0.14070298	&	0.13147314	\\
+\hline	15	&	3.65079068	&	1.81954172	&	5.0000	&	6.1600	&	0.04215937	&	0.01908715	&	0.03044919	\\
+\hline	16	&	0.02997972	&	0.16392172	&	0.4800	&	2.4000	&	0.00637868	&	0.00080004	&	0.00013414	\\
+\hline	17	&	0.20060956	&	0.38098608	&	1.0000	&	2.5200	&	0.00830969	&	0.00058663	&	0.00023103	\\
+\hline	18	&	6.67819704	&	3.98009484	&	15.8800	&	8.2800	&	0.09394147	&	0.04162679	&	0.10691481	\\
+\hline	19	&	0.44540620	&	0.68159284	&	3.3200	&	4.6000	&	0.01687598	&	0.00126330	&	0.00019425	\\
+\hline	20	&	0.89644132	&	0.79641936	&	4.8000	&	4.8000	&	0.02820003	&	0.00252656	&	0.00084704	\\
+\hline	21	&	4.74922272	&	1.84394700	&	5.6000	&	6.3600	&	0.04352903	&	0.02428703	&	0.09637430	\\
+\hline	22	&	0.18489916	&	0.50844160	&	1.0000	&	3.4400	&	0.00801272	&	0.00059727	&	0.00016563	\\
+\hline	23	&	0.86265308	&	0.63189508	&	3.8400	&	5.2000	&	0.02632835	&	0.00780512	&	0.00223517	\\
+\hline	24	&	0.01772372	&	0.36116640	&	0.1600	&	4.0400	&	0.00673504	&	0.00407552	&	0.00002649	\\
 \hline 
 \end{tabular} 
 \end{figure}
@@ -696,9 +727,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Ariadne (Before: 100km) & -0.05581519 & 3.12 & 11.6576	& 0.69901818 & 0.24286667 & 5.8288 & 0.233152 \\
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (Before: 100km) & -0.05581519 & 3.12 & 11.6576	& 0.69901818 & 5.8288 & 0.233152 \\
 \hline 
 \end{tabular} 
 \end{figure}
@@ -706,33 +737,33 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	4.89983452	&	8.32066644	&	12.0000	&	8.2000	&	0.60686959	&	0.08609509	&	0.19495887	&	0.10330187	\\
-\hline	1	&	5.65126364	&	8.52547084	&	12.3200	&	8.2000	&	0.62170568	&	0.08667110	&	0.20906030	&	0.09710958	\\
-\hline	2	&	3.62511764	&	3.19648376	&	10.2400	&	8.0000	&	0.50251482	&	0.05521474	&	0.03331761	&	0.07971386	\\
-\hline	3	&	1.93787876	&	3.88205340	&	5.7200	&	6.6400	&	0.58055411	&	0.03461827	&	0.06809476	&	0.00905391	\\
-\hline	4	&	2.01789728	&	2.54596744	&	6.0400	&	7.4800	&	0.53317460	&	0.03514888	&	0.01994091	&	0.01186065	\\
-\hline	5	&	1.89805124	&	1.26250424	&	9.5200	&	6.5200	&	0.45747820	&	0.04565378	&	0.01767523	&	0.02984303	\\
-\hline	6	&	3.00178612	&	1.37872700	&	7.9600	&	6.1600	&	0.80215385	&	0.05573647	&	0.01598653	&	0.04757637	\\
-\hline	7	&	3.31958660	&	1.40210708	&	7.4400	&	6.7200	&	0.85205483	&	0.05190872	&	0.02035527	&	0.06626117	\\
-\hline	8	&	0.23871468	&	0.57470524	&	2.0000	&	4.6800	&	0.71107937	&	0.01353769	&	0.00719601	&	0.00115689	\\
-\hline	9	&	3.67211716	&	1.25457724	&	5.0800	&	5.8000	&	0.96653968	&	0.05740215	&	0.02130661	&	0.13629920	\\
-\hline	10	&	0.00000000	&	0.23889756	&	0.0000	&	3.4800	&	0.92400000	&	0.00600000	&	0.00253050	&	0.00000000	\\
-\hline	11	&	0.01417564	&	0.30614564	&	0.1200	&	3.8400	&	0.94742857	&	0.00651435	&	0.00446946	&	0.00000928	\\
-\hline	12	&	0.00624680	&	0.24945936	&	0.0400	&	3.4800	&	0.94533333	&	0.00611249	&	0.00229586	&	0.00000497	\\
-\hline	13	&	7.01137616	&	7.85547568	&	16.2800	&	9.7200	&	0.48198639	&	0.10442409	&	0.15895122	&	0.13394608	\\
-\hline	14	&	5.87803916	&	5.48273092	&	16.4400	&	8.7200	&	0.47020388	&	0.09823489	&	0.11429405	&	0.08765036	\\
-\hline	15	&	2.10607784	&	1.24976596	&	4.3600	&	5.9200	&	0.85441270	&	0.03282420	&	0.01499822	&	0.02142376	\\
-\hline	16	&	0.02693540	&	0.13393868	&	0.2400	&	2.2400	&	0.75333333	&	0.00651135	&	0.00186924	&	0.00038813	\\
-\hline	17	&	0.21029052	&	0.36706780	&	0.9600	&	3.0000	&	1.00000000	&	0.00855607	&	0.00137643	&	0.00096169	\\
-\hline	18	&	5.20334476	&	3.14990504	&	18.7200	&	8.6400	&	0.37168431	&	0.09951101	&	0.04250434	&	0.08257974	\\
-\hline	19	&	0.32510116	&	0.49862944	&	1.4000	&	5.1200	&	0.63841270	&	0.01390796	&	0.00508193	&	0.00077852	\\
-\hline	20	&	0.24431164	&	0.50793272	&	1.7200	&	4.2000	&	0.78212698	&	0.01420025	&	0.00675260	&	0.00065684	\\
-\hline	21	&	2.68562484	&	1.27637096	&	4.5200	&	6.0800	&	0.96542857	&	0.03734474	&	0.01960192	&	0.08137327	\\
-\hline	22	&	0.27613360	&	0.51696952	&	1.2400	&	3.9600	&	0.83800000	&	0.00994763	&	0.00260495	&	0.00115287	\\
-\hline	23	&	0.55702292	&	0.48574020	&	0.8800	&	4.8800	&	0.89580952	&	0.02056382	&	0.00794017	&	0.00575367	\\
-\hline	24	&	0.25766600	&	0.40230192	&	0.4800	&	4.0400	&	0.94400000	&	0.01336026	&	0.00683703	&	0.00114427	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	4.89983452	&	8.32066644	&	12.0000	&	8.2000	&	0.08609509	&	0.19495887	&	0.10330187	\\
+\hline	1	&	5.65126364	&	8.52547084	&	12.3200	&	8.2000	&	0.08667110	&	0.20906030	&	0.09710958	\\
+\hline	2	&	3.62511764	&	3.19648376	&	10.2400	&	8.0000	&	0.05521474	&	0.03331761	&	0.07971386	\\
+\hline	3	&	1.93787876	&	3.88205340	&	5.7200	&	6.6400	&	0.03461827	&	0.06809476	&	0.00905391	\\
+\hline	4	&	2.01789728	&	2.54596744	&	6.0400	&	7.4800	&	0.03514888	&	0.01994091	&	0.01186065	\\
+\hline	5	&	1.89805124	&	1.26250424	&	9.5200	&	6.5200	&	0.04565378	&	0.01767523	&	0.02984303	\\
+\hline	6	&	3.00178612	&	1.37872700	&	7.9600	&	6.1600	&	0.05573647	&	0.01598653	&	0.04757637	\\
+\hline	7	&	3.31958660	&	1.40210708	&	7.4400	&	6.7200	&	0.05190872	&	0.02035527	&	0.06626117	\\
+\hline	8	&	0.23871468	&	0.57470524	&	2.0000	&	4.6800	&	0.01353769	&	0.00719601	&	0.00115689	\\
+\hline	9	&	3.67211716	&	1.25457724	&	5.0800	&	5.8000	&	0.05740215	&	0.02130661	&	0.13629920	\\
+\hline	10	&	0.00000000	&	0.23889756	&	0.0000	&	3.4800	&	0.00600000	&	0.00253050	&	0.00000000	\\
+\hline	11	&	0.01417564	&	0.30614564	&	0.1200	&	3.8400	&	0.00651435	&	0.00446946	&	0.00000928	\\
+\hline	12	&	0.00624680	&	0.24945936	&	0.0400	&	3.4800	&	0.00611249	&	0.00229586	&	0.00000497	\\
+\hline	13	&	7.01137616	&	7.85547568	&	16.2800	&	9.7200	&	0.10442409	&	0.15895122	&	0.13394608	\\
+\hline	14	&	5.87803916	&	5.48273092	&	16.4400	&	8.7200	&	0.09823489	&	0.11429405	&	0.08765036	\\
+\hline	15	&	2.10607784	&	1.24976596	&	4.3600	&	5.9200	&	0.03282420	&	0.01499822	&	0.02142376	\\
+\hline	16	&	0.02693540	&	0.13393868	&	0.2400	&	2.2400	&	0.00651135	&	0.00186924	&	0.00038813	\\
+\hline	17	&	0.21029052	&	0.36706780	&	0.9600	&	3.0000	&	0.00855607	&	0.00137643	&	0.00096169	\\
+\hline	18	&	5.20334476	&	3.14990504	&	18.7200	&	8.6400	&	0.09951101	&	0.04250434	&	0.08257974	\\
+\hline	19	&	0.32510116	&	0.49862944	&	1.4000	&	5.1200	&	0.01390796	&	0.00508193	&	0.00077852	\\
+\hline	20	&	0.24431164	&	0.50793272	&	1.7200	&	4.2000	&	0.01420025	&	0.00675260	&	0.00065684	\\
+\hline	21	&	2.68562484	&	1.27637096	&	4.5200	&	6.0800	&	0.03734474	&	0.01960192	&	0.08137327	\\
+\hline	22	&	0.27613360	&	0.51696952	&	1.2400	&	3.9600	&	0.00994763	&	0.00260495	&	0.00115287	\\
+\hline	23	&	0.55702292	&	0.48574020	&	0.8800	&	4.8800	&	0.02056382	&	0.00794017	&	0.00575367	\\
+\hline	24	&	0.25766600	&	0.40230192	&	0.4800	&	4.0400	&	0.01336026	&	0.00683703	&	0.00114427	\\
 \hline 
 \end{tabular} 
 \end{figure}
@@ -751,9 +782,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Ariadne (After: 60km) & -0.05325428	& 4.24 & 11.3152	& 0.72501267 & 0.25623188 & 5.89333333 & 0.24555556 \\ 
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (After: 60km) & -0.05325428	& 4.24 & 11.3152	& 0.72501267 & 5.89333333 & 0.24555556 \\ 
 \hline 
 \end{tabular} 
 \end{figure}
@@ -761,33 +792,33 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	5.16036156	&	10.47627292	&	8.8000	&	8.1200	&	0.82457431	&	0.06567145	&	0.19987111	&	0.08149631	\\
-\hline	1	&	5.23551720	&	11.09284644	&	9.0000	&	8.0000	&	0.83457143	&	0.06563621	&	0.22235560	&	0.08286413	\\
-\hline	2	&	4.09353752	&	4.00969188	&	6.1200	&	6.4400	&	0.62196537	&	0.04967571	&	0.02580089	&	0.03167777	\\
-\hline	3	&	2.89074720	&	4.70419836	&	4.5200	&	5.4400	&	0.59536508	&	0.04058895	&	0.02506704	&	0.00572947	\\
-\hline	4	&	2.78197232	&	2.62088708	&	4.4000	&	5.7600	&	0.55047619	&	0.03650362	&	0.00796128	&	0.00729260	\\
-\hline	5	&	1.96130524	&	1.66822824	&	7.3200	&	6.8000	&	0.46096037	&	0.05233911	&	0.01776381	&	0.00499504	\\
-\hline	6	&	4.68613712	&	2.23687204	&	10.2400	&	8.0400	&	0.71307071	&	0.05813292	&	0.03338689	&	0.07890425	\\
-\hline	7	&	5.93678260	&	2.06810156	&	9.4800	&	7.4800	&	0.78658586	&	0.06582744	&	0.02921817	&	0.11104847	\\
-\hline	8	&	0.89386664	&	0.81513760	&	5.7600	&	5.1600	&	0.53568254	&	0.03269063	&	0.00363226	&	0.00088401	\\
-\hline	9	&	5.63912128	&	2.09009756	&	6.2400	&	7.2400	&	0.98714286	&	0.05185054	&	0.03139406	&	0.13298361	\\
-\hline	10	&	0.05323988	&	0.31759552	&	0.7600	&	3.6000	&	0.77066667	&	0.00783581	&	0.00029367	&	0.00001598	\\
-\hline	11	&	0.17444720	&	0.36762904	&	1.6400	&	3.5200	&	0.75066667	&	0.01275970	&	0.00213306	&	0.00005358	\\
-\hline	12	&	0.21906448	&	0.37656312	&	2.2800	&	3.7200	&	0.73066667	&	0.01182928	&	0.00014320	&	0.00003602	\\
-\hline	13	&	7.58302480	&	10.38153036	&	12.6800	&	9.4000	&	0.58192308	&	0.08908923	&	0.17368731	&	0.14408559	\\
-\hline	14	&	7.05862416	&	7.22942652	&	12.8000	&	8.9600	&	0.57029736	&	0.08587737	&	0.12400177	&	0.10205289	\\
-\hline	15	&	2.77190060	&	1.63238884	&	4.1600	&	5.7200	&	0.75352381	&	0.03197597	&	0.01657326	&	0.01461682	\\
-\hline	16	&	0.00000000	&	0.00000000	&	999.0000	&	999.0000	&	999	&	999	&	999	&	999	\\
-\hline	17	&	0.18248772	&	0.37659180	&	1.0000	&	2.3600	&	1.00000000	&	0.00857153	&	0.00049695	&	0.00019297	\\
-\hline	18	&	6.36680940	&	3.74639724	&	15.4400	&	7.9200	&	0.41959111	&	0.09275439	&	0.04109655	&	0.09139855	\\
-\hline	19	&	0.46389328	&	0.69044140	&	3.4000	&	4.2800	&	0.50190476	&	0.01935123	&	0.00093279	&	0.00021101	\\
-\hline	20	&	1.02280624	&	0.83296720	&	4.7200	&	4.4800	&	0.69714286	&	0.03604473	&	0.00268190	&	0.00103421	\\
-\hline	21	&	4.97287868	&	1.90607880	&	6.3600	&	7.0800	&	0.93266667	&	0.04788491	&	0.02784183	&	0.10603521	\\
-\hline	22	&	0.25915400	&	0.51584076	&	1.0000	&	3.3600	&	0.38933333	&	0.00957424	&	0.00069252	&	0.00028271	\\
-\hline	23	&	0.71327764	&	0.63059148	&	3.2400	&	4.9600	&	0.60043290	&	0.02103774	&	0.00866464	&	0.00204226	\\
-\hline	24	&	0.01100452	&	0.34558552	&	0.0800	&	3.6000	&	0.86266667	&	0.00649732	&	0.00430945	&	0.00006656	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	5.16036156	&	10.47627292	&	8.8000	&	8.1200 &	0.06567145	&	0.19987111	&	0.08149631	\\
+\hline	1	&	5.23551720	&	11.09284644	&	9.0000	&	8.0000	&	0.06563621	&	0.22235560	&	0.08286413	\\
+\hline	2	&	4.09353752	&	4.00969188	&	6.1200	&	6.4400	&	0.04967571	&	0.02580089	&	0.03167777	\\
+\hline	3	&	2.89074720	&	4.70419836	&	4.5200	&	5.4400	&	0.04058895	&	0.02506704	&	0.00572947	\\
+\hline	4	&	2.78197232	&	2.62088708	&	4.4000	&	5.7600	&	0.03650362	&	0.00796128	&	0.00729260	\\
+\hline	5	&	1.96130524	&	1.66822824	&	7.3200	&	6.8000	&	0.05233911	&	0.01776381	&	0.00499504	\\
+\hline	6	&	4.68613712	&	2.23687204	&	10.2400	&	8.0400	&	0.05813292	&	0.03338689	&	0.07890425	\\
+\hline	7	&	5.93678260	&	2.06810156	&	9.4800	&	7.4800	&	0.06582744	&	0.02921817	&	0.11104847	\\
+\hline	8	&	0.89386664	&	0.81513760	&	5.7600	&	5.1600	&	0.03269063	&	0.00363226	&	0.00088401	\\
+\hline	9	&	5.63912128	&	2.09009756	&	6.2400	&	7.2400	&	0.05185054	&	0.03139406	&	0.13298361	\\
+\hline	10	&	0.05323988	&	0.31759552	&	0.7600	&	3.6000	&	0.00783581	&	0.00029367	&	0.00001598	\\
+\hline	11	&	0.17444720	&	0.36762904	&	1.6400	&	3.5200	&	0.01275970	&	0.00213306	&	0.00005358	\\
+\hline	12	&	0.21906448	&	0.37656312	&	2.2800	&	3.7200	&	0.01182928	&	0.00014320	&	0.00003602	\\
+\hline	13	&	7.58302480	&	10.38153036	&	12.6800	&	9.4000	&	0.08908923	&	0.17368731	&	0.14408559	\\
+\hline	14	&	7.05862416	&	7.22942652	&	12.8000	&	8.9600	&	0.08587737	&	0.12400177	&	0.10205289	\\
+\hline	15	&	2.77190060	&	1.63238884	&	4.1600	&	5.7200	&	0.03197597	&	0.01657326	&	0.01461682	\\
+\hline	16	&	0.00000000	&	0.00000000	&	999.0000	&	999.0000	&	999	&	999	&	999	\\
+\hline	17	&	0.18248772	&	0.37659180	&	1.0000	&	2.3600	&	0.00857153	&	0.00049695	&	0.00019297	\\
+\hline	18	&	6.36680940	&	3.74639724	&	15.4400	&	7.9200	&	0.09275439	&	0.04109655	&	0.09139855	\\
+\hline	19	&	0.46389328	&	0.69044140	&	3.4000	&	4.2800	&	0.01935123	&	0.00093279	&	0.00021101	\\
+\hline	20	&	1.02280624	&	0.83296720	&	4.7200	&	4.4800	&	0.03604473	&	0.00268190	&	0.00103421	\\
+\hline	21	&	4.97287868	&	1.90607880	&	6.3600	&	7.0800	&	0.04788491	&	0.02784183	&	0.10603521	\\
+\hline	22	&	0.25915400	&	0.51584076	&	1.0000	&	3.3600	&	0.00957424	&	0.00069252	&	0.00028271	\\
+\hline	23	&	0.71327764	&	0.63059148	&	3.2400	&	4.9600	&	0.02103774	&	0.00866464	&	0.00204226	\\
+\hline	24	&	0.01100452	&	0.34558552	&	0.0800	&	3.6000	&	0.00649732	&	0.00430945	&	0.00006656	\\
 \hline 
 \end{tabular} 
 \end{figure}
@@ -804,9 +835,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Ariadne (After: 100km) & -0.05695306	& 3.08 & 10.9184 & 0.67954338 &	0.24724638 & 5.68666667	& 0.23694444
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (After: 100km) & -0.05695306	& 3.08 & 10.9184 & 0.67954338 & 5.68666667	& 0.23694444
  \\ 
 \hline 
 \end{tabular} 
@@ -815,36 +846,68 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	3.06643424	&	6.07401580	&	10.2400	&	8.0400	&	0.63960417	&	0.07545583	&	0.12093972	&	0.05003812	\\
-\hline	1	&	3.83291536	&	6.11571240	&	10.8000	&	8.5600	&	0.65371298	&	0.07693095	&	0.17498175	&	0.09110773	\\
-\hline	2	&	3.67581112	&	3.18717124	&	9.8000	&	7.6000	&	0.52989799	&	0.06189563	&	0.05298723	&	0.09799815	\\
-\hline	3	&	2.00754312	&	3.94399972	&	5.4800	&	6.5200	&	0.60374603	&	0.04231811	&	0.10390300	&	0.02089409	\\
-\hline	4	&	2.32559364	&	2.70775716	&	6.0400	&	7.2400	&	0.54154978	&	0.04216085	&	0.03195118	&	0.04732999	\\
-\hline	5	&	1.80055964	&	1.22150472	&	9.0000	&	5.8000	&	0.46532325	&	0.04532250	&	0.02270255	&	0.02714574	\\
-\hline	6	&	3.01853756	&	1.26870548	&	7.9200	&	6.2400	&	0.79265246	&	0.05922607	&	0.02041338	&	0.06835380	\\
-\hline	7	&	2.98474928	&	1.24622852	&	7.0400	&	6.3200	&	0.83768165	&	0.05939650	&	0.02258723	&	0.06634617	\\
-\hline	8	&	0.37216576	&	0.54676900	&	2.6800	&	4.5600	&	0.63371429	&	0.01924075	&	0.00807622	&	0.00184202	\\
-\hline	9	&	2.27813524	&	0.97101088	&	4.3200	&	5.4400	&	0.97619048	&	0.04395270	&	0.01802054	&	0.06755565	\\
-\hline	10	&	0.00000000	&	0.21901440	&	0.0000	&	2.8800	&	0.96666667	&	0.00625000	&	0.00204394	&	0.00000000	\\
-\hline	11	&	0.00285328	&	0.24479564	&	0.0400	&	2.8400	&	0.89200000	&	0.00631119	&	0.00316273	&	0.00000068	\\
-\hline	12	&	0.00000000	&	0.24383828	&	0.0000	&	3.2000	&	0.81733333	&	0.00625000	&	0.00229727	&	0.00000000	\\
-\hline	13	&	4.62837940	&	5.87608252	&	14.8000	&	8.8000	&	0.50482987	&	0.09805619	&	0.19027115	&	0.08701165	\\
-\hline	14	&	4.98773616	&	4.62298124	&	14.9200	&	9.4400	&	0.49580242	&	0.09624714	&	0.10113253	&	0.11419163	\\
-\hline	15	&	2.25499136	&	1.21904160	&	4.5200	&	5.6400	&	0.84171429	&	0.03922334	&	0.02023867	&	0.06115087	\\
-\hline	16	&	0.00000000	&	0.00000000	&	999	&	999	&	999	&	999	&	999	&	999	\\
-\hline	17	&	0.18038704	&	0.37240288	&	1.0800	&	2.9200	&	1.00000000	&	0.00893836	&	0.00326753	&	0.00173073	\\
-\hline	18	&	4.43973696	&	2.94574080	&	17.9200	&	7.9200	&	0.34846115	&	0.09698155	&	0.04840445	&	0.07125558	\\
-\hline	19	&	0.20792500	&	0.46888040	&	1.7200	&	4.6000	&	0.60019048	&	0.01190047	&	0.00565915	&	0.00059329	\\
-\hline	20	&	0.08612292	&	0.47842216	&	1.3200	&	4.3600	&	0.77428571	&	0.00873340	&	0.00914215	&	0.00010721	\\
-\hline	21	&	2.84477672	&	1.11921204	&	4.8000	&	5.8000	&	0.95311111	&	0.05199142	&	0.02056158	&	0.11730373	\\
-\hline	22	&	0.41162352	&	0.51311336	&	1.2000	&	3.8000	&	0.82533333	&	0.01329582	&	0.00474654	&	0.00261211	\\
-\hline	23	&	0.54839324	&	0.39617168	&	0.6800	&	4.4800	&	0.91552381	&	0.02041257	&	0.00736051	&	0.00359720	\\
-\hline	24	&	0.37564960	&	0.32844824	&	0.1600	&	3.4800	&	1.00000000	&	0.00950866	&	0.00514898	&	0.00183386	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	3.06643424	&	6.07401580	&	10.2400	&	8.0400	&	0.07545583	&	0.12093972	&	0.05003812	\\
+\hline	1	&	3.83291536	&	6.11571240	&	10.8000	&	8.5600	&	0.07693095	&	0.17498175	&	0.09110773	\\
+\hline	2	&	3.67581112	&	3.18717124	&	9.8000	&	7.6000	&	0.06189563	&	0.05298723	&	0.09799815	\\
+\hline	3	&	2.00754312	&	3.94399972	&	5.4800	&	6.5200	&	0.04231811	&	0.10390300	&	0.02089409	\\
+\hline	4	&	2.32559364	&	2.70775716	&	6.0400	&	7.2400	&	0.04216085	&	0.03195118	&	0.04732999	\\
+\hline	5	&	1.80055964	&	1.22150472	&	9.0000	&	5.8000	&	0.04532250	&	0.02270255	&	0.02714574	\\
+\hline	6	&	3.01853756	&	1.26870548	&	7.9200	&	6.2400	&	0.05922607	&	0.02041338	&	0.06835380	\\
+\hline	7	&	2.98474928	&	1.24622852	&	7.0400	&	6.3200	&	0.05939650	&	0.02258723	&	0.06634617	\\
+\hline	8	&	0.37216576	&	0.54676900	&	2.6800	&	4.5600	&	0.01924075	&	0.00807622	&	0.00184202	\\
+\hline	9	&	2.27813524	&	0.97101088	&	4.3200	&	5.4400	&	0.04395270	&	0.01802054	&	0.06755565	\\
+\hline	10	&	0.00000000	&	0.21901440	&	0.0000	&	2.8800	&	0.00625000	&	0.00204394	&	0.00000000	\\
+\hline	11	&	0.00285328	&	0.24479564	&	0.0400	&	2.8400	&	0.00631119	&	0.00316273	&	0.00000068	\\
+\hline	12	&	0.00000000	&	0.24383828	&	0.0000	&	3.2000	&	0.00625000	&	0.00229727	&	0.00000000	\\
+\hline	13	&	4.62837940	&	5.87608252	&	14.8000	&	8.8000	&	0.09805619	&	0.19027115	&	0.08701165	\\
+\hline	14	&	4.98773616	&	4.62298124	&	14.9200	&	9.4400	&	0.09624714	&	0.10113253	&	0.11419163	\\
+\hline	15	&	2.25499136	&	1.21904160	&	4.5200	&	5.6400	&	0.03922334	&	0.02023867	&	0.06115087	\\
+\hline	16	&	0.00000000	&	0.00000000	&	999	&	999	&	999	&	999	&	999	\\
+\hline	17	&	0.18038704	&	0.37240288	&	1.0800	&	2.9200	&	0.00893836	&	0.00326753	&	0.00173073	\\
+\hline	18	&	4.43973696	&	2.94574080	&	17.9200	&	7.9200	&	0.09698155	&	0.04840445	&	0.07125558	\\
+\hline	19	&	0.20792500	&	0.46888040	&	1.7200	&	4.6000	&	0.01190047	&	0.00565915	&	0.00059329	\\
+\hline	20	&	0.08612292	&	0.47842216	&	1.3200	&	4.3600	&	0.00873340	&	0.00914215	&	0.00010721	\\
+\hline	21	&	2.84477672	&	1.11921204	&	4.8000	&	5.8000	&	0.05199142	&	0.02056158	&	0.11730373	\\
+\hline	22	&	0.41162352	&	0.51311336	&	1.2000	&	3.8000	&	0.01329582	&	0.00474654	&	0.00261211	\\
+\hline	23	&	0.54839324	&	0.39617168	&	0.6800	&	4.4800	&	0.02041257	&	0.00736051	&	0.00359720	\\
+\hline	24	&	0.37564960	&	0.32844824	&	0.1600	&	3.4800	&	0.00950866	&	0.00514898	&	0.00183386	\\
 \hline 
 \end{tabular} 
 \end{figure}
+
+\subsubsection{Interaction Shifts}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/Ariadne60}
+\caption{Total interaction shift by node for Ariadne (60km).}
+\label{fig:Ariadne60}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/AriadnePercent60}
+\caption{Percent total interaction shift by node for Ariadne (60km).}
+\label{fig:AriadnePercent60}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/Ariadne100}
+\caption{Total interaction shift by node for Ariadne (100km).}
+\label{fig:Ariadne100}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/AriadnePercent100}
+\caption{Percent total interaction shift by node for Ariadne (100km).}
+\label{fig:AriadnePercent100}
+\end{figure}
+
+
 
 \section{Agent-based Model}
 
@@ -852,7 +915,7 @@ High transitivity values suggest strong neighborhood effects within all of the A
 Similarly, the agent-based model network-level metric results converged to steady values within 25 models runs. While Poggio Civitate does not appear to be highly connected it does seem to be central to the northern settlements. On average the model results suggest that Murlo would have maintained 2-3 incoming edges and about 3 outgoing edges. Though the agent-based model has produced the most promising evidence for Murlo as a central node the interaction quantity maintained over its edges would still have been among the weakest within the system. Even if Poggio Civitate did sustain connections with as many as six other settlements it was likely not fostering strong affiliations. PageRank and HITS values are very small and therefore do not indicate that Murlo was serving an important central function.
 
 \paragraph{}
-Visually, the networks from this model seem to be resulting in communities with higher connectivities. Transitivity values show that there is some association between neighbors. Overall, these networks are less connected than previous models, which is supported by a smaller average degree. The removal of Murlo does not seem to suggest any strong fluctuations within the system. Minor decreases in the average degree and beta index suggest slightly less connectivity while small increases in the gamma index suggest higher connectivity. All of these variations are small and do not provide strong evidence towards and real transformations of the network. Similarly to the Ariadne results the mixed evidence is likely due to noise generated from the stochastic nature of the model. 
+Visually, the networks from this model seem to be resulting in communities with higher connectivities. Transitivity values show that there is some association between neighbors. Overall, these networks are less connected than previous models, which is supported by a smaller average degree. The removal of Murlo does not seem to suggest any strong fluctuations within the system. Minor decreases in the average degree and beta index suggest slightly less connectivity while small increases in the gamma index suggest higher connectivity. All of these variations are small and do not provide strong evidence towards any real transformations of the network. Similar to the Ariadne results the mixed evidence is likely due to noise generated from the stochastic nature of the model. Individual nodes are split between interaction gains and loses and most variations occurring at less than 10 percent deviations. Nodes 18, 19, and 20 show moderate increases around 15-20 percent while node 24 shows intense gains of about 50 percent. Likewise, 7 and 11 have the highest loses which approaches 20 percent. 
 
 \subsubsection{Before}
 
@@ -866,9 +929,9 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Agent Model (Before) & -0.03900133 & 5.0	& 8.3136 & 0.43295384 &	0.1732 & 4.1568	& 0.166272 \\ 
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Agent Model (Before) & -0.03900133 & 5.0	& 8.3136 & 0.43295384 & 4.1568	& 0.166272 \\ 
 \hline 
 \end{tabular} 
 \end{figure}
@@ -876,33 +939,33 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	268.8800	&	235.3600	&	5.0000	&	3.5200	&	0.74000000	&	0.20116159	&	0.27213437	&	0.35633480	\\
-\hline	1	&	252.7200	&	222.3600	&	7.0000	&	4.2800	&	0.61904762	&	0.18596166	&	0.28471034	&	0.29682130	\\
-\hline	2	&	84.6000	&	87.0000	&	5.0000	&	4.2400	&	0.50000000	&	0.05479031	&	0.00688518	&	0.00568801	\\
-\hline	3	&	73.8400	&	77.1200	&	3.0000	&	3.0000	&	0.66666667	&	0.04913631	&	0.00196484	&	0.00214724	\\
-\hline	4	&	26.9200	&	31.9200	&	5.0000	&	4.1600	&	0.20000000	&	0.02688070	&	0.00030261	&	0.00009308	\\
-\hline	5	&	12.9600	&	17.9600	&	5.8000	&	5.7200	&	0.33863781	&	0.01715167	&	0.00009261	&	0.00012245	\\
-\hline	6	&	10.3200	&	15.3200	&	2.4400	&	5.1600	&	0.35904762	&	0.01464954	&	0.01140266	&	0.00029078	\\
-\hline	7	&	9.1200	&	13.8800	&	4.0400	&	4.2000	&	0.36209524	&	0.01425532	&	0.01648979	&	0.00502421	\\
-\hline	8	&	7.5600	&	12.5200	&	3.4000	&	5.4800	&	0.52339683	&	0.01281434	&	0.00000104	&	0.00000039	\\
-\hline	9	&	24.2400	&	26.8000	&	5.6000	&	4.0400	&	0.69504762	&	0.02329927	&	0.03309842	&	0.02744999	\\
-\hline	10	&	5.5200	&	10.5200	&	3.0800	&	4.7600	&	0.56800000	&	0.01080427	&	0.00000177	&	0.00000036	\\
-\hline	11	&	5.7600	&	10.7200	&	3.2000	&	4.4000	&	0.52133333	&	0.01145565	&	0.00000112	&	0.00000585	\\
-\hline	12	&	6.0400	&	10.8800	&	3.1600	&	4.0000	&	0.70666667	&	0.01133522	&	0.00000173	&	0.00000011	\\
-\hline	13	&	223.5600	&	194.9200	&	7.6000	&	6.0000	&	0.57285714	&	0.16549250	&	0.25261614	&	0.26289842	\\
-\hline	14	&	85.5600	&	86.4800	&	8.0000	&	5.4000	&	0.39571429	&	0.06104593	&	0.08582814	&	0.03723831	\\
-\hline	15	&	32.0400	&	36.2800	&	4.5200	&	3.2000	&	0.44800000	&	0.02433631	&	0.00220370	&	0.00178417	\\
-\hline	16	&	3.6800	&	8.6800	&	2.5200	&	3.1600	&	0.30666667	&	0.00896006	&	0.00011064	&	0.00001616	\\
-\hline	17	&	5.7600	&	10.7600	&	1.0000	&	1.0000	&	0.00000000	&	0.01010698	&	0.00000425	&	0.00000882	\\
-\hline	18	&	20.9600	&	25.9600	&	5.8000	&	4.8000	&	0.30543434	&	0.02543693	&	0.01577961	&	0.00001974	\\
-\hline	19	&	7.8800	&	12.8000	&	3.5200	&	5.6800	&	0.42914286	&	0.01263052	&	0.00000167	&	0.00000015	\\
-\hline	20	&	7.2000	&	12.1600	&	3.8000	&	4.8000	&	0.54885714	&	0.01221435	&	0.00000113	&	0.00001020	\\
-\hline	21	&	7.1600	&	11.9200	&	4.1200	&	2.8000	&	0.48723810	&	0.01275270	&	0.01624084	&	0.00398420	\\
-\hline	22	&	7.9200	&	12.8800	&	2.0000	&	2.0000	&	0.00000000	&	0.01208800	&	0.00000397	&	0.00000625	\\
-\hline	23	&	4.9600	&	9.9600	&	3.1200	&	5.1200	&	0.29520635	&	0.01091704	&	0.00007750	&	0.00001999	\\
-\hline	24	&	4.8400	&	4.8400	&	2.2000	&	3.0000	&	0.50666667	&	0.01032283	&	0.00004596	&	0.00003502	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	268.8800	&	235.3600	&	5.0000	&	3.5200	&	0.20116159	&	0.27213437	&	0.35633480	\\
+\hline	1	&	252.7200	&	222.3600	&	7.0000	&	4.2800	&	0.18596166	&	0.28471034	&	0.29682130	\\
+\hline	2	&	84.6000	&	87.0000	&	5.0000	&	4.2400	&	0.05479031	&	0.00688518	&	0.00568801	\\
+\hline	3	&	73.8400	&	77.1200	&	3.0000	&	3.0000	&	0.04913631	&	0.00196484	&	0.00214724	\\
+\hline	4	&	26.9200	&	31.9200	&	5.0000	&	4.1600	&	0.02688070	&	0.00030261	&	0.00009308	\\
+\hline	5	&	12.9600	&	17.9600	&	5.8000	&	5.7200	&	0.01715167	&	0.00009261	&	0.00012245	\\
+\hline	6	&	10.3200	&	15.3200	&	2.4400	&	5.1600	&	0.01464954	&	0.01140266	&	0.00029078	\\
+\hline	7	&	9.1200	&	13.8800	&	4.0400	&	4.2000	&	0.01425532	&	0.01648979	&	0.00502421	\\
+\hline	8	&	7.5600	&	12.5200	&	3.4000	&	5.4800	&	0.01281434	&	0.00000104	&	0.00000039	\\
+\hline	9	&	24.2400	&	26.8000	&	5.6000	&	4.0400	&	0.02329927	&	0.03309842	&	0.02744999	\\
+\hline	10	&	5.5200	&	10.5200	&	3.0800	&	4.7600	&	0.01080427	&	0.00000177	&	0.00000036	\\
+\hline	11	&	5.7600	&	10.7200	&	3.2000	&	4.4000	&	0.01145565	&	0.00000112	&	0.00000585	\\
+\hline	12	&	6.0400	&	10.8800	&	3.1600	&	4.0000	&	0.01133522	&	0.00000173	&	0.00000011	\\
+\hline	13	&	223.5600	&	194.9200	&	7.6000	&	6.0000	&	0.16549250	&	0.25261614	&	0.26289842	\\
+\hline	14	&	85.5600	&	86.4800	&	8.0000	&	5.4000	&	0.06104593	&	0.08582814	&	0.03723831	\\
+\hline	15	&	32.0400	&	36.2800	&	4.5200	&	3.2000	&	0.02433631	&	0.00220370	&	0.00178417	\\
+\hline	16	&	3.6800	&	8.6800	&	2.5200	&	3.1600	&	0.00896006	&	0.00011064	&	0.00001616	\\
+\hline	17	&	5.7600	&	10.7600	&	1.0000	&	1.0000	&	0.01010698	&	0.00000425	&	0.00000882	\\
+\hline	18	&	20.9600	&	25.9600	&	5.8000	&	4.8000	&	0.02543693	&	0.01577961	&	0.00001974	\\
+\hline	19	&	7.8800	&	12.8000	&	3.5200	&	5.6800	&	0.01263052	&	0.00000167	&	0.00000015	\\
+\hline	20	&	7.2000	&	12.1600	&	3.8000	&	4.8000	&	0.01221435	&	0.00000113	&	0.00001020	\\
+\hline	21	&	7.1600	&	11.9200	&	4.1200	&	2.8000	&	0.01275270	&	0.01624084	&	0.00398420	\\
+\hline	22	&	7.9200	&	12.8800	&	2.0000	&	2.0000	&	0.01208800	&	0.00000397	&	0.00000625	\\
+\hline	23	&	4.9600	&	9.9600	&	3.1200	&	5.1200	&	0.01091704	&	0.00007750	&	0.00001999	\\
+\hline	24	&	4.8400	&	4.8400	&	2.2000	&	3.0000	&	0.01032283	&	0.00004596	&	0.00003502	\\
 \hline 
 \end{tabular} 
 \end{figure}
@@ -919,9 +982,9 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline Agent Model (After) & -0.02370421 & 5.0 & 7.9744 & 0.44168669 & 0.18057971 & 4.15333333 & 0.17305556 \\ 
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Agent Model (After) & -0.02370421 & 5.0 & 7.9744 & 0.44168669 & 4.15333333 & 0.17305556 \\ 
 \hline 
 \end{tabular} 
 \end{figure}
@@ -929,47 +992,74 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}[H]
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	Transitivityq	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	276.0400	&	242.0000	&	5.0000	&	2.9200	&	0.74000000	&	0.20667059	&	0.27516427	&	0.35770363	\\
-\hline	1	&	254.9600	&	223.4800	&	7.0000	&	3.8400	&	0.60761905	&	0.18786417	&	0.28145215	&	0.29851473	\\
-\hline	2	&	73.8800	&	77.5600	&	4.0000	&	4.0000	&	0.50000000	&	0.04860014	&	0.00605907	&	0.00559860	\\
-\hline	3	&	64.0800	&	68.3600	&	3.0000	&	3.0000	&	0.66666667	&	0.04413701	&	0.00148406	&	0.00142513	\\
-\hline	4	&	27.6400	&	32.4800	&	4.0000	&	4.0000	&	0.16666667	&	0.02751972	&	0.00025992	&	0.00009594	\\
-\hline	5	&	12.8800	&	17.8800	&	6.0400	&	5.3200	&	0.39977778	&	0.01752550	&	0.00003045	&	0.00013090	\\
-\hline	6	&	11.6800	&	16.6800	&	2.2000	&	5.2000	&	0.32761905	&	0.01611379	&	0.01251641	&	0.00054420	\\
-\hline	7	&	7.1600	&	12.1600	&	3.6400	&	4.1200	&	0.35114286	&	0.01230714	&	0.01444776	&	0.00272638	\\
-\hline	8	&	8.4800	&	13.3600	&	4.0400	&	5.0000	&	0.55311111	&	0.01372132	&	0.00000107	&	0.00000038	\\
-\hline	9	&	26.7600	&	28.7600	&	5.0800	&	4.0800	&	0.69923810	&	0.02518492	&	0.03464417	&	0.02987861	\\
-\hline	10	&	6.2800	&	11.2400	&	3.4000	&	4.8400	&	0.60628571	&	0.01175978	&	0.00000163	&	0.00000024	\\
-\hline	11	&	4.2400	&	9.2400	&	2.6400	&	4.4400	&	0.53333333	&	0.01008040	&	0.00000061	&	0.00000030	\\
-\hline	12	&	5.8000	&	10.7600	&	3.0000	&	4.5200	&	0.68800000	&	0.01139420	&	0.00000154	&	0.00000015	\\
-\hline	13	&	230.8400	&	200.4000	&	7.6400	&	5.8800	&	0.56428571	&	0.17007393	&	0.25537514	&	0.26237901	\\
-\hline	14	&	86.3200	&	88.5600	&	8.0000	&	5.0000	&	0.40428571	&	0.06153044	&	0.08244504	&	0.03534963	\\
-\hline	15	&	29.1600	&	33.7200	&	3.8400	&	3.0400	&	0.52666667	&	0.02266485	&	0.00209317	&	0.00221989	\\
-\hline	16	&	0.0000	&	0.0000	&	999	&	999	&	999	&	999	&	999	&	999	\\
-\hline	17	&	6.0800	&	11.0800	&	1.0000	&	1.0000	&	0.00000000	&	0.01065550	&	0.00000445	&	0.00000777	\\
-\hline	18	&	24.3200	&	29.3200	&	6.0000	&	4.5200	&	0.32096970	&	0.02741361	&	0.01860784	&	0.00000198	\\
-\hline	19	&	9.6400	&	14.4800	&	4.1600	&	4.7200	&	0.52000000	&	0.01456341	&	0.00000150	&	0.00000011	\\
-\hline	20	&	9.3200	&	14.3200	&	4.8400	&	4.6000	&	0.66514286	&	0.01433156	&	0.00000092	&	0.00001689	\\
-\hline	21	&	6.5600	&	11.3600	&	4.2000	&	2.8800	&	0.48171429	&	0.01171616	&	0.01529332	&	0.00336850	\\
-\hline	22	&	8.1600	&	13.0800	&	2.0000	&	1.8000	&	0.00000000	&	0.01293553	&	0.00000434	&	0.00000313	\\
-\hline	23	&	4.8400	&	9.8400	&	2.7200	&	5.5600	&	0.33720635	&	0.01060208	&	0.00006222	&	0.00000047	\\
-\hline	24	&	4.8800	&	9.8800	&	2.2400	&	5.4000	&	0.47600000	&	0.01063426	&	0.00004895	&	0.00003342	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	276.0400	&	242.0000	&	5.0000	&	2.9200 &	0.20667059	&	0.27516427	&	0.35770363	\\
+\hline	1	&	254.9600	&	223.4800	&	7.0000	&	3.8400	&	0.18786417	&	0.28145215	&	0.29851473	\\
+\hline	2	&	73.8800	&	77.5600	&	4.0000	&	4.0000	&	0.04860014	&	0.00605907	&	0.00559860	\\
+\hline	3	&	64.0800	&	68.3600	&	3.0000	&	3.0000	&	0.04413701	&	0.00148406	&	0.00142513	\\
+\hline	4	&	27.6400	&	32.4800	&	4.0000	&	4.0000	&	0.02751972	&	0.00025992	&	0.00009594	\\
+\hline	5	&	12.8800	&	17.8800	&	6.0400	&	5.3200	&	0.01752550	&	0.00003045	&	0.00013090	\\
+\hline	6	&	11.6800	&	16.6800	&	2.2000	&	5.2000	&	0.01611379	&	0.01251641	&	0.00054420	\\
+\hline	7	&	7.1600	&	12.1600	&	3.6400	&	4.1200	&	0.01230714	&	0.01444776	&	0.00272638	\\
+\hline	8	&	8.4800	&	13.3600	&	4.0400	&	5.0000	&	0.01372132	&	0.00000107	&	0.00000038	\\
+\hline	9	&	26.7600	&	28.7600	&	5.0800	&	4.0800	&	0.02518492	&	0.03464417	&	0.02987861	\\
+\hline	10	&	6.2800	&	11.2400	&	3.4000	&	4.8400	&	0.01175978	&	0.00000163	&	0.00000024	\\
+\hline	11	&	4.2400	&	9.2400	&	2.6400	&	4.4400	&	0.01008040	&	0.00000061	&	0.00000030	\\
+\hline	12	&	5.8000	&	10.7600	&	3.0000	&	4.5200	&	0.01139420	&	0.00000154	&	0.00000015	\\
+\hline	13	&	230.8400	&	200.4000	&	7.6400	&	5.8800	&	0.17007393	&	0.25537514	&	0.26237901	\\
+\hline	14	&	86.3200	&	88.5600	&	8.0000	&	5.0000	&	0.06153044	&	0.08244504	&	0.03534963	\\
+\hline	15	&	29.1600	&	33.7200	&	3.8400	&	3.0400	&	0.02266485	&	0.00209317	&	0.00221989	\\
+\hline	16	&	0.0000	&	0.0000	&	999	&	999	&	999	&	999	&	999	\\
+\hline	17	&	6.0800	&	11.0800	&	1.0000	&	1.0000	&	0.01065550	&	0.00000445	&	0.00000777	\\
+\hline	18	&	24.3200	&	29.3200	&	6.0000	&	4.5200	&	0.02741361	&	0.01860784	&	0.00000198	\\
+\hline	19	&	9.6400	&	14.4800	&	4.1600	&	4.7200	&	0.01456341	&	0.00000150	&	0.00000011	\\
+\hline	20	&	9.3200	&	14.3200	&	4.8400	&	4.6000	&	0.01433156	&	0.00000092	&	0.00001689	\\
+\hline	21	&	6.5600	&	11.3600	&	4.2000	&	2.8800	&	0.01171616	&	0.01529332	&	0.00336850	\\
+\hline	22	&	8.1600	&	13.0800	&	2.0000	&	1.8000	&	0.01293553	&	0.00000434	&	0.00000313	\\
+\hline	23	&	4.8400	&	9.8400	&	2.7200	&	5.5600	&	0.01060208	&	0.00006222	&	0.00000047	\\
+\hline	24	&	4.8800	&	9.8800	&	2.2400	&	5.4000	&	0.01063426	&	0.00004895	&	0.00003342	\\
 \hline
 \end{tabular} 
 \end{figure}
 
+\subsubsection{Interaction Shifts}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/Agent}
+\caption{Total interaction shift by node for agent-based model.}
+\label{fig:Agent}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{../NodeDeviations/AgentPercent}
+\caption{Percent total interaction shift by node for agent-based model.}
+\label{fig:AgentPercent}
+\end{figure}
+
+
+
 \chapter{Discussion}
 \section{Implications for Poggio Civitate and Etruria}
--overall results pertaining to murlo
--make the point that there is no reason to tweak paramaters after removal of murlo (not like thera)
--state that models should be rerun with attention to particular nodes for finer and more accurate results
+\paragraph{}
+None of the models in this research indicate that Poggio Civitate was a highly connected central node within a larger network. Only within the context of the agent-based model did this geographically centrally located settlement command mild network centrality and even then it was not enough to drastically alter the network once the site was destroyed. It is therefore important to differentiate between these two concepts. Given Murlo's size and the collective distances required to travel to other settlements it is highly unlikely that it leveraged any natural geographic advantages. Individual node metrics such as PageRank and HITS did not show any signs that Poggio Civitate was punching above its weight and therefore maintained high levels of interaction despite its relatively smaller size. Instead, it seems probable that the elite society which dwelt upon the hilltop site enjoyed relative autonomy. 
+\paragraph{}
+In every model the connections Murlo held with other settlements was always among the weakest levels in interactions throughout the system and would be representative of loose affiliations. Those in control could have exploited these limited relationships in order to grow their authority and power. It is also clear that the distances prescribed within the models to differentiate between walking and horseback transportation will give different results. The agent-based model suggests those limited to walking would have been at a severe disadvantage for participating in the wider network, especially in the north. Similarly, the Ariadne networks with higher distance thresholds (100km) resulted in higher connectivity. If access to horses can be seen as a luxury only for those with elite status than it is also possible to differentiate between varying interaction networks within a society depending on social hierarchy. Moreover, the Ariadne results suggest that networks governed less by spatial restrictions may have been less resilient and that removing nodes could have a larger impact on overall interaction sustainability. Arguably, the total decrease in interaction could call for a complete system shift which would require model parameter changes that result in a much less connected network similar to the research completed concerning Thera in the Greek Mediterranean during the Bronze Age \citeyearpar{KnaRivEva11}.      
+
+\paragraph{}
+It is intriguing that in two different scenarios (radiation model and Ariadne (60km)) node number 5 (Chiusi) gained significant interaction increases. This provides initial evidence towards a motive for the destruction of Murlo. In order to further test the theory that Chiusi eliminated the society at Poggio Civitate in order to better situate itself in the regional network it will be necessary to continue testing the stochastic models and collect further results. It would also be interesting to observe whether or not patterns emerge suggesting relationships between Poggio Civitate's demise and any other settlement's rise.
+  
 
 \section{Comparing and Contrasting the Models}
--add in a point about parameters in the 100km ariadne run regarding different transportation technologies
+\paragraph{}
+Each model used in this research returned spatial interaction networks which were similar in their general structure. This suggests that their was certainly a spatial component to each model that was successfully being captured. Nevertheless, the different analytical frameworks produced unique results each with their own characteristics.  
 
-\section{Simulating Networks - Limitations - Future Work}
+-Assortativity
+
+\section{Limitations - Future Work}
+-filtering
 -agent model should have considered starting agent populations in proportion to starting size
 -change importance calculation to be local (iteration) rather than global (entire simulation) the number of visitors
 -data limitations
@@ -977,15 +1067,20 @@ Visually, the networks from this model seem to be resulting in communities with 
 
 \chapter{Conclusion}
 
+\begin{singlespace}
 \bibliographystyle{apa-good}
 \bibliography{bibfile}
+\end{singlespace}
 
-\appendix
+{\newgeometry{left=1.4in,right=.75in,top=1in,bottom=1in, includehead, includefoot}
+\begin{appendices}
+\restoregeometry
+\chapter{}
 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{../SlopeReclass}
-\caption{}
+\caption{Study region slope reclassified according to energy costs.}
 \label{fig:slopeReclass}
 \end{figure}
 
@@ -1068,70 +1163,70 @@ Visually, the networks from this model seem to be resulting in communities with 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta001_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta002_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta003_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta004_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta005_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta007_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta009_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta001_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta002_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta003_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta004_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta005_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta007_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/PPA/lcptest_PPA-beta009_r0_sl50_j0}
 \caption{A-G: PPA results for $k$ equals 1, 2, 3, 4, 5, 7, and 9.}
 \label{fig:PPA}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D25_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D50_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D75_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D85_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D100_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D125_r0_sl50_j0}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D150_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D25_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D50_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D75_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D85_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D100_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D125_r0_sl50_j0}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/MDN/lcptest_MDN-D150_r0_sl50_j0}
 \caption{A-G: MDN results for distance thresholds of 25km, 50km, 75km, 85km, 100km, 125km, and 150km.}
 \label{fig:MDN}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/1lcptest_j-02_00-m00_100-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/2lcptest_j-01_00-m00_100-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/3lcptest_j-04_00-m00_100-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/4lcptest_j-02_00-m000_00-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/5lcptest_j-02_00-m00_200-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/6lcptest_j-02_00-m00_100-k00_500-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/7lcptest_j-02_00-m00_100-k002_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/8lcptest_j-02_00-m00_100-k001_00-l002_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/9lcptest_j-02_00-m00_100-k001_00-l008_00}
-\caption{}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/1lcptest_j-02_00-m00_100-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/2lcptest_j-01_00-m00_100-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/3lcptest_j-04_00-m00_100-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/4lcptest_j-02_00-m000_00-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/5lcptest_j-02_00-m00_200-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/6lcptest_j-02_00-m00_100-k00_500-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/7lcptest_j-02_00-m00_100-k002_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/8lcptest_j-02_00-m00_100-k001_00-l002_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/60/9lcptest_j-02_00-m00_100-k001_00-l008_00}
+\caption{Parameterization of Ariadne (60km).}
 \label{fig:60kmAll}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/1lcptest_j-02_00-m00_100-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/2lcptest_j-01_00-m00_100-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/3lcptest_j-04_00-m00_100-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/4lcptest_j-02_00-m000_00-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/5lcptest_j-02_00-m00_200-k001_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/6lcptest_j-02_00-m00_100-k00_500-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/7lcptest_j-02_00-m00_100-k002_00-l004_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/8lcptest_j-02_00-m00_100-k001_00-l002_00}
-\includegraphics[width=0.35\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/9lcptest_j-02_00-m00_100-k001_00-l008_00}
-\caption{}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/1lcptest_j-02_00-m00_100-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/2lcptest_j-01_00-m00_100-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/3lcptest_j-04_00-m00_100-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/4lcptest_j-02_00-m000_00-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/5lcptest_j-02_00-m00_200-k001_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/6lcptest_j-02_00-m00_100-k00_500-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/7lcptest_j-02_00-m00_100-k002_00-l004_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/8lcptest_j-02_00-m00_100-k001_00-l002_00}
+\includegraphics[width=0.3\linewidth]{../ExploratoryModelAnalysis/Ariadne/100/9lcptest_j-02_00-m00_100-k001_00-l008_00}
+\caption{Parameterization of Ariadne (100km).}
 \label{fig:100kmAll}
 \end{figure}
 
 \begin{figure}
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline	5	&	-0.05140299	&	4.40000000	&	11.68000000	&	0.70671354	&	0.24333333	&	5.84000000	&	0.23360000	\\
-\hline	10	&	-0.05091950	&	4.20000000	&	11.71200000	&	0.71293931	&	0.24400000	&	5.85600000	&	0.23424000	\\
-\hline	15	&	-0.05081230	&	4.20000000	&	11.64266667	&	0.70496897	&	0.24255556	&	5.82133333	&	0.23285333	\\
-\hline	20	&	-0.05107444	&	4.20000000	&	11.63600000	&	0.70794023	&	0.24241667	&	5.81800000	&	0.23272000	\\
-\hline	25	&	-0.05119454	&	4.16000000	&	11.62880000	&	0.70893446	&	0.24226667	&	5.81440000	&	0.23257600	\\ 
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline	5	&	-0.05140299	&	4.40000000	&	11.68000000	&	0.70671354	&	5.84000000	&	0.23360000	\\
+\hline	10	&	-0.05091950	&	4.20000000	&	11.71200000	&	0.71293931	&	5.85600000	&	0.23424000	\\
+\hline	15	&	-0.05081230	&	4.20000000	&	11.64266667	&	0.70496897	&	5.82133333	&	0.23285333	\\
+\hline	20	&	-0.05107444	&	4.20000000	&	11.63600000	&	0.70794023	&	5.81800000	&	0.23272000	\\
+\hline	25	&	-0.05119454	&	4.16000000	&	11.62880000	&	0.70893446	&	5.81440000	&	0.23257600	\\ 
 \hline 
 \end{tabular}
 \caption{Network-level metric results for 25 runs (Ariadne - Before - 60km)}
@@ -1141,13 +1236,13 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline	5	&	-0.05526671	&	3.00000000	&	12.14400000	&	0.73106504	&	0.25300000	&	6.07200000	&	0.24288000	\\
-\hline	10	&	-0.05538473	&	3.00000000	&	11.84800000	&	0.69957622	&	0.24683333	&	5.92400000	&	0.23696000	\\
-\hline	15	&	-0.05541665	&	3.13333333	&	11.96800000	&	0.70008067	&	0.24933333	&	5.98400000	&	0.23936000	\\
-\hline	20	&	-0.05569742	&	3.10000000	&	11.63600000	&	0.69305360	&	0.24241667	&	5.81800000	&	0.23272000	\\
-\hline	25	&	-0.05581519	&	3.12000000	&	11.65760000	&	0.69901818	&	0.24286667	&	5.82880000	&	0.23315200	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline	5	&	-0.05526671	&	3.00000000	&	12.14400000	&	0.73106504	&	6.07200000	&	0.24288000	\\
+\hline	10	&	-0.05538473	&	3.00000000	&	11.84800000	&	0.69957622	&	5.92400000	&	0.23696000	\\
+\hline	15	&	-0.05541665	&	3.13333333	&	11.96800000	&	0.70008067	&	5.98400000	&	0.23936000	\\
+\hline	20	&	-0.05569742	&	3.10000000	&	11.63600000	&	0.69305360	&	5.81800000	&	0.23272000	\\
+\hline	25	&	-0.05581519	&	3.12000000	&	11.65760000	&	0.69901818	&	5.82880000	&	0.23315200	\\
 \hline 
 \end{tabular}
 \caption{Network-level metric results for 25 runs (Ariadne - Before - 100km)}
@@ -1157,13 +1252,13 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline	5	&	-0.05294613	&	4.60000000	&	11.42400000	&	0.71058266	&	0.25869565	&	5.95000000	&	0.24791667	\\
-\hline	10	&	-0.05346564	&	4.50000000	&	11.18400000	&	0.71911467	&	0.25326087	&	5.82500000	&	0.24270833	\\
-\hline	15	&	-0.05322030	&	4.33333333	&	11.24266667	&	0.72488791	&	0.25458937	&	5.85555556	&	0.24398148	\\
-\hline	20	&	-0.05322119	&	4.25000000	&	11.37600000	&	0.72831435	&	0.25760870	&	5.92500000	&	0.24687500	\\
-\hline	25	&	-0.05325428	&	4.24000000	&	11.31520000	&	0.72501267	&	0.25623188	&	5.89333333	&	0.24555556	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline	5	&	-0.05294613	&	4.60000000	&	11.42400000	&	0.71058266	&	5.95000000	&	0.24791667	\\
+\hline	10	&	-0.05346564	&	4.50000000	&	11.18400000	&	0.71911467	&	5.82500000	&	0.24270833	\\
+\hline	15	&	-0.05322030	&	4.33333333	&	11.24266667	&	0.72488791	&	5.85555556	&	0.24398148	\\
+\hline	20	&	-0.05322119	&	4.25000000	&	11.37600000	&	0.72831435	&	5.92500000	&	0.24687500	\\
+\hline	25	&	-0.05325428	&	4.24000000	&	11.31520000	&	0.72501267	&	5.89333333	&	0.24555556	\\
 \hline 
 \end{tabular}
 \caption{Network-level metric results for 25 runs (Ariadne - After - 60km)}
@@ -1173,29 +1268,42 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline	5	&	-0.05840201	&	3.20000000	&	10.46400000	&	0.66037357	&	0.23695652	&	5.45000000	&	0.22708333	\\
-\hline	10	&	-0.05642575	&	3.10000000	&	10.87200000	&	0.67265716	&	0.24619565	&	5.66250000	&	0.23593750	\\
-\hline	15	&	-0.05726372	&	3.06666667	&	11.03466667	&	0.69067383	&	0.24987923	&	5.74722222	&	0.23946759	\\
-\hline	20	&	-0.05687748	&	3.10000000	&	11.01200000	&	0.68319655	&	0.24936594	&	5.73541667	&	0.23897569	\\
-\hline	25	&	-0.05695306	&	3.08000000	&	10.91840000	&	0.67954338	&	0.24724638	&	5.68666667	&	0.23694444	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline	5	&	-0.05840201	&	3.20000000	&	10.46400000	&	0.66037357	&	5.45000000	&	0.22708333	\\
+\hline	10	&	-0.05642575	&	3.10000000	&	10.87200000	&	0.67265716	&	5.66250000	&	0.23593750	\\
+\hline	15	&	-0.05726372	&	3.06666667	&	11.03466667	&	0.69067383	&	5.74722222	&	0.23946759	\\
+\hline	20	&	-0.05687748	&	3.10000000	&	11.01200000	&	0.68319655	&	5.73541667	&	0.23897569	\\
+\hline	25	&	-0.05695306	&	3.08000000	&	10.91840000	&	0.67954338	&	5.68666667	&	0.23694444	\\
 \hline 
 \end{tabular}
 \caption{Network-level metric results for 25 runs (Ariadne - After - 100km)}
 \label{fig:ConvergeAriadneA100} 
 \end{figure}
 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.35\linewidth]{../BeforeViz/agentTest1}
+\includegraphics[width=0.35\linewidth]{../BeforeViz/agentTest2}
+\includegraphics[width=0.35\linewidth]{../BeforeViz/agentTest3}
+\includegraphics[width=0.35\linewidth]{../BeforeViz/agentTest4}
+\includegraphics[width=0.35\linewidth]{../BeforeViz/agentTest5}
+\caption{Five sample model runs for the agent model.}
+\label{fig:agentFluctuations}
+\end{figure}
+
+
 \begin{figure}
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline	5	&	-0.04980000	&	5.00000000	&	8.37000000	&	0.43800000	&	0.17400000	&	4.18000000	&	0.16700000	\\
-\hline	10	&	-0.04030000	&	5.00000000	&	8.36000000	&	0.44100000	&	0.17400000	&	4.18000000	&	0.16700000	\\
-\hline	15	&	-0.03890000	&	5.00000000	&	8.42000000	&	0.43600000	&	0.17500000	&	4.21000000	&	0.16800000	\\
-\hline	20	&	-0.04120000	&	5.00000000	&	8.39000000	&	0.43500000	&	0.17500000	&	4.20000000	&	0.16800000	\\
-\hline	25	&	-0.03900133	&	5.00000000	&	8.31360000	&	0.43295384	&	0.17320000	&	4.15680000	&	0.16627200	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline	5	&	-0.04980000	&	5.00000000	&	8.37000000	&	0.43800000	&	4.18000000	&	0.16700000	\\
+\hline	10	&	-0.04030000	&	5.00000000	&	8.36000000	&	0.44100000	&	4.18000000	&	0.16700000	\\
+\hline	15	&	-0.03890000	&	5.00000000	&	8.42000000	&	0.43600000	&	4.21000000	&	0.16800000	\\
+\hline	20	&	-0.04120000	&	5.00000000	&	8.39000000	&	0.43500000	&	4.20000000	&	0.16800000	\\
+\hline	25	&	-0.03900133	&	5.00000000	&	8.31360000	&	0.43295384	&	4.15680000	&	0.16627200	\\
 \hline 
 \end{tabular}
 \caption{Network-level metric results for 25 runs (Agent Model - Before)}
@@ -1205,17 +1313,20 @@ Visually, the networks from this model seem to be resulting in communities with 
 \begin{figure}
 \centering
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
-\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Density & Beta & Gamma \\ 
-\hline	5	-0.02416639	&	5.00000000	&	7.93600000	&	0.43904952	&	0.17971014	&	4.13333333	&	0.17222222	\\
-\hline	10	-0.02245842	&	5.00000000	&	7.92000000	&	0.43448981	&	0.17934783	&	4.12500000	&	0.17187500	\\
-\hline	15	-0.02198818	&	5.00000000	&	7.94666667	&	0.43704930	&	0.17995169	&	4.13888889	&	0.17245370	\\
-\hline	20	-0.02568726	&	5.00000000	&	7.96000000	&	0.44110698	&	0.18025362	&	4.14583333	&	0.17274306	\\
-\hline	25	-0.02370421	&	5.00000000	&	7.97440000	&	0.44168669	&	0.18057971	&	4.15333333	&	0.17305556	\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline Run Number & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline	5 &	-0.02416639	&	5.00000000	&	7.93600000	&	0.43904952 &	4.13333333	&	0.17222222	\\
+\hline	10 & -0.02245842	&	5.00000000	&	7.92000000	&	0.43448981	&	4.12500000	&	0.17187500	\\
+\hline	15 & -0.02198818	&	5.00000000	&	7.94666667	&	0.43704930	&	4.13888889	&	0.17245370	\\
+\hline	20 & -0.02568726	&	5.00000000	&	7.96000000	&	0.44110698	&	4.14583333	&	0.17274306	\\
+\hline	25 & -0.02370421	&	5.00000000	&	7.97440000	&	0.44168669	&	4.15333333	&	0.17305556	\\
 \hline 
 \end{tabular}
 \caption{Network-level metric results for 25 runs (Agent Model - After)}
 \label{fig:ConvergeAgentA} 
 \end{figure}
+
+
+\end{appendices}
 
 \end{document}}
