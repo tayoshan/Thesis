@@ -73,7 +73,7 @@
 \contentsline {subsubsection}{Degree Centrality}{49}
 \contentsline {paragraph}{}{49}
 \contentsline {subsubsection}{PageRank}{49}
-\contentsline {paragraph}{title}{49}
+\contentsline {paragraph}{}{49}
 \contentsline {subsubsection}{HITS (Authorities and Hubs)}{49}
 \contentsline {paragraph}{}{49}
 \contentsline {subsection}{\numberline {4.3.2}Network-level Metrics}{50}
@@ -82,8 +82,8 @@
 \contentsline {paragraph}{}{50}
 \contentsline {subsubsection}{Assortativity Coefficient (Degree and Size)}{50}
 \contentsline {paragraph}{}{50}
-\contentsline {subsubsection}{Diameter}{51}
-\contentsline {paragraph}{}{51}
+\contentsline {subsubsection}{Diameter}{50}
+\contentsline {paragraph}{}{50}
 \contentsline {subsubsection}{Transitivity/Average Clustering}{51}
 \contentsline {paragraph}{}{51}
 \contentsline {subsubsection}{Beta Index}{51}
