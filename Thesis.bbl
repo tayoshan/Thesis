@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{51}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -108,6 +108,11 @@ Graham, S. (2008).
 Harvey, D. (2006).
 \newblock {\em David Harvey: A Critical Reader\/}, chap. Space As a Keyword.
 \newblock United Kingdom: Blackwell.
+
+\bibitem[{Haynes \& Fotheringham(1984)}]{FotHay}
+Haynes, K.~E., \& Fotheringham, A.~S. (1984).
+\newblock {\em Gravity and Spatial Interaction Models\/}.
+\newblock Beverly Hills: Sage.
 
 \bibitem[{Hodder(2003)}]{Hod03}
 Hodder, I. (2003).

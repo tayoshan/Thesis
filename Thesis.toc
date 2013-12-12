@@ -33,13 +33,13 @@
 \contentsline {section}{\numberline {2.5}Spatial Interaction Modeling in Classical Archaeology}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {paragraph}{}{26}
-\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{27}
 \contentsline {paragraph}{}{28}
 \contentsline {paragraph}{}{29}
-\contentsline {paragraph}{}{29}
-\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{}{30}
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{32}
+\contentsline {paragraph}{}{33}
 \contentsline {chapter}{\numberline {3.}Problem Statement and Hypothesis}{34}
 \contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{34}
@@ -47,14 +47,14 @@
 \contentsline {chapter}{\numberline {4.}Methodology}{36}
 \contentsline {section}{\numberline {4.1}Data}{36}
 \contentsline {paragraph}{}{36}
-\contentsline {paragraph}{}{37}
 \contentsline {paragraph}{}{39}
 \contentsline {paragraph}{}{39}
-\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{41}
-\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{41}
-\contentsline {paragraph}{}{41}
+\contentsline {paragraph}{}{39}
+\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{42}
+\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{42}
 \contentsline {paragraph}{}{42}
 \contentsline {paragraph}{}{42}
+\contentsline {paragraph}{}{43}
 \contentsline {subsection}{\numberline {4.2.2}Radiation Model}{43}
 \contentsline {paragraph}{}{43}
 \contentsline {subsection}{\numberline {4.2.3}Ariadne Model}{44}
@@ -70,27 +70,27 @@
 \contentsline {paragraph}{}{48}
 \contentsline {subsubsection}{Interaction Strength}{48}
 \contentsline {paragraph}{}{48}
-\contentsline {subsubsection}{Degree Centrality}{48}
-\contentsline {paragraph}{}{48}
+\contentsline {subsubsection}{Degree Centrality}{49}
+\contentsline {paragraph}{}{49}
 \contentsline {subsubsection}{PageRank}{49}
 \contentsline {paragraph}{title}{49}
 \contentsline {subsubsection}{HITS (Authorities and Hubs)}{49}
 \contentsline {paragraph}{}{49}
-\contentsline {subsection}{\numberline {4.3.2}Network-level Metrics}{49}
-\contentsline {paragraph}{}{49}
+\contentsline {subsection}{\numberline {4.3.2}Network-level Metrics}{50}
+\contentsline {paragraph}{}{50}
 \contentsline {subsubsection}{Average Node Degree}{50}
 \contentsline {paragraph}{}{50}
 \contentsline {subsubsection}{Assortativity Coefficient (Degree and Size)}{50}
 \contentsline {paragraph}{}{50}
-\contentsline {subsubsection}{Diameter}{50}
-\contentsline {paragraph}{}{50}
+\contentsline {subsubsection}{Diameter}{51}
+\contentsline {paragraph}{}{51}
 \contentsline {subsubsection}{Transitivity/Average Clustering}{51}
 \contentsline {paragraph}{}{51}
 \contentsline {subsubsection}{Beta Index}{51}
 \contentsline {paragraph}{}{51}
 \contentsline {subsubsection}{Gamma Index}{51}
 \contentsline {paragraph}{}{51}
-\contentsline {paragraph}{}{51}
+\contentsline {paragraph}{}{52}
 \contentsline {chapter}{\numberline {5.}Results}{53}
 \contentsline {paragraph}{}{53}
 \contentsline {section}{\numberline {5.1}Radiation Model}{53}
@@ -123,4 +123,4 @@
 \contentsline {section}{\numberline {6.3}Limitations - Future Work}{69}
 \contentsline {chapter}{\numberline {7.}Conclusion}{70}
 \contentsline {chapter}{Appendices}{75}
-\contentsline {chapter}{\numberline {A.}}{76}
+\contentsline {chapter}{\numberline {A.}Appendix A}{76}
