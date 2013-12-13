@@ -37,15 +37,15 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Study region slope reclassified according to energy costs.}}{77}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces A-G: PPA results for $k$ equals 1, 2, 3, 4, 5, 7, and 9.}}{78}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces A-G: MDN results for distance thresholds of 25km, 50km, 75km, 85km, 100km, 125km, and 150km.}}{79}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Parameterization of Ariadne (60km).}}{80}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Parameterization of Ariadne (100km).}}{81}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 60km)}}{81}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 100km)}}{81}
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 60km)}}{82}
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 100km)}}{82}
-\contentsline {figure}{\numberline {A.10}{\ignorespaces Five sample model runs for the agent model.}}{83}
-\contentsline {figure}{\numberline {A.11}{\ignorespaces Network-level metric results for 25 runs (Agent Model - Before)}}{83}
-\contentsline {figure}{\numberline {A.12}{\ignorespaces Network-level metric results for 25 runs (Agent Model - After)}}{84}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Study region slope reclassified according to energy costs.}}{78}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces A-G: PPA results for $k$ equals 1, 2, 3, 4, 5, 7, and 9.}}{79}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces A-G: MDN results for distance thresholds of 25km, 50km, 75km, 85km, 100km, 125km, and 150km.}}{80}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Parameterization of Ariadne (60km).}}{81}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Parameterization of Ariadne (100km).}}{82}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 60km)}}{82}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 100km)}}{82}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 60km)}}{83}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 100km)}}{83}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Five sample model runs for the agent model.}}{84}
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Network-level metric results for 25 runs (Agent Model - Before)}}{84}
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Network-level metric results for 25 runs (Agent Model - After)}}{85}
