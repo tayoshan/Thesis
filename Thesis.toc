@@ -1,128 +1,127 @@
-\contentsline {chapter}{\numberline {1.}Introduction}{7}
-\contentsline {section}{\numberline {1.1}General Overview}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {paragraph}{}{7}
+\contentsline {chapter}{\numberline {1.}Introduction}{8}
+\contentsline {section}{\numberline {1.1}General Overview}{8}
 \contentsline {paragraph}{}{8}
 \contentsline {paragraph}{}{8}
 \contentsline {paragraph}{}{8}
 \contentsline {paragraph}{}{9}
-\contentsline {chapter}{\numberline {2.}Literature Review}{11}
-\contentsline {section}{\numberline {2.1}History of the Etruscans and Poggio Civitate}{11}
-\contentsline {paragraph}{}{11}
-\contentsline {paragraph}{}{13}
-\contentsline {paragraph}{}{13}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{10}
+\contentsline {chapter}{\numberline {2.}Literature Review}{12}
+\contentsline {section}{\numberline {2.1}History of the Etruscans and Poggio Civitate}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{14}
 \contentsline {paragraph}{}{14}
 \contentsline {paragraph}{}{15}
 \contentsline {paragraph}{}{16}
 \contentsline {paragraph}{}{17}
-\contentsline {paragraph}{}{17}
-\contentsline {paragraph}{}{17}
 \contentsline {paragraph}{}{18}
-\contentsline {section}{\numberline {2.2}Spatial Interaction Theory In Archaeology and Within Etruria}{19}
+\contentsline {paragraph}{}{18}
+\contentsline {paragraph}{}{18}
 \contentsline {paragraph}{}{19}
-\contentsline {paragraph}{}{19}
+\contentsline {section}{\numberline {2.2}Spatial Interaction Theory In Archaeology and Within Etruria}{20}
 \contentsline {paragraph}{}{20}
-\contentsline {section}{\numberline {2.3}Modern Transportation Geographic Theory}{21}
+\contentsline {paragraph}{}{20}
 \contentsline {paragraph}{}{21}
+\contentsline {section}{\numberline {2.3}Modern Transportation Geographic Theory}{22}
 \contentsline {paragraph}{}{22}
-\contentsline {section}{\numberline {2.4}Spatial Interaction Theory and Modeling}{22}
-\contentsline {paragraph}{}{22}
+\contentsline {paragraph}{}{23}
+\contentsline {section}{\numberline {2.4}Spatial Interaction Theory and Modeling}{23}
 \contentsline {paragraph}{}{23}
 \contentsline {paragraph}{}{24}
 \contentsline {paragraph}{}{25}
-\contentsline {section}{\numberline {2.5}Spatial Interaction Modeling in Classical Archaeology}{25}
-\contentsline {paragraph}{}{25}
+\contentsline {paragraph}{}{26}
+\contentsline {section}{\numberline {2.5}Spatial Interaction Modeling in Classical Archaeology}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {paragraph}{}{27}
 \contentsline {paragraph}{}{28}
-\contentsline {paragraph}{}{28}
+\contentsline {paragraph}{}{29}
 \contentsline {paragraph}{}{29}
 \contentsline {paragraph}{}{30}
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{32}
-\contentsline {chapter}{\numberline {3.}Problem Statement and Hypothesis}{33}
 \contentsline {paragraph}{}{33}
-\contentsline {paragraph}{}{33}
+\contentsline {chapter}{\numberline {3.}Problem Statement and Hypothesis}{34}
 \contentsline {paragraph}{}{34}
-\contentsline {chapter}{\numberline {4.}Methodology}{35}
-\contentsline {section}{\numberline {4.1}Data}{35}
+\contentsline {paragraph}{}{34}
 \contentsline {paragraph}{}{35}
-\contentsline {paragraph}{}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {paragraph}{}{38}
-\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{41}
-\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{41}
-\contentsline {paragraph}{}{41}
+\contentsline {chapter}{\numberline {4.}Methodology}{36}
+\contentsline {section}{\numberline {4.1}Data}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {paragraph}{}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{42}
+\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{42}
 \contentsline {paragraph}{}{42}
-\contentsline {paragraph}{}{42}
-\contentsline {subsection}{\numberline {4.2.2}Radiation Model}{43}
 \contentsline {paragraph}{}{43}
-\contentsline {subsection}{\numberline {4.2.3}Ariadne Model}{43}
 \contentsline {paragraph}{}{43}
+\contentsline {subsection}{\numberline {4.2.2}Radiation Model}{44}
 \contentsline {paragraph}{}{44}
-\contentsline {paragraph}{}{46}
-\contentsline {paragraph}{}{46}
-\contentsline {subsection}{\numberline {4.2.4}Agent-based Model}{46}
-\contentsline {paragraph}{}{46}
+\contentsline {subsection}{\numberline {4.2.3}Ariadne Model}{44}
+\contentsline {paragraph}{}{44}
+\contentsline {paragraph}{}{45}
 \contentsline {paragraph}{}{47}
-\contentsline {section}{\numberline {4.3}Network Analysis Metrics}{49}
-\contentsline {subsection}{\numberline {4.3.1}Node-level Metrics}{49}
-\contentsline {paragraph}{}{49}
-\contentsline {subsubsection}{Interaction Strength}{49}
-\contentsline {paragraph}{}{49}
-\contentsline {subsubsection}{Degree Centrality}{50}
+\contentsline {paragraph}{}{47}
+\contentsline {subsection}{\numberline {4.2.4}Agent-based Model}{47}
+\contentsline {paragraph}{}{47}
+\contentsline {paragraph}{}{48}
+\contentsline {section}{\numberline {4.3}Network Analysis Metrics}{50}
+\contentsline {subsection}{\numberline {4.3.1}Node-level Metrics}{50}
 \contentsline {paragraph}{}{50}
-\contentsline {subsubsection}{PageRank}{50}
+\contentsline {subsubsection}{Interaction Strength}{50}
 \contentsline {paragraph}{}{50}
-\contentsline {subsubsection}{HITS (Authorities and Hubs)}{50}
-\contentsline {paragraph}{}{50}
-\contentsline {subsection}{\numberline {4.3.2}Network-level Metrics}{51}
+\contentsline {subsubsection}{Degree Centrality}{51}
 \contentsline {paragraph}{}{51}
-\contentsline {subsubsection}{Average Node Degree}{51}
+\contentsline {subsubsection}{PageRank}{51}
 \contentsline {paragraph}{}{51}
-\contentsline {subsubsection}{Assortativity Coefficient (Degree and Size)}{51}
+\contentsline {subsubsection}{HITS (Authorities and Hubs)}{51}
 \contentsline {paragraph}{}{51}
-\contentsline {subsubsection}{Diameter}{51}
-\contentsline {paragraph}{}{51}
-\contentsline {subsubsection}{Transitivity/Average Clustering}{52}
+\contentsline {subsection}{\numberline {4.3.2}Network-level Metrics}{52}
 \contentsline {paragraph}{}{52}
-\contentsline {subsubsection}{Beta Index}{52}
+\contentsline {subsubsection}{Average Node Degree}{52}
 \contentsline {paragraph}{}{52}
-\contentsline {subsubsection}{Gamma Index}{52}
+\contentsline {subsubsection}{Assortativity Coefficient (Degree and Size)}{52}
 \contentsline {paragraph}{}{52}
+\contentsline {subsubsection}{Diameter}{52}
+\contentsline {paragraph}{}{52}
+\contentsline {subsubsection}{Transitivity/Average Clustering}{53}
 \contentsline {paragraph}{}{53}
-\contentsline {chapter}{\numberline {5.}Results}{54}
+\contentsline {subsubsection}{Beta Index}{53}
+\contentsline {paragraph}{}{53}
+\contentsline {subsubsection}{Gamma Index}{53}
+\contentsline {paragraph}{}{53}
 \contentsline {paragraph}{}{54}
-\contentsline {section}{\numberline {5.1}Radiation Model}{54}
-\contentsline {paragraph}{}{54}
-\contentsline {paragraph}{}{54}
-\contentsline {subsubsection}{Before}{56}
-\contentsline {subsubsection}{After}{58}
-\contentsline {subsubsection}{Interaction Shifts}{59}
-\contentsline {section}{\numberline {5.2}Ariadne Model}{60}
-\contentsline {paragraph}{}{60}
-\contentsline {paragraph}{}{60}
-\contentsline {subsubsection}{Before - 60km}{62}
-\contentsline {subsubsection}{Before - 100km}{64}
-\contentsline {subsubsection}{After - 60km}{66}
-\contentsline {subsubsection}{After - 100km}{68}
-\contentsline {subsubsection}{Interaction Shifts}{69}
-\contentsline {section}{\numberline {5.3}Agent-based Model}{71}
-\contentsline {paragraph}{}{71}
-\contentsline {paragraph}{}{71}
-\contentsline {subsubsection}{Before}{72}
-\contentsline {subsubsection}{After}{74}
-\contentsline {subsubsection}{Interaction Shifts}{75}
-\contentsline {chapter}{\numberline {6.}Discussion}{77}
-\contentsline {section}{\numberline {6.1}Implications for Poggio Civitate and Etruria}{77}
-\contentsline {paragraph}{}{77}
-\contentsline {paragraph}{}{77}
-\contentsline {paragraph}{}{78}
-\contentsline {section}{\numberline {6.2}Comparing and Contrasting the Models}{78}
-\contentsline {paragraph}{}{78}
-\contentsline {paragraph}{}{78}
-\contentsline {section}{\numberline {6.3}Limitations - Future Work}{79}
-\contentsline {chapter}{\numberline {7.}Conclusion}{80}
-\contentsline {chapter}{Appendices}{85}
-\contentsline {chapter}{\numberline {A.}Appendix A}{86}
+\contentsline {chapter}{\numberline {5.}Results}{55}
+\contentsline {paragraph}{}{55}
+\contentsline {section}{\numberline {5.1}Radiation Model}{55}
+\contentsline {paragraph}{}{55}
+\contentsline {paragraph}{}{55}
+\contentsline {subsubsection}{Before}{57}
+\contentsline {subsubsection}{After}{59}
+\contentsline {subsubsection}{Interaction Shifts}{60}
+\contentsline {section}{\numberline {5.2}Ariadne Model}{61}
+\contentsline {paragraph}{}{61}
+\contentsline {paragraph}{}{61}
+\contentsline {subsubsection}{Before - 60km}{63}
+\contentsline {subsubsection}{Before - 100km}{65}
+\contentsline {subsubsection}{After - 60km}{67}
+\contentsline {subsubsection}{After - 100km}{69}
+\contentsline {subsubsection}{Interaction Shifts}{70}
+\contentsline {section}{\numberline {5.3}Agent-based Model}{72}
+\contentsline {paragraph}{}{72}
+\contentsline {paragraph}{}{72}
+\contentsline {subsubsection}{Before}{74}
+\contentsline {subsubsection}{After}{76}
+\contentsline {subsubsection}{Interaction Shifts}{77}
+\contentsline {chapter}{\numberline {6.}Discussion}{79}
+\contentsline {section}{\numberline {6.1}Implications for Poggio Civitate and Etruria}{79}
+\contentsline {paragraph}{}{79}
+\contentsline {paragraph}{}{79}
+\contentsline {paragraph}{}{80}
+\contentsline {section}{\numberline {6.2}Comparing and Contrasting the Models}{80}
+\contentsline {paragraph}{}{80}
+\contentsline {paragraph}{}{80}
+\contentsline {section}{\numberline {6.3}Limitations - Future Work}{81}
+\contentsline {chapter}{\numberline {7.}Conclusion}{82}
+\contentsline {chapter}{Appendix \numberline {A.}}{87}
