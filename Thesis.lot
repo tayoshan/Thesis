@@ -2,7 +2,26 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sites used in the study and their attributes.}}{37}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Energy cost of walking and running on different slopes ($J\cdot kg^{-1}\cdot m^{-1}$).}}{39}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Cost classification for each slope range.}}{40}
 \addvspace {10pt}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Network metrics for radiation model before the destruction of Murlo}}{56}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Node metrics for radiation model before the destruction of Murlo}}{57}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Network metrics for radiation model after the destruction of Murlo}}{58}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Node metrics for radiation model after the destruction of Murlo}}{59}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Network metrics for Ariadne (60km) model before the destruction of Murlo.}}{62}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Node metrics for Ariadne (60km) model before the destruction of Murlo.}}{63}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Network metrics for Ariadne (100km) model before the destruction of Murlo}}{64}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Node metrics for Ariadne (100km) model before the destruction of Murlo.}}{65}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Network metrics for Ariadne (60km) model after the destruction of Murlo.}}{66}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Node metrics for Ariadne (60km) model after the destruction of Murlo.}}{67}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Network metrics for Ariadne (100km) model after the destruction of Murlo.}}{68}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Node metrics for Ariadne (100) model after the destruction of Murlo.}}{69}
+\contentsline {table}{\numberline {5.13}{\ignorespaces Network metrics for agent model before the destruction of Murlo.}}{73}
+\contentsline {table}{\numberline {5.14}{\ignorespaces Node metrics for Agent model before the destruction of Murlo.}}{73}
+\contentsline {table}{\numberline {5.15}{\ignorespaces Network metrics for Agent model after the destruction of Murlo.}}{74}
+\contentsline {table}{\numberline {5.16}{\ignorespaces Node metrics for Agent model after the destruction of Murlo.}}{75}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
