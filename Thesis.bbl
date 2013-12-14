@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{52}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -53,9 +53,11 @@ Eckbo, G. (1969).
 
 \bibitem[{Edlund-Berry(1994)}]{IEB94}
 Edlund-Berry, I.~M. (1994).
-\newblock {\em Murlo and the Etruscans: Art and Society in Ancient Etruria\/},
-  (pp. 16--28).
-\newblock Madison: University of Wisconsin Press.
+\newblock Ritual destruction of cities and sanctuaries: The "un-founding" of
+  the archaic monumental building at poggio civitate (murlo).
+\newblock In R.~De~Puma, \& J.~Small (Eds.) {\em Murlo and the Etruscans: Art
+  and Society in Ancient Etruria\/}, (pp. 16--28). Madison: University of
+  Wisconsin Press.
 
 \bibitem[{Etherington(2011)}]{Eth11}
 Etherington, T.~R. (2011).
@@ -113,6 +115,11 @@ Haynes, K.~E., \& Fotheringham, A.~S. (1984).
 Hodder, I. (2003).
 \newblock {\em Archaeology Beyond Dialogue\/}.
 \newblock Salt Lake City: University of Utah Press.
+
+\bibitem[{Izzet(2007)}]{Ize07}
+Izzet, V. (2007).
+\newblock {\em The Archaeology of Etruscan Society\/}.
+\newblock New York: Cambridge University Press.
 
 \bibitem[{Kantner(2008)}]{Kantner08}
 Kantner, J. (2008).
@@ -193,25 +200,32 @@ Page, L., Brin, S., Motwani, R., \& Winograd, T. (1999).
 
 \bibitem[{Pena(2011)}]{Pen11}
 Pena, T.~J. (2011).
-\newblock {\em State Formation in Italy and Greece: Questioning the
-  Neoevolutionist Paradigm\/}, chap. State Formation in Souther Coastal
-  Etruria: An Application of the Kipp-Schrotman Model, (pp. 162--178).
-\newblock Oxford: Oxbow Books.
+\newblock State formation in souther coastal etruria: An application of the
+  kipp-schrotman model.
+\newblock In N.~Terrenato, \& D.~C. Higgins (Eds.) {\em State Formation in
+  Italy and Greece: Questioning the Neoevolutionist Paradigm\/}, (pp.
+  162--178). Oxford: Oxbow Books.
 
 \bibitem[{Renfrew \& Level(1979)}]{RenLev79}
 Renfrew, A.~C., \& Level, E.~V. (1979).
-\newblock {\em Transformation: Mathematical approaches to Culture Change\/}.
-\newblock New York: Academic Press.
+\newblock Exploring dominance: Preciting polities from centres.
+\newblock In {\em Transformation: Mathematical approaches to Culture Change\/}.
+  New York: Academic Press.
 
 \bibitem[{Renfrew(1975)}]{Ren75}
 Renfrew, C. (1975).
-\newblock {\em Ancient Civilizations and Trade\/}.
-\newblock Albuquerque: School of American Research - University of New Mexico.
+\newblock Trade as an action at a distance: Questions of interaction and
+  communication.
+\newblock In J.~A. Savbloff, \& C.~C. Lamberg-Karlovsky (Eds.) {\em Ancient
+  Civilizations and Trade\/}. Albuquerque: School of American Research -
+  University of New Mexico.
 
 \bibitem[{Rihll \& Wilson(1991)}]{RihWil91}
 Rihll, T., \& Wilson, A. (1991).
-\newblock {\em City and Country in the Ancient World\/}.
-\newblock 3. London: Routledge.
+\newblock Modelling settlement structures in ancient greece: New approaches to
+  the polis.
+\newblock In J.~Rich, \& A.~Wallace-Hadrill (Eds.) {\em City and Country in the
+  Ancient World\/}. London: Routledge.
 
 \bibitem[{Rodrigue et~al.(2006)Rodrigue, Comtois, \& Slack}]{RodComSla06}
 Rodrigue, J.-P., Comtois, C., \& Slack, B. (2006).
@@ -245,9 +259,10 @@ Spivy, N., \& Stoddart, S. (1992).
 
 \bibitem[{Stoddart \& Redhouse(2011)}]{StoRed11}
 Stoddart, S., \& Redhouse, D.~I. (2011).
-\newblock {\em State Formation in Italy and Greece: Questioning the
-  Neoevolutionist Paradigm\/}.
-\newblock Oxford: Oxbow Books.
+\newblock Mapping estruscan state formation.
+\newblock In N.~Terrenato, \& D.~C. Higgins (Eds.) {\em State Formation in
+  Italy and Greece: Questioning the Neoevolutionist Paradigm\/}. Oxford: Oxbow
+  Books.
 
 \bibitem[{Tuan(1976)}]{Tuan76}
 Tuan, Y.-F. (1976).
@@ -257,9 +272,11 @@ Tuan, Y.-F. (1976).
 
 \bibitem[{Tuck(2006)}]{Tuc06}
 Tuck, A. (2006).
-\newblock {\em Deliciae Fictiles III. Architectural Terracottas in Ancient
-  Italy\/}, (pp. 130--135).
-\newblock Oxbow Books.
+\newblock The social and political context of the 7th century architectural
+  terracottas from poggio civitate (murlo).
+\newblock In I.~Edlund-Berry, J.~F. Kentfield, \& G.~Greco (Eds.) {\em Deliciae
+  Fictiles III. Architectural Terracottas in Ancient Italy\/}, (pp. 130--135).
+  Oxbow Books.
 
 \bibitem[{Tuck et~al.(2010)Tuck, Brunk, Huntsman, \& Tallman}]{TucBruHunTal10}
 Tuck, A., Brunk, J., Huntsman, T., \& Tallman, H. (2010).
