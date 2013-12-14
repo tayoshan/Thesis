@@ -41,87 +41,84 @@
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{}{32}
 \contentsline {paragraph}{}{33}
-\contentsline {chapter}{\numberline {3.}Problem Statement and Hypothesis}{34}
-\contentsline {paragraph}{}{34}
-\contentsline {paragraph}{}{34}
+\contentsline {chapter}{\numberline {3.}Problem Statement and Hypothesis}{35}
 \contentsline {paragraph}{}{35}
-\contentsline {chapter}{\numberline {4.}Methodology}{36}
-\contentsline {section}{\numberline {4.1}Data}{36}
+\contentsline {paragraph}{}{35}
 \contentsline {paragraph}{}{36}
-\contentsline {paragraph}{}{39}
-\contentsline {paragraph}{}{39}
-\contentsline {paragraph}{}{39}
-\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{42}
-\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{42}
-\contentsline {paragraph}{}{42}
+\contentsline {chapter}{\numberline {4.}Methodology}{37}
+\contentsline {section}{\numberline {4.1}Data}{37}
+\contentsline {paragraph}{}{37}
+\contentsline {paragraph}{}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{43}
+\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{43}
 \contentsline {paragraph}{}{43}
-\contentsline {paragraph}{}{43}
-\contentsline {subsection}{\numberline {4.2.2}Radiation Model}{44}
 \contentsline {paragraph}{}{44}
-\contentsline {subsection}{\numberline {4.2.3}Ariadne Model}{44}
 \contentsline {paragraph}{}{44}
+\contentsline {subsection}{\numberline {4.2.2}Radiation Model}{45}
 \contentsline {paragraph}{}{45}
-\contentsline {paragraph}{}{47}
-\contentsline {paragraph}{}{47}
-\contentsline {subsection}{\numberline {4.2.4}Agent-based Model}{47}
-\contentsline {paragraph}{}{47}
+\contentsline {subsection}{\numberline {4.2.3}Ariadne Model}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {paragraph}{}{46}
 \contentsline {paragraph}{}{48}
-\contentsline {section}{\numberline {4.3}Network Analysis Metrics}{50}
-\contentsline {subsection}{\numberline {4.3.1}Node-level Metrics}{50}
-\contentsline {paragraph}{}{50}
-\contentsline {subsubsection}{Interaction Strength}{50}
-\contentsline {paragraph}{}{50}
-\contentsline {subsubsection}{Degree Centrality}{51}
+\contentsline {paragraph}{}{48}
+\contentsline {subsection}{\numberline {4.2.4}Agent-based Model}{48}
+\contentsline {paragraph}{}{48}
+\contentsline {paragraph}{}{49}
+\contentsline {section}{\numberline {4.3}Network Analysis Metrics}{51}
+\contentsline {subsection}{\numberline {4.3.1}Node-level Metrics}{51}
 \contentsline {paragraph}{}{51}
-\contentsline {subsubsection}{PageRank}{51}
+\contentsline {subsubsection}{Interaction Strength}{51}
 \contentsline {paragraph}{}{51}
-\contentsline {subsubsection}{HITS (Authorities and Hubs)}{51}
-\contentsline {paragraph}{}{51}
-\contentsline {subsection}{\numberline {4.3.2}Network-level Metrics}{52}
+\contentsline {subsubsection}{Degree Centrality}{52}
 \contentsline {paragraph}{}{52}
-\contentsline {subsubsection}{Average Node Degree}{52}
+\contentsline {subsubsection}{PageRank}{52}
 \contentsline {paragraph}{}{52}
-\contentsline {subsubsection}{Assortativity Coefficient (Degree and Size)}{52}
+\contentsline {subsubsection}{HITS (Authorities and Hubs)}{52}
 \contentsline {paragraph}{}{52}
-\contentsline {subsubsection}{Diameter}{52}
-\contentsline {paragraph}{}{52}
-\contentsline {subsubsection}{Transitivity/Average Clustering}{53}
+\contentsline {subsection}{\numberline {4.3.2}Network-level Metrics}{53}
 \contentsline {paragraph}{}{53}
-\contentsline {subsubsection}{Beta Index}{53}
+\contentsline {subsubsection}{Average Node Degree}{53}
 \contentsline {paragraph}{}{53}
-\contentsline {subsubsection}{Gamma Index}{53}
+\contentsline {subsubsection}{Assortativity Coefficient (Degree and Size)}{53}
 \contentsline {paragraph}{}{53}
+\contentsline {subsubsection}{Diameter}{53}
+\contentsline {paragraph}{}{53}
+\contentsline {subsubsection}{Transitivity/Average Clustering}{54}
+\contentsline {paragraph}{}{54}
+\contentsline {subsubsection}{Beta Index}{54}
+\contentsline {paragraph}{}{54}
+\contentsline {subsubsection}{Gamma Index}{54}
 \contentsline {paragraph}{}{54}
 \contentsline {chapter}{\numberline {5.}Results}{55}
 \contentsline {paragraph}{}{55}
 \contentsline {section}{\numberline {5.1}Radiation Model}{55}
 \contentsline {paragraph}{}{55}
 \contentsline {paragraph}{}{55}
-\contentsline {subsubsection}{Before}{57}
-\contentsline {subsubsection}{After}{59}
+\contentsline {subsubsection}{Visualizations}{57}
+\contentsline {subsubsection}{Metrics}{58}
 \contentsline {subsubsection}{Interaction Shifts}{60}
 \contentsline {section}{\numberline {5.2}Ariadne Model}{61}
 \contentsline {paragraph}{}{61}
 \contentsline {paragraph}{}{61}
-\contentsline {subsubsection}{Before - 60km}{63}
-\contentsline {subsubsection}{Before - 100km}{65}
-\contentsline {subsubsection}{After - 60km}{67}
-\contentsline {subsubsection}{After - 100km}{69}
+\contentsline {subsubsection}{Visualizations}{63}
+\contentsline {subsubsection}{Metrics}{66}
 \contentsline {subsubsection}{Interaction Shifts}{70}
 \contentsline {section}{\numberline {5.3}Agent-based Model}{72}
 \contentsline {paragraph}{}{72}
 \contentsline {paragraph}{}{72}
-\contentsline {subsubsection}{Before}{74}
-\contentsline {subsubsection}{After}{76}
-\contentsline {subsubsection}{Interaction Shifts}{77}
-\contentsline {chapter}{\numberline {6.}Discussion}{79}
-\contentsline {section}{\numberline {6.1}Implications for Poggio Civitate and Etruria}{79}
+\contentsline {subsubsection}{Visualizations}{73}
+\contentsline {subsubsection}{Metrics}{74}
+\contentsline {subsubsection}{Interaction Shifts}{76}
+\contentsline {chapter}{\numberline {6.}Discussion}{78}
+\contentsline {section}{\numberline {6.1}Implications for Poggio Civitate and Etruria}{78}
+\contentsline {paragraph}{}{78}
+\contentsline {paragraph}{}{78}
+\contentsline {paragraph}{}{79}
+\contentsline {section}{\numberline {6.2}Comparing and Contrasting the Models}{79}
 \contentsline {paragraph}{}{79}
 \contentsline {paragraph}{}{79}
-\contentsline {paragraph}{}{80}
-\contentsline {section}{\numberline {6.2}Comparing and Contrasting the Models}{80}
-\contentsline {paragraph}{}{80}
-\contentsline {paragraph}{}{80}
-\contentsline {section}{\numberline {6.3}Limitations - Future Work}{81}
-\contentsline {chapter}{\numberline {7.}Conclusion}{82}
-\contentsline {chapter}{Appendix \numberline {A.}}{87}
+\contentsline {section}{\numberline {6.3}Limitations - Future Work}{80}
+\contentsline {chapter}{\numberline {7.}Conclusion}{81}
+\contentsline {chapter}{Appendix \numberline {A.}}{86}
