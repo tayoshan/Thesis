@@ -1,32 +1,32 @@
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Map of Etruscan territory}}{13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces View of Poggio Civitate from the immediate periphery}}{15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Rendering of Orientalizing era (phase I) monumental architecture}}{16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Rendering of Archaic era (phase II) monumental architecture}}{16}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Rooftop decorations and statues}}{17}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Results from the XTENT model for Etruria}}{28}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Results from Rhil and Wilson's maximum entropy gravity model}}{31}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Map of Etruscan territory}}{12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces View of Poggio Civitate from the immediate periphery}}{14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Rendering of Orientalizing era (phase I) monumental architecture}}{15}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Rendering of Archaic era (phase II) monumental architecture}}{15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Rooftop decorations and statues}}{16}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Results from the XTENT model for Etruria}}{27}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Results from Rhil and Wilson's maximum entropy gravity model}}{30}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Study sites within their natural topographic (elevation) environment.}}{38}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Direct relationship between energy cost and slope for both walking and running (\citep {Min02}).}}{42}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Accumulated least-cost paths between all sites.}}{43}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Ariadne model runs with initial parameters for average journeys of 60km (A) and 100km (B)}}{48}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Disconnected network from agent-based framework (60km).}}{50}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Study sites within their natural topographic (elevation) environment.}}{37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Direct relationship between energy cost and slope for both walking and running (\citep {Min02}).}}{41}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Accumulated least-cost paths between all sites.}}{42}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ariadne model runs with initial parameters for average journeys of 60km (A) and 100km (B)}}{47}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Disconnected network from agent-based framework (60km).}}{49}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Visualization of a single radiation model run including Murlo.}}{57}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Visualization of a single radiation model run excluding Murlo.}}{58}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Total interaction shift by node for radiation model.}}{60}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Percent total interaction by node for radiation model.}}{61}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Visualization of a single Ariadne model run including Murlo (60km).}}{63}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Visualization of a single Ariadne model run including Murlo (100km).}}{64}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Visualization of a single Ariadne model run excluding Murlo (60km).}}{65}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Visualization of a single Ariadne model run excluding Murlo (100km).}}{66}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Total interaction shift by node for Ariadne (60km).}}{70}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Percent total interaction shift by node for Ariadne (60km).}}{71}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Total interaction shift by node for Ariadne (100km).}}{71}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Percent total interaction shift by node for Ariadne (100km).}}{72}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Visualization of a single radiation model run including Murlo.}}{56}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Visualization of a single radiation model run excluding Murlo.}}{57}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Total interaction shift by node for radiation model.}}{59}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Percent total interaction by node for radiation model.}}{60}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Visualization of a single Ariadne model run including Murlo (60km).}}{62}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Visualization of a single Ariadne model run including Murlo (100km).}}{63}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Visualization of a single Ariadne model run excluding Murlo (60km).}}{64}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Visualization of a single Ariadne model run excluding Murlo (100km).}}{65}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Total interaction shift by node for Ariadne (60km).}}{69}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Percent total interaction shift by node for Ariadne (60km).}}{70}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Total interaction shift by node for Ariadne (100km).}}{70}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Percent total interaction shift by node for Ariadne (100km).}}{71}
 \contentsline {figure}{\numberline {5.13}{\ignorespaces Visualization of a single agent-based model run including Murlo.}}{73}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Visualization of a single agent-based model run excluding Murlo.}}{74}
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Total interaction shift by node for agent-based model.}}{76}
