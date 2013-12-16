@@ -25,11 +25,11 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A.1}{\ignorespaces Least-cost path distances (km)}}{90}
-\contentsline {table}{\numberline {A.2}{\ignorespaces As the crow flies distances (km)}}{91}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 60km)}}{96}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 100km)}}{96}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 60km)}}{96}
-\contentsline {table}{\numberline {A.6}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 100km)}}{96}
-\contentsline {table}{\numberline {A.7}{\ignorespaces Network-level metric results for 25 runs (Agent Model - Before)}}{98}
-\contentsline {table}{\numberline {A.8}{\ignorespaces Network-level metric results for 25 runs (Agent Model - After)}}{98}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Least-cost path distances (km)}}{91}
+\contentsline {table}{\numberline {A.2}{\ignorespaces As the crow flies distances (km)}}{92}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 60km)}}{97}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 100km)}}{97}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 60km)}}{97}
+\contentsline {table}{\numberline {A.6}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 100km)}}{97}
+\contentsline {table}{\numberline {A.7}{\ignorespaces Network-level metric results for 25 runs (Agent Model - Before)}}{99}
+\contentsline {table}{\numberline {A.8}{\ignorespaces Network-level metric results for 25 runs (Agent Model - After)}}{99}

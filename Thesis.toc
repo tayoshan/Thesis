@@ -51,9 +51,9 @@
 \contentsline {paragraph}{}{40}
 \contentsline {paragraph}{}{40}
 \contentsline {paragraph}{}{40}
-\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{43}
-\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{43}
-\contentsline {paragraph}{}{43}
+\contentsline {section}{\numberline {4.2}Simulating Networks Using Spatial Interaction Models}{44}
+\contentsline {subsection}{\numberline {4.2.1}Preliminary Data Modeling}{44}
+\contentsline {paragraph}{}{44}
 \contentsline {paragraph}{}{44}
 \contentsline {paragraph}{}{44}
 \contentsline {subsection}{\numberline {4.2.2}Radiation Model}{45}
@@ -65,7 +65,7 @@
 \contentsline {paragraph}{}{47}
 \contentsline {subsection}{\numberline {4.2.4}Agent-based Model}{49}
 \contentsline {paragraph}{}{49}
-\contentsline {paragraph}{}{51}
+\contentsline {paragraph}{}{50}
 \contentsline {section}{\numberline {4.3}Network Analysis Metrics}{51}
 \contentsline {subsection}{\numberline {4.3.1}Node-level Metrics}{51}
 \contentsline {paragraph}{}{51}
@@ -124,11 +124,11 @@
 \contentsline {section}{\numberline {6.3}Limitations and Future Work}{81}
 \contentsline {paragraph}{}{81}
 \contentsline {paragraph}{}{81}
-\contentsline {paragraph}{}{81}
 \contentsline {paragraph}{}{82}
-\contentsline {chapter}{\numberline {7.}Conclusion}{83}
-\contentsline {paragraph}{}{83}
-\contentsline {paragraph}{}{83}
+\contentsline {paragraph}{}{82}
+\contentsline {chapter}{\numberline {7.}Conclusion}{84}
 \contentsline {paragraph}{}{84}
 \contentsline {paragraph}{}{84}
-\contentsline {chapter}{Appendix \numberline {A.}}{89}
+\contentsline {paragraph}{}{85}
+\contentsline {paragraph}{}{85}
+\contentsline {chapter}{Appendix \numberline {A.}}{90}
