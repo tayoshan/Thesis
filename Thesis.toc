@@ -79,8 +79,6 @@
 \contentsline {paragraph}{}{52}
 \contentsline {subsubsection}{Average Node Degree}{52}
 \contentsline {paragraph}{}{52}
-\contentsline {subsubsection}{Assortativity Coefficient (Degree and Size)}{52}
-\contentsline {paragraph}{}{52}
 \contentsline {subsubsection}{Diameter}{52}
 \contentsline {paragraph}{}{52}
 \contentsline {subsubsection}{Transitivity/Average Clustering}{53}

@@ -510,9 +510,6 @@ A core component of this study is to evaluate an entire network, which is repres
 \paragraph{}
 Average node degree is similar to the degree measure described previously, except that it does not distinguish between incoming and outgoing relationships. It is, in effect, an average for all degree values calculated for individual nodes. Higher degrees are associated with more connected networks.  
 
-\subsubsection{Assortativity Coefficient (Degree and Size)}
-\paragraph{}
-Assortativity measures the similarity of connections in the graph with respect to a given attribute. In this case, the relationship between connectivity and total interaction flowing through a node is being calculated. A higher coefficient means there is a stronger relationship between these two variables within the network \citep{New03a}. 
 
 \subsubsection{Diameter}
 \paragraph{}
@@ -570,9 +567,9 @@ A Medium transitivity value (Table \ref{tab:radNetBefore}) suggests that there i
 \centering
 \caption{Network metrics for radiation model before the destruction of Murlo}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Radiation Model (Before) & -0.06080357 & 5 & 8.72 & 0.44292804 & 4.36 & 0.1744 \\ 
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Radiation Model (Before) & 5 & 8.72 & 0.44292804 & 4.36 & 0.1744 \\ 
 \hline 
 \end{tabular} 
 \label{tab:radNetBefore}
@@ -621,9 +618,9 @@ A Medium transitivity value (Table \ref{tab:radNetBefore}) suggests that there i
 \centering
 \caption{Network metrics for radiation model after the destruction of Murlo}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Radiation Model (After) & -0.06149662 & 5 & 8.8 & 0.46039604 & 4.58333333 & 0.19097222 \\ 
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Radiation Model (After) & 5 & 8.8 & 0.46039604 & 4.58333333 & 0.19097222 \\ 
 \hline 
 \end{tabular} 
 \label{tab:radNetAfter}
@@ -732,9 +729,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \centering
 \caption{Network metrics for Ariadne (60km) model before the destruction of Murlo.}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Ariadne (Before: 60km) & -0.05119454	& 4.1600 & 11.6288 & 0.70893446 & 5.8144 & 0.232576\\ 
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (Before: 60km)	& 4.1600 & 11.6288 & 0.70893446 & 5.8144 & 0.232576\\ 
 \hline 
 \end{tabular} 
 \label{tab:ariadneNetBefore60}
@@ -784,9 +781,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \centering
 \caption{Network metrics for Ariadne (100km) model before the destruction of Murlo}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Ariadne (Before: 100km) & -0.05581519 & 3.12 & 11.6576	& 0.69901818 & 5.8288 & 0.233152 \\
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (Before: 100km) & 3.12 & 11.6576	& 0.69901818 & 5.8288 & 0.233152 \\
 \hline 
 \end{tabular} 
 \label{tab:ariadneNetBefore100}
@@ -835,9 +832,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \centering
 \caption{Network metrics for Ariadne (60km) model after the destruction of Murlo.}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Ariadne (After: 60km) & -0.05325428	& 4.24 & 11.3152	& 0.72501267 & 5.89333333 & 0.24555556 \\ 
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (After: 60km) & 4.24 & 11.3152	& 0.72501267 & 5.89333333 & 0.24555556 \\ 
 \hline 
 \end{tabular} 
 \label{tab:ariadneNetAfter60}
@@ -885,9 +882,9 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \centering
 \caption{Network metrics for Ariadne (100km) model after the destruction of Murlo.}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Ariadne (After: 100km) & -0.05695306	& 3.08 & 10.9184 & 0.67954338 & 5.68666667	& 0.23694444
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (After: 100km) & 3.08 & 10.9184 & 0.67954338 & 5.68666667	& 0.23694444
  \\ 
 \hline 
 \end{tabular} 
@@ -996,9 +993,9 @@ Visually, the networks from this model seem to result in communities with higher
 \centering
 \caption{Network metrics for agent model before the destruction of Murlo.}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Agent Model (Before) & -0.03900133 & 5.0	& 8.3136 & 0.43295384 & 4.1568	& 0.166272 \\ 
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Agent Model (Before) & 5.0	& 8.3136 & 0.43295384 & 4.1568	& 0.166272 \\ 
 \hline 
 \end{tabular} 
 \label{tab:agentNetBefore}
@@ -1046,9 +1043,9 @@ Visually, the networks from this model seem to result in communities with higher
 \centering
 \caption{Network metrics for Agent model after the destruction of Murlo.}
 \tiny
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline Metric & Assortativity & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Agent Model (After) & -0.02370421 & 5.0 & 7.9744 & 0.44168669 & 4.15333333 & 0.17305556 \\ 
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Agent Model (After) & 5.0 & 7.9744 & 0.44168669 & 4.15333333 & 0.17305556 \\ 
 \hline 
 \end{tabular} 
 \label{tab:agentNetAfter}
@@ -1133,8 +1130,6 @@ Within the context of this research, the radiation model produced networks with 
 
 \paragraph{}
 The agent-based model, while also susceptible to researcher's bias, is not as vulnerable since it's parameters proved to be resilient. Changing any of the model's variables resulted in networks which manifested similar structure. Instead, this model's main weakness is that it is the least grounded within spatial interaction theory. It is more difficult to derive specific theories pertaining to individuals than it is for a society as a whole. In effect, the equations used lack the rigorous derivation of other spatial interaction methods. This model, therefore, is best applied in conjunction with other models as it was within this research.   
-
--Assortativity
 
 \section{Limitations and Future Work}
 
