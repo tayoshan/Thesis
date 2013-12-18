@@ -1,5 +1,5 @@
 \documentclass[12pt,a4paper]{thesis}
-\usepackage[a4paper,left=1.4in,right=.75in,top=1in,bottom=.75in, includehead]{geometry}
+\usepackage[a4paper,left=1.4in,right=.75in,top=1in,bottom=.8in, includehead]{geometry}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -288,9 +288,9 @@ For all of the chosen models, the necessary data is a selection of settlements, 
 
 \footnotetext{http://www.getty.edu/research/tools/vocabularies/tgn/}
 
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.7\linewidth]{../Sites}
+\includegraphics[width=0.9\linewidth]{../Sites}
 \caption{Study sites within their natural topographic (elevation) environment.}
 \label{fig:Sites}
 \end{figure}
@@ -394,9 +394,9 @@ Since the distances between the sites are long enough to prohibit an average per
 
 Given the following assumptions, a general cost class was assigned to each slope range (Table \ref{tab:slopeClass}) to produce a cost or friction raster which was used as input to derive the least accumulated cost paths in origin-destination matrix format \citep{Eth11}. These calculated values (Appendix Table \ref{tab:LCP}) are all longer than the straight-line distances (Appendix Table \ref{tab:crowDist}) since they tend to closely gravitate towards areas with lower slopes. They represent the routes (Figure \ref{fig:LCPs}) which will require the least energy to be exerted without greatly deviating from the shortest possible path. Developing a distance measurement that is representative of a physical transportation network preserves the network's edges length units which enhances the ease with which the model results can be interpreted. Additionally, a non-abstract measure of distance preserves the ability of the data to be verified against both contemporary knowledge and future discoveries of ancient roads within the study region.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.9\linewidth]{../LCPs}
+\includegraphics[width=1.2\linewidth]{../LCPs}
 \caption{Accumulated least-cost paths between all sites.}
 \label{fig:LCPs}
 \end{figure}
@@ -699,17 +699,16 @@ High transitivity values suggest strong neighborhood effects within all of the A
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\linewidth]{./BeforeViz/ariadne100}
-\caption{Visualization of a single Ariadne model run including Murlo (100km).}
-\label{fig:ariadneB100}
-\end{figure}
-
-
-\begin{figure}[H]
-\centering
 \includegraphics[width=0.9\linewidth]{./AfterViz/ariadne60}
 \caption{Visualization of a single Ariadne model run excluding Murlo (60km).}
 \label{fig:ariadneA60}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{./BeforeViz/ariadne100}
+\caption{Visualization of a single Ariadne model run including Murlo (100km).}
+\label{fig:ariadneB100}
 \end{figure}
 
 
@@ -776,6 +775,55 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \end{table}
 
 
+\begin{table}[H]
+\centering
+\caption{Network metrics for Ariadne (60km) model after the destruction of Murlo.}
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
+\hline Ariadne (After: 60km) & 4.24 & 11.3152	& 0.72501267 & 5.89333333 & 0.24555556 \\ 
+\hline 
+\end{tabular} 
+\label{tab:ariadneNetAfter60}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Node metrics for Ariadne (60km) model after the destruction of Murlo.}
+\tiny
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
+\hline	0	&	5.16036156	&	10.47627292	&	8.8000	&	8.1200 &	0.06567145	&	0.19987111	&	0.08149631	\\
+\hline	1	&	5.23551720	&	11.09284644	&	9.0000	&	8.0000	&	0.06563621	&	0.22235560	&	0.08286413	\\
+\hline	2	&	4.09353752	&	4.00969188	&	6.1200	&	6.4400	&	0.04967571	&	0.02580089	&	0.03167777	\\
+\hline	3	&	2.89074720	&	4.70419836	&	4.5200	&	5.4400	&	0.04058895	&	0.02506704	&	0.00572947	\\
+\hline	4	&	2.78197232	&	2.62088708	&	4.4000	&	5.7600	&	0.03650362	&	0.00796128	&	0.00729260	\\
+\hline	5	&	1.96130524	&	1.66822824	&	7.3200	&	6.8000	&	0.05233911	&	0.01776381	&	0.00499504	\\
+\hline	6	&	4.68613712	&	2.23687204	&	10.2400	&	8.0400	&	0.05813292	&	0.03338689	&	0.07890425	\\
+\hline	7	&	5.93678260	&	2.06810156	&	9.4800	&	7.4800	&	0.06582744	&	0.02921817	&	0.11104847	\\
+\hline	8	&	0.89386664	&	0.81513760	&	5.7600	&	5.1600	&	0.03269063	&	0.00363226	&	0.00088401	\\
+\hline	9	&	5.63912128	&	2.09009756	&	6.2400	&	7.2400	&	0.05185054	&	0.03139406	&	0.13298361	\\
+\hline	10	&	0.05323988	&	0.31759552	&	0.7600	&	3.6000	&	0.00783581	&	0.00029367	&	0.00001598	\\
+\hline	11	&	0.17444720	&	0.36762904	&	1.6400	&	3.5200	&	0.01275970	&	0.00213306	&	0.00005358	\\
+\hline	12	&	0.21906448	&	0.37656312	&	2.2800	&	3.7200	&	0.01182928	&	0.00014320	&	0.00003602	\\
+\hline	13	&	7.58302480	&	10.38153036	&	12.6800	&	9.4000	&	0.08908923	&	0.17368731	&	0.14408559	\\
+\hline	14	&	7.05862416	&	7.22942652	&	12.8000	&	8.9600	&	0.08587737	&	0.12400177	&	0.10205289	\\
+\hline	15	&	2.77190060	&	1.63238884	&	4.1600	&	5.7200	&	0.03197597	&	0.01657326	&	0.01461682	\\
+\rowcolor{yellow}
+\hline	16	&	0.00000000	&	0.00000000	&	999.0000	&	999.0000	&	999	&	999	&	999	\\
+\hline	17	&	0.18248772	&	0.37659180	&	1.0000	&	2.3600	&	0.00857153	&	0.00049695	&	0.00019297	\\
+\hline	18	&	6.36680940	&	3.74639724	&	15.4400	&	7.9200	&	0.09275439	&	0.04109655	&	0.09139855	\\
+\hline	19	&	0.46389328	&	0.69044140	&	3.4000	&	4.2800	&	0.01935123	&	0.00093279	&	0.00021101	\\
+\hline	20	&	1.02280624	&	0.83296720	&	4.7200	&	4.4800	&	0.03604473	&	0.00268190	&	0.00103421	\\
+\hline	21	&	4.97287868	&	1.90607880	&	6.3600	&	7.0800	&	0.04788491	&	0.02784183	&	0.10603521	\\
+\hline	22	&	0.25915400	&	0.51584076	&	1.0000	&	3.3600	&	0.00957424	&	0.00069252	&	0.00028271	\\
+\hline	23	&	0.71327764	&	0.63059148	&	3.2400	&	4.9600	&	0.02103774	&	0.00866464	&	0.00204226	\\
+\hline	24	&	0.01100452	&	0.34558552	&	0.0800	&	3.6000	&	0.00649732	&	0.00430945	&	0.00006656	\\
+\hline 
+\end{tabular} 
+\label{tab:ariadneNodeAfter60}
+\end{table}
+
 
 \begin{table}[H]
 \centering
@@ -827,55 +875,6 @@ High transitivity values suggest strong neighborhood effects within all of the A
 \label{tab:ariadneNodeBefore100}
 \end{table}
 
-
-\begin{table}[H]
-\centering
-\caption{Network metrics for Ariadne (60km) model after the destruction of Murlo.}
-\tiny
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline Metric & Diameter & Average Degree & Transitivity & Beta & Gamma \\ 
-\hline Ariadne (After: 60km) & 4.24 & 11.3152	& 0.72501267 & 5.89333333 & 0.24555556 \\ 
-\hline 
-\end{tabular} 
-\label{tab:ariadneNetAfter60}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Node metrics for Ariadne (60km) model after the destruction of Murlo.}
-\tiny
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline	Node	&	Interaction In	&	Interaction Out	&	Degree In	&	Degree Out	&	PageRank	&	Hubs	&	Authorities	\\
-\hline	0	&	5.16036156	&	10.47627292	&	8.8000	&	8.1200 &	0.06567145	&	0.19987111	&	0.08149631	\\
-\hline	1	&	5.23551720	&	11.09284644	&	9.0000	&	8.0000	&	0.06563621	&	0.22235560	&	0.08286413	\\
-\hline	2	&	4.09353752	&	4.00969188	&	6.1200	&	6.4400	&	0.04967571	&	0.02580089	&	0.03167777	\\
-\hline	3	&	2.89074720	&	4.70419836	&	4.5200	&	5.4400	&	0.04058895	&	0.02506704	&	0.00572947	\\
-\hline	4	&	2.78197232	&	2.62088708	&	4.4000	&	5.7600	&	0.03650362	&	0.00796128	&	0.00729260	\\
-\hline	5	&	1.96130524	&	1.66822824	&	7.3200	&	6.8000	&	0.05233911	&	0.01776381	&	0.00499504	\\
-\hline	6	&	4.68613712	&	2.23687204	&	10.2400	&	8.0400	&	0.05813292	&	0.03338689	&	0.07890425	\\
-\hline	7	&	5.93678260	&	2.06810156	&	9.4800	&	7.4800	&	0.06582744	&	0.02921817	&	0.11104847	\\
-\hline	8	&	0.89386664	&	0.81513760	&	5.7600	&	5.1600	&	0.03269063	&	0.00363226	&	0.00088401	\\
-\hline	9	&	5.63912128	&	2.09009756	&	6.2400	&	7.2400	&	0.05185054	&	0.03139406	&	0.13298361	\\
-\hline	10	&	0.05323988	&	0.31759552	&	0.7600	&	3.6000	&	0.00783581	&	0.00029367	&	0.00001598	\\
-\hline	11	&	0.17444720	&	0.36762904	&	1.6400	&	3.5200	&	0.01275970	&	0.00213306	&	0.00005358	\\
-\hline	12	&	0.21906448	&	0.37656312	&	2.2800	&	3.7200	&	0.01182928	&	0.00014320	&	0.00003602	\\
-\hline	13	&	7.58302480	&	10.38153036	&	12.6800	&	9.4000	&	0.08908923	&	0.17368731	&	0.14408559	\\
-\hline	14	&	7.05862416	&	7.22942652	&	12.8000	&	8.9600	&	0.08587737	&	0.12400177	&	0.10205289	\\
-\hline	15	&	2.77190060	&	1.63238884	&	4.1600	&	5.7200	&	0.03197597	&	0.01657326	&	0.01461682	\\
-\rowcolor{yellow}
-\hline	16	&	0.00000000	&	0.00000000	&	999.0000	&	999.0000	&	999	&	999	&	999	\\
-\hline	17	&	0.18248772	&	0.37659180	&	1.0000	&	2.3600	&	0.00857153	&	0.00049695	&	0.00019297	\\
-\hline	18	&	6.36680940	&	3.74639724	&	15.4400	&	7.9200	&	0.09275439	&	0.04109655	&	0.09139855	\\
-\hline	19	&	0.46389328	&	0.69044140	&	3.4000	&	4.2800	&	0.01935123	&	0.00093279	&	0.00021101	\\
-\hline	20	&	1.02280624	&	0.83296720	&	4.7200	&	4.4800	&	0.03604473	&	0.00268190	&	0.00103421	\\
-\hline	21	&	4.97287868	&	1.90607880	&	6.3600	&	7.0800	&	0.04788491	&	0.02784183	&	0.10603521	\\
-\hline	22	&	0.25915400	&	0.51584076	&	1.0000	&	3.3600	&	0.00957424	&	0.00069252	&	0.00028271	\\
-\hline	23	&	0.71327764	&	0.63059148	&	3.2400	&	4.9600	&	0.02103774	&	0.00866464	&	0.00204226	\\
-\hline	24	&	0.01100452	&	0.34558552	&	0.0800	&	3.6000	&	0.00649732	&	0.00430945	&	0.00006656	\\
-\hline 
-\end{tabular} 
-\label{tab:ariadneNodeAfter60}
-\end{table}
 
 
 \begin{table}[H]
@@ -1109,59 +1108,59 @@ Visually, the networks from this model seem to result in communities with higher
 \chapter{Discussion}
 \section{Implications for Poggio Civitate and Etruria}
 \paragraph{}
-None of the models in this research indicate that Poggio Civitate was home to a highly connected central settlement within a larger network. Only within the context of the agent-based model did this geographically central settlement command mild network centrality, and even then it was not enough to drastically alter the network once the site was destroyed. It is therefore important to differentiate between these two concepts. Given Murlo's size and the collective distances required to travel to other settlements, it is highly unlikely that it leveraged any natural geographic advantages. Individual node metrics such as PageRank and HITS did not show any signs that Murlo was punching above its weight (maintained high levels of interaction despite its relatively smaller size). Instead, it seems probable that the elite society which dwelt upon the hilltop site enjoyed relative autonomy, which is in agreement with conclusions drawn in previous research \citep{StoRed11}. Upon the removal of Murlo, there were no 
+None of the models in this research indicate that Poggio Civitate was home to a highly connected central settlement within a larger network. Only within the context of the agent-based model did this geographically central settlement command mild network centrality, and even then it was not enough to drastically alter the network once the site was destroyed. It is therefore important to differentiate between geographic centrality and network centrality. Given Murlo's size and the distances required to travel to other settlements, it is highly unlikely that it leveraged any natural geographic advantages. Individual node metrics such as PageRank and HITS did not show any signs that Murlo was punching above its weight (maintained high levels of interaction despite its relatively smaller size). Instead, it seems probable that the elite society which dwelt upon the hilltop site enjoyed relative autonomy, which is in agreement with conclusions drawn in previous research (e.g., \citeauthor{StoRed11}, \citeyear{StoRed11}).
  
  
 \paragraph{}
-Within all models, the connections Murlo held with other settlements were always amongst the weakest interaction levels throughout the system and would be representative of loose affiliations. Those in control could have exploited these limited relationships in order to grow their authority and power. It is also clear that the distances prescribed within the models to differentiate between transportation by walking or horseback produced different results. The agent-based model suggests that those limited to walking would have been at a severe disadvantage for participating in the wider network, especially in the north. Similarly, the Ariadne networks with higher distance thresholds (100km) resulted in higher connectivity. If access to horses can be seen as a luxury, only for those with elite status, then it is also possible to differentiate between varying interaction networks within a society depending on social hierarchy. Moreover, the Ariadne (100km) results suggest that networks governed less by spatial restrictions may have been less resilient, and that removing nodes could have a larger impact on overall interaction sustainability. Arguably, the total decrease in interaction could call for a complete system shift, which would require model parameter alterations thereby producing a much less connected network, similar to the research concerning Thera in the Greek Mediterranean during the Bronze Age \citep{KnaRivEva11}.      
+Within all models, the connections Murlo held with other settlements were always amongst the weakest interaction levels throughout the system, and would be representative of loose affiliations. Those in control could have exploited these limited relationships in order to grow their authority and power. It is also clear that the maximum journey distances associated with different transportation modes (walking and horseback) produced contrasting results. The agent-based model suggests that those limited to walking would have been at a severe disadvantage for participating in the wider network, especially in the north. Similarly, the Ariadne networks with higher distance thresholds (100km) resulted in higher connectivity. If access to horses can be seen as a luxury (only for those with elite status) then it may also possible to differentiate between varying interaction networks within a society depending on social hierarchy. Moreover, the Ariadne (100km) results suggest that networks governed less by spatial restrictions may have been less resilient, and that removing nodes could have a larger impact on overall interaction sustainability. Arguably, the total decrease in interaction could call for a complete system shift, which would require model parameter alterations, thereby producing a much less connected network, similar to the research concerning Thera in the Greek Mediterranean during the Bronze Age \citep{KnaRivEva11}.      
 
 \paragraph{}
-It is intriguing that in two different scenarios (radiation and Ariadne (60km) models) node number 5 (Chiusi) gained significant interaction increases. This provides initial agreement with existing theories towards a motive for the destruction of Murlo. To further test the theory that Chiusi eliminated the society at Poggio Civitate in order to better situate itself in the regional network it will be necessary to continue testing the stochastic models and collect further results. Current interaction shift results, which are averaged, proved difficult to compare across the models. By running the stochastic models many more times it would possible to derive a probability that can be assigned to the likelihood of a particular observation. It would be interesting to use this additional output to examine whether or not patterns emerge inferring relationships between Murlo's demise and shifts in any other settlement. 
+It is intriguing that in two different scenarios (radiation and Ariadne (60km) models) node number 5 (Chiusi) gained significant increases in interaction. This provides initial agreement with existing theories towards a motive for the destruction of Murlo. To further test the theory that Chiusi eliminated the society at Poggio Civitate in order to better situate itself in the regional network, it will be necessary to continue testing the stochastic models and collect further results. Current interaction shift results, which are averaged, proved difficult to compare across the models. By running the stochastic models many more times, it would possible to derive a probability distribution that could be assigned to a particular observation. From this distribution, confidence intervals could be calculated for the observed values. It would be interesting to use this additional output to examine whether or not any patterns emerge suggesting a relationship between Murlo's demise and shifts in interactions for any other settlements. 
 
 \section{Comparing and Contrasting the Models}
 \paragraph{}
-Each model used in this research returned spatial interaction networks which were similar in their general structure. This advocates that their was certainly a spatial component to each model that was successfully being captured. Nevertheless, the different analytical frameworks produced unique results each with their own characteristics.
+Each model used in this research returned spatial interaction networks which were similar in their general structure. This suggests that their was indeed a spatial component that was successfully captured by each model. Nevertheless, the different analytical frameworks produced unique results, each with their own important characteristics.
 
 \paragraph{}
-The radiation model's relative simplicity, especially that it does not require any parameters, makes it ideal for preliminary model runs. Avoiding the subjective process of parameterization maintains a high level of objectivity within the model results, which is important for research concerned with dynamic inputs for differing scenarios, however; without parameters the model lacks the ability to reach the same analytical complexity of either the agent-based or Ariadne models. It cannot test different distance thresholds nor can it be adjusted for experimentation. As a result, when it is not possible to validate model results against observed data, this model should be employed alongside another model to provide further evidence that it captures a similar process and is appropriate for analysis. In contrast, it would be very useful to apply this model to compare different study regions since it would not be necessary to worry about uncertainty introduced during parameterization. 
+The radiation model's relative simplicity (it does not require any parameters) makes it ideal for preliminary model runs. Avoiding the subjective process of parameterization maintains a high level of objectivity within the model results, which is important for research concerned with dynamic inputs for differing scenarios. However; without parameters, the model lacks the ability to reach the same analytical complexity of either the agent-based or Ariadne models. It cannot test different distance thresholds nor can it be adjusted for experimentation. As a result, when it is not possible to validate model results against observed data, this model should be employed alongside another model to provide further evidence that it captures a similar process and is appropriate for analysis. In contrast, this would be very useful for comparing different study regions, since uncertainty introduced during parameterization is not an issue. 
 
 \paragraph{{}}
-Within the context of this research, the radiation model produced networks with interactions that were more homogeneous when compared to the other two models. It also appears that there may be too many weak long distance interactions, suggesting that the filter applied to the interaction system may need to be more finely tuned. Compared to the radiation mode, the Ariadne and agent models both displayed networks with more diverse and varying interaction strengths. The Ariadne model resulted in the most heterogeneous interaction networks (strong/short-distance vs. weak/long-distance) supporting the claim that this model has the ability to efficiently portray interaction occurring differently over varying scales. This complexity helps to paint more vivid interaction landscapes, though these benefits come with increased uncertainty. Due to the model's relatively sensitive parameters and it's subjective parameterization process, it is the most susceptible to a researcher's bias compared to the other models. This model is, therefore, best employed when there is sufficient proof to support the selected phenomenon being modeled.      
+Within the context of this research, the radiation model produced networks with interactions that were more homogeneous when compared to the other two models. It also appears that there may be too many weak long distance interactions, suggesting that the filter applied to the interaction system may need to be more finely tuned. Compared to the radiation mode, the Ariadne and agent models both displayed networks with more diverse and varying interaction strengths. The Ariadne model resulted in the most heterogeneous interaction networks (strong/short-distance vs. weak/long-distance) supporting the claim that this model has the ability to efficiently portray interaction occurring differently over varying scales. This complexity helps to paint more vivid interaction landscapes, though these benefits come with increased uncertainty. Due to the model's sensitivity to parameter values and it's subjective parameterization process, it is the most susceptible to a researcher's bias compared to the other models. This model is, therefore, best employed when there is sufficient evidence to support the selected phenomenon being modeled.      
 
 \paragraph{}
-The agent-based model, while also susceptible to researcher's bias, is not as vulnerable since it's parameters proved to be resilient. Changing any of the model's variables resulted in networks which manifested similar structure. Instead, this model's main weakness is that it is the least grounded within spatial interaction theory. It is more difficult to derive specific theories pertaining to individuals than it is for a society as a whole. In effect, the equations used lack the rigorous derivation of other spatial interaction methods. This model, therefore, is best applied in conjunction with other models as it was within this research.   
+The agent-based model, while also susceptible to researcher's bias, is not as vulnerable since it's parameters proved to be relatively inconsequential to its output. Changing any of the model's variables resulted in networks with similar structure. Instead, this model's main weakness is that it is the least grounded within spatial interaction theory. It is more difficult to derive specific theories pertaining to individuals than it is for a society as a whole. In effect, the equations used, lack the rigorous derivation of other spatial interaction methods. This model, therefore, is best applied in conjunction with other models as it was within this research.   
 
 \section{Limitations and Future Work}
 
 \paragraph{}
-In the agent model, distance is treated as a barrier which, at a certain distance, no agent can traverse. This binary characteristic is problematic since humans have always been known to travel extreme distances in extenuating circumstances or when the rewards were great enough. One solution to this problem would be to give the agents the ability to traverse longer distances to arrive at a settlement if the potential settlement has extra perks such as unusually high connectivity, which could be leveraged by the agent in the following round of simulation. This model could also be more closely customized to the study region by scaling the starting population at each site by the site's size rather than using a uniform number of agents. Further, the model could be made more complex by altering Equation 2.6 so that it considers only the number of visitors a settlement received in the current iteration rather than the cumulative number of visitors arriving there throughout the entire simulation. This adjustment would prevent positive feedback loops from forming between agents and key settlements as quickly, which might provide more interesting results.
+In the agent model, journey length is treated as a barrier which, at a certain distance value, no agent can traverse. This binary characteristic is problematic since humans have always been known to travel extreme distances in extenuating circumstances or when the rewards were great enough. One solution to this problem would be to give the agents the ability to traverse longer distances to arrive at a settlement if the potential settlement has extra perks, such as unusually high connectivity, which could be leveraged by the agent in the following round of simulation. This model could also be more closely customized to the study region by scaling the starting population at each site by the site's size rather than using a uniform number of agents. Further, the model could be made more complex by altering Equation 2.6 so that it considers only the number of visitors a settlement received in the current iteration rather than the cumulative number of visitors arriving there throughout the entire simulation. This adjustment would prevent positive feedback loops from forming between agents and key settlements as quickly, which might provide more interesting results.
 
 \paragraph{}
 The results of this research are largely dependent upon the filtering techniques applied to each model to remove ineffective interaction links. Two different methods were employed due to the fact that the magnitude and distribution of the interaction values differed in each model. By transforming or scaling the interaction values it may be possible to define one filtering approach for all of the models, which would allow for more effective comparisons amongst them.    
 
 \paragraph{}
-Any research that is model-driven is only as good as the data that it utilizes as input. For this research, the quality of the estimates of the site's sizes are paramount to the final results. It is obvious that within the field of archaeology these values are approximations which are debatable and susceptible to change over time as new information is gathered. If a research question pertains to a single settlement, it would be interesting to test how sensitive the entire system is to the specific site's size estimate. By holding all other variables constant and varying a single site's size it is possible to test which sites may cause the most volatility within the network. It would then be possible to identify key sites who's size estimates should be reconsidered. This could offer a new technique for selecting where to further excavate or conduct archaeological survey. 
+Any research that is model-driven is only as good as the data that it utilizes as input. For this research, the quality of the estimates of the site's sizes are paramount to the final results. It is obvious that within the field of archaeology these values are approximations which are debatable and susceptible to change over time as new information is gathered. Although it is outside the scope of this research, it would be interesting to test how sensitive the entire system is to the specific site's size estimate. By holding all other variables constant and varying a single site's size it is possible to test which sites may cause the most volatility within the network. It would then be possible to identify key sites who's size estimates should be reconsidered. This could offer a new technique for selecting where to further excavate or conduct archaeological survey. 
 
 \paragraph{}
-Spatial interaction methods are also strongly conditioned by the selected input distances between places of interest. This research considered distance by recording the length of the path between two places which required the least energy costs to traverse the natural terrain. In light of new evidence from this work, which suggests contrasting interaction networks for different transportation modes, it would be more appropriate to define energy costs in terms of each specific transportation mode. For example, the energy cost constraints for humans and horses to traverse the same terrain is likely to be quite different and may produce completely unique paths between two places. Alternatively, distance could be interpreted as the time cost associated with each journey. Obviously, a horse has the ability to travel more quickly than humans and so it would be expected that the travel time distance would be shorter for horses than for humans over the same physical distances. Indeed, the distance values can also be increased in accuracy by more closely modeling the physical environment. By employing higher resolution elevation data, more accurate slopes could be calculated, which would result in better cost estimates. Additionally, data representing waterways should be incorporated, which could bestow advantages upon settlements with rivers nearby and disadvantages to those that must consider sailing across lakes. Lastly, it would be interesting to place restrictions into the landscape to represent known socio-political barriers in order to include them in the spatial interaction decision process.  
+Spatial interaction methods are also strongly conditioned by the selected input distances between places of interest. This research considered distance by recording the length of the path between two places which required the lowest energy costs to traverse the natural terrain. In light of new evidence from this work which suggests contrasting interaction networks for different transportation modes, it may be more appropriate to define energy costs in terms of each specific transportation mode. For example, the energy cost constraints for humans or horses to traverse the same terrain is likely to be quite different, and may produce completely unique paths between two places. Alternatively, distance could be interpreted as the time cost associated with each journey. Obviously, a horse has the ability to travel more quickly than humans, and so it would be expected that the travel time distance would be shorter on horse-back than for walking over the same physical distances. Indeed, the accuracy of the distance values can be increased by more closely modeling the physical environment. By employing higher resolution elevation data, more accurate slopes could be calculated, which would result in better cost estimates. Additionally, data representing waterways should be incorporated, which could bestow advantages upon settlements with rivers nearby and disadvantages to those that must consider sailing across lakes. Lastly, it would be interesting to place restrictions on the landscape to represent known socio-political barriers in order to include them in the spatial interaction decision process.  
 
 
 
 \chapter{Conclusion}
 
 \paragraph{}
-Networks provide the ability to take static components and weave them together to more closely look at how a system that was truly dynamic in nature would have evolved. By employing three conceptually unique quantitative models, this research has produced relative spatial interaction networks which embody the regional relationships amongst settlements within ancient Etruria. Applying the same spatial inputs, each of the models produced results which were similar in their overall structure such that the networks consistently produced visible communities of more intense interaction with weaker interaction binding them all together. Additionally, all of the models produced networks in which interaction occurred more frequently amongst the southern settlements than the northern ones. Observing these characteristics across multiple models provides proof that we are indeed capturing the spatial phenomenon that we set out to.     
+Networks provide the ability to take static components and weave them together to more closely look at how a system that was truly dynamic in nature could have evolved. By employing three conceptually unique quantitative models, this research has produced relative spatial interaction networks which embody the regional relationships amongst settlements within ancient Etruria. Applying the same spatial inputs, each of the models produced results which were similar in their overall structure, such that the networks consistently produced visible communities of more intense interaction, with weaker interaction binding them together. Additionally, all of the models produced networks in which interaction occurred more frequently amongst the southern settlements than the northern ones. Observing these characteristics across multiple models provides evidence that we are indeed capturing the spatial phenomenon that we set out to.     
 
 \paragraph{} 
-By embedding Murlo within the larger region of central Italy it was possible to consider it's individual characteristics against all of the other settlements within a spatial context. Model results consistently support the hypothesis that Murlo was generally an autonomous settlement, mostly exempt from the influences of larger and more powerful sites. It is important to note that the models do not suggest that Murlo was completely void of any relationships with it's neighbors. Instead, the limited interactions which were observed can be interpreted as rare opportunities to acquire important information or goods for the inhabitants at Murlo. If authoritative figures at Murlo were able to dominate the relationships with the wider region, it likely provided increased power and wealth over those who were excluded. Furthermore, the produced networks from this research advocate that different modes of transportation would have facilitated varying interactions across the landscape. Those without access to horses would have been severely restricted in their ability to interact within Etruria while those with horses would have enjoyed increased mobility, which provided higher connectivity in the overall network.         
+By embedding Murlo within the larger region of central Italy, it was possible to consider it's size and location against all of the other settlements within a spatial context. Model results consistently support the hypothesis that Murlo was generally an autonomous settlement, mostly exempt from the influences of larger and more powerful sites. It is important to note that the models do not suggest that Murlo was completely void of any relationships with it's neighbors. Instead, the limited interactions which were observed can be interpreted as rare opportunities to acquire important information or goods for the inhabitants at Murlo. If authoritative figures at Murlo were able to dominate the relationships with the wider region, it likely provided increased power and wealth over those who were excluded. Furthermore, the networks produced in this research suggest that different modes of transportation would have facilitated varying interactions across the landscape. Those without access to horses would have been severely restricted in their ability to interact within Etruria, while those with horses would have enjoyed increased mobility, which would have provided greater connectivity in the overall network.         
 
  
 \paragraph{}
-Diverging landscapes, due to transportation disparities, could have played a role in the ultimate fate of Etruscan society. This research suggests that when interactions are permitted to occur over longer distances that local ties are diluted, reducing the overall connectivity of the network. Settlements may have become more vulnerable to ensuing advances from enemies such as Rome as they increasingly structured their relationships towards greater socio-economic advantages offered from long-distance trade, thereby sacrificing the resilience of local communities. In this manner, the future landscape would have been strongly influenced by the current spatial dynamics within the region.    
+Diverging landscapes, due to transportation disparities, could have played a role in the ultimate fate of Etruscan society. This research suggests that when interactions are permitted to occur over longer distances, local ties are diluted, reducing the overall connectivity of the network. Settlements may have become more vulnerable to ensuing advances from enemies such as Rome, as they increasingly structured their relationships towards greater socio-economic advantages offered from long-distance trade, thereby sacrificing the resilience of local communities. In this manner, the future landscape would have been strongly influenced by the current spatial dynamics within the region.    
 
 
 \paragraph{}
-Each of the three models in this research displayed different advantages that could be leveraged in order to test more specific hypotheses within future research. Specifically, the radiation model's simplicity is helpful when comparing results across regions while the Ariadne and agent-based models are necessary to test varying distance thresholds theorized to affect the spatial decision making process. This study has provided a wealth of spatial interaction network simulation methods that can serve as a starting point for further inquiries. They can be improved upon within the context of other study regions as well as within the contexts of Etruria in order to shed more light on the enigmatic site of Murlo. 
+Each of the three models in this research displayed different advantages that could be leveraged in order to test more specific hypotheses within future research. Specifically, the radiation model's simplicity is helpful when comparing results across regions while the Ariadne and agent-based models are necessary to test varying distance thresholds theorized to affect the spatial decision making process. This study has provided a wealth of spatial interaction network simulation methods that can serve as a starting point for further inquiries. Additional archaeological study regions can be tested by simply collecting the size and location data of any settlement distribution. Methods applied within this research are also easily generalized, so that this framework can be adopted in fields as diverse as transportation planning, retail modeling, and communications studies. Once networks have been generated, any number of metrics can be introduced to study their pertinent characteristics. Finally, this framework can be improved upon within the context of Etruria in order to shed more light on the enigmatic site of Murlo. 
 
 
 \begin{singlespace}

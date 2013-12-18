@@ -2,34 +2,34 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Sites used in the study and their attributes.}}{38}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Energy cost of walking and running on different slopes ($J\cdot kg^{-1}\cdot m^{-1}$).}}{40}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sites used in the study and their attributes.}}{39}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Energy cost of walking and running on different slopes ($J\cdot kg^{-1}\cdot m^{-1}$).}}{41}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Cost classification for each slope range.}}{41}
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Network metrics for radiation model before the destruction of Murlo}}{57}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Node metrics for radiation model before the destruction of Murlo}}{58}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Network metrics for radiation model after the destruction of Murlo}}{58}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Node metrics for radiation model after the destruction of Murlo}}{59}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Network metrics for Ariadne (60km) model before the destruction of Murlo.}}{65}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Node metrics for Ariadne (60km) model before the destruction of Murlo.}}{66}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Network metrics for Ariadne (100km) model before the destruction of Murlo}}{66}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Node metrics for Ariadne (100km) model before the destruction of Murlo.}}{67}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Network metrics for Ariadne (60km) model after the destruction of Murlo.}}{67}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Node metrics for Ariadne (60km) model after the destruction of Murlo.}}{68}
-\contentsline {table}{\numberline {5.11}{\ignorespaces Network metrics for Ariadne (100km) model after the destruction of Murlo.}}{68}
-\contentsline {table}{\numberline {5.12}{\ignorespaces Node metrics for Ariadne (100) model after the destruction of Murlo.}}{69}
-\contentsline {table}{\numberline {5.13}{\ignorespaces Network metrics for agent model before the destruction of Murlo.}}{74}
-\contentsline {table}{\numberline {5.14}{\ignorespaces Node metrics for Agent model before the destruction of Murlo.}}{75}
-\contentsline {table}{\numberline {5.15}{\ignorespaces Network metrics for Agent model after the destruction of Murlo.}}{75}
-\contentsline {table}{\numberline {5.16}{\ignorespaces Node metrics for Agent model after the destruction of Murlo.}}{76}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Network metrics for radiation model before the destruction of Murlo}}{58}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Node metrics for radiation model before the destruction of Murlo}}{59}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Network metrics for radiation model after the destruction of Murlo}}{59}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Node metrics for radiation model after the destruction of Murlo}}{60}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Network metrics for Ariadne (60km) model before the destruction of Murlo.}}{66}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Node metrics for Ariadne (60km) model before the destruction of Murlo.}}{67}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Network metrics for Ariadne (100km) model before the destruction of Murlo}}{67}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Node metrics for Ariadne (100km) model before the destruction of Murlo.}}{68}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Network metrics for Ariadne (60km) model after the destruction of Murlo.}}{68}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Node metrics for Ariadne (60km) model after the destruction of Murlo.}}{69}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Network metrics for Ariadne (100km) model after the destruction of Murlo.}}{69}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Node metrics for Ariadne (100) model after the destruction of Murlo.}}{70}
+\contentsline {table}{\numberline {5.13}{\ignorespaces Network metrics for agent model before the destruction of Murlo.}}{75}
+\contentsline {table}{\numberline {5.14}{\ignorespaces Node metrics for Agent model before the destruction of Murlo.}}{76}
+\contentsline {table}{\numberline {5.15}{\ignorespaces Network metrics for Agent model after the destruction of Murlo.}}{76}
+\contentsline {table}{\numberline {5.16}{\ignorespaces Node metrics for Agent model after the destruction of Murlo.}}{77}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {A.1}{\ignorespaces Least-cost path distances (km)}}{91}
-\contentsline {table}{\numberline {A.2}{\ignorespaces As the crow flies distances (km)}}{92}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 60km)}}{97}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 100km)}}{97}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 60km)}}{97}
-\contentsline {table}{\numberline {A.6}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 100km)}}{97}
-\contentsline {table}{\numberline {A.7}{\ignorespaces Network-level metric results for 25 runs (Agent Model - Before)}}{99}
-\contentsline {table}{\numberline {A.8}{\ignorespaces Network-level metric results for 25 runs (Agent Model - After)}}{99}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Least-cost path distances (km)}}{92}
+\contentsline {table}{\numberline {A.2}{\ignorespaces As the crow flies distances (km)}}{93}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 60km)}}{98}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Network-level metric results for 25 runs (Ariadne - Before - 100km)}}{98}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 60km)}}{98}
+\contentsline {table}{\numberline {A.6}{\ignorespaces Network-level metric results for 25 runs (Ariadne - After - 100km)}}{98}
+\contentsline {table}{\numberline {A.7}{\ignorespaces Network-level metric results for 25 runs (Agent Model - Before)}}{100}
+\contentsline {table}{\numberline {A.8}{\ignorespaces Network-level metric results for 25 runs (Agent Model - After)}}{100}
